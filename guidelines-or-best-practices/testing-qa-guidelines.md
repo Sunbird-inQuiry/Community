@@ -1,0 +1,3 @@
+# Testing QA guidelines
+
+coming soon...

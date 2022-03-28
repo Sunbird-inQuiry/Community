@@ -1,0 +1,982 @@
+"objectCategoryDefinition": {
+    "identifier": "obj-cat:practice-question-set_questionset_all",
+    "objectMetadata": {
+        "config": {
+            "sourcingSettings": {
+                "collection": {
+                    "objectType": "QuestionSet",
+                    "primaryCategory": "Practice Question Set",
+                    "maxDepth": 1,
+                    "isRoot": true,
+                    "iconClass": "fa fa-book",
+                    "children": {
+                        "Question": [
+                            "Multiple Choice Question",
+                            "Subjective Question"
+                        ]
+                    },
+                    "hierarchy": {
+                        "level1": {
+                            "name": "Section",
+                            "type": "Unit",
+                            "mimeType": "application/vnd.sunbird.questionset",
+                            "primaryCategory": "Practice Question Set",
+                            "iconClass": "fa fa-folder-o",
+                            "children": {
+                                "Question": [
+                                    "Multiple Choice Question",
+                                    "Subjective Question"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "schema": {
+            "properties": {
+                "mimeType": {
+                    "type": "string",
+                    "enum": [
+                        "application/vnd.sunbird.questionset"
+                    ]
+                }
+            }
+        }
+    },
+    "languageCode": [],
+    "name": "Practice Question Set",
+    "forms": {
+        "create": {
+            "templateName": "",
+            "required": [],
+            "properties": [
+                {
+                    "code": "instructions",
+                    "dataType": "text",
+                    "description": "Instructions for the question set",
+                    "editable": true,
+                    "inputType": "richtext",
+                    "label": "Instructions",
+                    "name": "Instruction",
+                    "placeholder": "Enter Instructions",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-2 required"
+                    },
+                    "validations": [
+                        {
+                            "type": "required",
+                            "message": "Instruction is required"
+                        }
+                    ],
+                    "required": true,
+                    "visible": true
+                },
+                {
+                    "code": "name",
+                    "dataType": "text",
+                    "description": "Name of the Practice Question Set",
+                    "editable": true,
+                    "inputType": "text",
+                    "label": "Name",
+                    "name": "Name",
+                    "placeholder": "Enter name of the question set",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1 required"
+                    },
+                    "required": true,
+                    "visible": true,
+                    "validations": [
+                        {
+                            "type": "maxLength",
+                            "value": "120",
+                            "message": "Input is Exceeded"
+                        },
+                        {
+                            "type": "required",
+                            "message": "Name is required"
+                        }
+                    ]
+                },
+                {
+                    "code": "description",
+                    "dataType": "text",
+                    "description": "Description of the content",
+                    "editable": true,
+                    "inputType": "textarea",
+                    "label": "Description",
+                    "name": "Description",
+                    "placeholder": "Description",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1 required"
+                    },
+                    "required": true,
+                    "visible": true,
+                    "validations": [
+                        {
+                            "type": "required",
+                            "message": "description is required"
+                        }
+                    ]
+                },
+                {
+                    "code": "keywords",
+                    "visible": true,
+                    "editable": true,
+                    "dataType": "list",
+                    "name": "Keywords",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "description": "Keywords for the content",
+                    "inputType": "keywords",
+                    "label": "keywords",
+                    "placeholder": "Enter Keywords",
+                    "required": false,
+                    "validations": []
+                },
+                {
+                    "code": "primaryCategory",
+                    "dataType": "text",
+                    "description": "Type",
+                    "editable": false,
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "inputType": "text",
+                    "label": "Type",
+                    "name": "Type",
+                    "placeholder": "",
+                    "required": false,
+                    "visible": true
+                },
+                {
+                    "code": "additionalCategories",
+                    "dataType": "list",
+                    "description": "Additonal Category of the Content",
+                    "editable": true,
+                    "inputType": "nestedselect",
+                    "label": "Additional Category",
+                    "name": "Additional Category",
+                    "placeholder": "Select Additional Category",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "default": "",
+                    "required": false,
+                    "visible": true
+                },
+                {
+                    "code": "board",
+                    "default": "",
+                    "visible": true,
+                    "depends": [],
+                    "editable": true,
+                    "dataType": "text",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "description": "Board",
+                    "label": "Board/Syllabus",
+                    "required": false,
+                    "name": "Board/Syllabus",
+                    "inputType": "select",
+                    "placeholder": "Select Board/Syllabus"
+                },
+                {
+                    "code": "medium",
+                    "visible": true,
+                    "depends": [
+                        "board"
+                    ],
+                    "editable": true,
+                    "default": "",
+                    "dataType": "list",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "description": "",
+                    "label": "Medium",
+                    "required": false,
+                    "name": "Medium",
+                    "inputType": "select",
+                    "placeholder": "Select Medium"
+                },
+                {
+                    "code": "gradeLevel",
+                    "visible": true,
+                    "depends": [
+                        "board",
+                        "medium"
+                    ],
+                    "editable": true,
+                    "default": "",
+                    "dataType": "list",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "description": "Class",
+                    "label": "Class",
+                    "required": false,
+                    "name": "Class",
+                    "inputType": "select",
+                    "placeholder": "Select Class"
+                },
+                {
+                    "code": "subject",
+                    "visible": true,
+                    "depends": [
+                        "board",
+                        "medium",
+                        "gradeLevel"
+                    ],
+                    "editable": true,
+                    "default": "",
+                    "dataType": "list",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "description": "",
+                    "label": "Subject",
+                    "required": false,
+                    "name": "Subject",
+                    "inputType": "select",
+                    "placeholder": "Select Subject"
+                },
+                {
+                    "code": "topic",
+                    "visible": true,
+                    "editable": true,
+                    "dataType": "list",
+                    "depends": [
+                        "board",
+                        "medium",
+                        "gradeLevel",
+                        "subject"
+                    ],
+                    "default": "",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "name": "Topic",
+                    "description": "Choose a Topics",
+                    "inputType": "topicselector",
+                    "label": "Topics",
+                    "placeholder": "Choose Topics",
+                    "required": false
+                },
+                {
+                    "code": "audience",
+                    "dataType": "list",
+                    "description": "Audience",
+                    "editable": true,
+                    "inputType": "select",
+                    "label": "Audience",
+                    "name": "Audience",
+                    "placeholder": "Select Audience",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1 required"
+                    },
+                    "required": true,
+                    "visible": true,
+                    "range": [
+                        "Student",
+                        "Teacher",
+                        "Administrator"
+                    ],
+                    "validations": [
+                        {
+                            "type": "required",
+                            "message": "Audience is required"
+                        }
+                    ]
+                },
+                {
+                    "code": "showFeedback",
+                    "dataType": "text",
+                    "description": "Show Feedback",
+                    "editable": true,
+                    "default": "",
+                    "inputType": "checkbox",
+                    "label": "Show Feedback",
+                    "name": "showFeedback",
+                    "placeholder": "Show Feedback",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "required": false,
+                    "visible": true
+                },
+                {
+                    "code": "showSolutions",
+                    "dataType": "text",
+                    "description": "Show Solution",
+                    "editable": true,
+                    "inputType": "checkbox",
+                    "label": "Show Solution",
+                    "name": "Show Solution",
+                    "placeholder": "Show Solution",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "required": false,
+                    "visible": true
+                },
+                {
+                    "code": "shuffle",
+                    "dataType": "boolean",
+                    "description": "Shuffle Questions",
+                    "editable": true,
+                    "default": "",
+                    "inputType": "checkbox",
+                    "label": "Shuffle Questions",
+                    "name": "Shuffle Questions",
+                    "placeholder": "Shuffle Questions",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "required": false,
+                    "visible": true
+                },
+                {
+                    "code": "maxAttempts",
+                    "visible": true,
+                    "editable": true,
+                    "dataType": "number",
+                    "name": "Max Attempts",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "description": "Max Attempts",
+                    "inputType": "select",
+                    "label": "Max Attempts",
+                    "placeholder": "Max Attempts",
+                    "required": false,
+                    "range": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25
+                    ]
+                },
+                {
+                    "code": "maxTime",
+                    "visible": true,
+                    "editable": true,
+                    "dataType": "text",
+                    "name": "MaxTimer",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1 required"
+                    },
+                    "description": "MaxTime for the content",
+                    "inputType": "timer",
+                    "label": "Max Time",
+                    "placeholder": "HH:mm:ss",
+                    "required": true,
+                    "validations": [
+                        {
+                            "type": "required",
+                            "message": "Maxtime is required"
+                        },
+                        {
+                            "type": "maxTime",
+                            "value": "05:30",
+                            "message": "Maxtime should be less than or equal to 05:30"
+                        },
+                        {
+                            "type": "minTime",
+                            "value": "00:01",
+                            "message": "Maxtime should be greater than 00:00"
+                        }
+                    ]
+                },
+                {
+                    "code": "warningTime",
+                    "visible": true,
+                    "editable": true,
+                    "dataType": "list",
+                    "name": "Warning Time",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "depends": [
+                        "maxTime"
+                    ],
+                    "description": "warning for the content",
+                    "inputType": "timer",
+                    "label": "Warning Time",
+                    "placeholder": "hh:mm:ss",
+                    "required": false,
+                    "validations": [
+                        {
+                            "type": "compare",
+                            "criteria": {
+                                "<=": [
+                                    "maxTime"
+                                ]
+                            },
+                            "message": "warning time should be less than max timer"
+                        }
+                    ],
+                    "default": null
+                },
+                {
+                    "code": "requiresSubmit",
+                    "visible": true,
+                    "editable": true,
+                    "dataType": "text",
+                    "name": "Submit Confirmation",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "description": "Submit Confirmation",
+                    "inputType": "checkbox",
+                    "label": "Submit Confirmation",
+                    "placeholder": "Submit Confirmation",
+                    "required": false
+                },
+                {
+                    "code": "maxQuestions",
+                    "dataType": "number",
+                    "description": "Show Questions",
+                    "editable": true,
+                    "inputType": "select",
+                    "label": "Show Questions",
+                    "name": "maxQuestions",
+                    "placeholder": "Number of questions to be shown",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "required": false,
+                    "visible": true
+                },
+                {
+                    "code": "author",
+                    "dataType": "text",
+                    "description": "Author of the content",
+                    "editable": true,
+                    "inputType": "text",
+                    "label": "Author",
+                    "name": "Author",
+                    "placeholder": "Author",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1 required"
+                    },
+                    "required": true,
+                    "visible": true,
+                    "validations": [
+                        {
+                            "type": "required",
+                            "message": "Author is required"
+                        }
+                    ]
+                },
+                {
+                    "code": "attributions",
+                    "dataType": "text",
+                    "description": "Attributions",
+                    "editable": true,
+                    "inputType": "text",
+                    "label": "Attributions",
+                    "name": "Attributions",
+                    "placeholder": "Attributions",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "required": false,
+                    "visible": true
+                },
+                {
+                    "code": "copyright",
+                    "dataType": "text",
+                    "description": "Copyright & year",
+                    "editable": true,
+                    "inputType": "text",
+                    "label": "Copyright & year",
+                    "name": "Copyright & year",
+                    "placeholder": "Copyright & year",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "required": false,
+                    "visible": true
+                },
+                {
+                    "code": "license",
+                    "dataType": "text",
+                    "description": "license",
+                    "editable": true,
+                    "inputType": "select",
+                    "label": "license",
+                    "name": "license",
+                    "placeholder": "Select license",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "required": false,
+                    "visible": true,
+                    "range": ""
+                },
+                {
+                    "code": "showTimer",
+                    "visible": false,
+                    "editable": false,
+                    "dataType": "text",
+                    "default": "Yes",
+                    "depends": [
+                        "maxTime"
+                    ],
+                    "name": "Show Timer",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "description": "Show Timer",
+                    "inputType": "checkbox",
+                    "label": "Show Timer",
+                    "placeholder": "Show Timer",
+                    "required": false
+                },
+                {
+                    "code": "summaryType",
+                    "dataType": "text",
+                    "description": "summaryType",
+                    "editable": true,
+                    "inputType": "select",
+                    "label": "Summary Type",
+                    "name": "summaryType",
+                    "placeholder": "Select Summary Type",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    },
+                    "required": false,
+                    "visible": true,
+                    "range": [
+                        "Complete",
+                        "Score",
+                        "Duration",
+                        "Score & Duration"
+                    ]
+                }
+            ]
+        },
+        "delete": {},
+        "publish": {},
+        "publishchecklist": {
+            "templateName": "",
+            "required": [],
+            "properties": [
+                {
+                    "name": "Appropriateness",
+                    "renderingHints": {
+                        "class": "d-grid-inline-3 display-sectionName"
+                    },
+                    "fields": [
+                        {
+                            "code": "appropriatenessOne",
+                            "name": "No Hate speech, Abuse, Violence, Profanity",
+                            "label": "No Hate speech, Abuse, Violence, Profanity",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "appropriatenessTwo",
+                            "name": "No Sexual content, Nudity or Vulgarity",
+                            "label": "No Sexual content, Nudity or Vulgarity",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "appropriatenessThree",
+                            "name": "No Discrimination or Defamation",
+                            "label": "No Discrimination or Defamation",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "appropriatenessFour",
+                            "name": "Is suitable for children",
+                            "label": "Is suitable for children",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Content details",
+                    "renderingHints": {
+                        "class": "d-grid-inline-3 display-sectionName"
+                    },
+                    "fields": [
+                        {
+                            "code": "contentdetailsOne",
+                            "name": "Appropriate Title, Description",
+                            "label": "Appropriate Title, Description",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "contentdetailsTwo",
+                            "name": "Correct Board, Grade, Subject, Medium",
+                            "label": "Correct Board, Grade, Subject, Medium",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "contentdetailsThree",
+                            "name": "Appropriate tags such as Resource Type, Concepts",
+                            "label": "Appropriate tags such as Resource Type, Concepts",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "contentdetailsFour",
+                            "name": "Relevant Keywords",
+                            "label": "Relevant Keywords",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Usability",
+                    "renderingHints": {
+                        "class": "d-grid-inline-3 display-sectionName"
+                    },
+                    "fields": [
+                        {
+                            "code": "usabilityOne",
+                            "name": "Content plays correctly",
+                            "label": "Content plays correctly",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "usabilityTwo",
+                            "name": "Can see the content clearly on Desktop and App",
+                            "label": "Can see the content clearly on Desktop and App",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "usabilityThree",
+                            "name": "Audio (if any) is clear and easy to understand",
+                            "label": "Audio (if any) is clear and easy to understand",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "usabilityFour",
+                            "name": "No Spelling mistakes in the text",
+                            "label": "No Spelling mistakes in the text",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        },
+                        {
+                            "code": "usabilityFive",
+                            "name": "Language is simple to understand",
+                            "label": "Language is simple to understand",
+                            "dataType": "boolean",
+                            "inputType": "checkbox",
+                            "editable": true,
+                            "required": false,
+                            "visible": true,
+                            "validations": [
+                                {
+                                    "type": "required",
+                                    "message": ""
+                                }
+                            ],
+                            "renderingHints": {
+                                "class": "sb-g-col-lg-1"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "unitMetadata": {
+            "templateName": "",
+            "required": [],
+            "properties": [
+                {
+                    "code": "name",
+                    "dataType": "text",
+                    "description": "Name of the content",
+                    "editable": true,
+                    "inputType": "text",
+                    "label": "Title",
+                    "name": "Title",
+                    "placeholder": "Title",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1 required"
+                    },
+                    "required": true,
+                    "visible": true,
+                    "validations": [
+                        {
+                            "type": "maxLength",
+                            "value": "120",
+                            "message": "Input is Exceeded"
+                        },
+                        {
+                            "type": "required",
+                            "message": "Title is required"
+                        }
+                    ]
+                },
+                {
+                    "code": "description",
+                    "dataType": "text",
+                    "description": "Description of the content",
+                    "editable": true,
+                    "inputType": "textarea",
+                    "label": "Description",
+                    "name": "Description",
+                    "placeholder": "Description",
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1 required"
+                    },
+                    "required": true,
+                    "visible": true,
+                    "validations": [
+                        {
+                            "type": "maxLength",
+                            "value": "500",
+                            "message": "Input is Exceeded"
+                        }
+                    ]
+                },
+                {
+                    "code": "maxQuestions",
+                    "name": "Show Questions",
+                    "label": "Show Questions",
+                    "placeholder": "Number of questions to be shown",
+                    "description": "Number of questions to be shown",
+                    "default": "",
+                    "dataType": "number",
+                    "inputType": "select",
+                    "editable": true,
+                    "required": false,
+                    "visible": true,
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    }
+                },
+                {
+                    "code": "showFeedback",
+                    "name": "Show Feedback",
+                    "label": "Show Feedback",
+                    "placeholder": "Show Correct/Incorrect Feedback",
+                    "description": "Show Correct/Incorrect Feedback",
+                    "default": "Yes",
+                    "dataType": "text",
+                    "inputType": "checkbox",
+                    "editable": true,
+                    "required": false,
+                    "visible": true,
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    }
+                },
+                {
+                    "code": "shuffle",
+                    "name": "Shuffle Questions",
+                    "label": "Shuffle Questions",
+                    "placeholder": "Shuffle Questions",
+                    "description": "Questions will be Shuffled while playing",
+                    "default": "false",
+                    "dataType": "boolean",
+                    "inputType": "checkbox",
+                    "editable": true,
+                    "required": false,
+                    "visible": true,
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    }
+                },
+                {
+                    "code": "showSolutions",
+                    "name": "Show Solution",
+                    "label": "Show Solution",
+                    "placeholder": "Show Solution",
+                    "description": "Show Solution",
+                    "default": "Yes",
+                    "dataType": "text",
+                    "inputType": "checkbox",
+                    "editable": true,
+                    "required": false,
+                    "visible": true,
+                    "renderingHints": {
+                        "class": "sb-g-col-lg-1"
+                    }
+                }
+            ]
+        },
+        "update": {}
+    }
+}
