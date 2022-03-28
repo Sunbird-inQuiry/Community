@@ -146,10 +146,6 @@ The QuML player does not store the state of the question set, but instead, it ex
 
 If the question set is part of a trackable collection or course then the user needs to log in to access the course, but a user can always access the question set without logging into the web app.
 
-### Does QuML player accessibility-supported?
-
-Yes, QuML supports accessibility by using keyboard navigation and a screen reader.
-
 ### Can users change the look and styles of the player?
 
 As of now, the QuML player does not support any themes or custom styles. But still, users can override the existing classes and change the styles.&#x20;
@@ -160,7 +156,5 @@ As of now, the QuML player does not support any themes or custom styles. But sti
 
 ### Does the QuML player support multiple Languages?
 
-As of now, the player does not support multiple languages :cry:
-
-
+As of now, the player works in English language. It can be extended and made multi-lingual.
 
