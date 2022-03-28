@@ -20,8 +20,6 @@
     * [Player Configuration](learn/product-and-developer-guide/question-set-player/player-configuration.md)
     * [FAQ's](learn/product-and-developer-guide/question-set-player/faqs.md)
   * [Analytics](learn/product-and-developer-guide/analytics.md)
-* [Try it out](learn/try-it-out.md)
-* [Product Roadmap](learn/product-roadmap.md)
 
 ## Use
 
@@ -33,10 +31,9 @@
     * [Local Installation](use/installation-guide/question-and-question-set-service/local-installation.md)
     * [Configuration](use/installation-guide/question-and-question-set-service/configuration.md)
   * [Question Set Editor](use/installation-guide/question-set-editor/README.md)
-    * [Installation and Contribution Guide](use/installation-guide/question-set-editor/installation-and-contribution-guide.md)
+    * [Installation](use/installation-guide/question-set-editor/installation.md)
   * [Question set Player](use/installation-guide/question-set-player/README.md)
-    * [Installation and Contribution Guide](use/installation-guide/question-set-player/installation-and-contribution-guide.md)
-* [Upgrade](use/upgrade.md)
+    * [Installation](use/installation-guide/question-set-player/installation.md)
 * [Release notes](use/release-notes/README.md)
   * [inQuiry - Release V 4.8.0 (Upcoming)](use/release-notes/inquiry-release-v-4.8.0-upcoming.md)
   * [inQuiry - Release V 4.7.0 (Live)](use/release-notes/inquiry-release-v-4.7.0-live.md)

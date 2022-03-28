@@ -6,27 +6,19 @@
 | ------- | -------------------- | --------------- |
 | inQuiry | 04-04-22 (tentative) | V 4.8.0         |
 
-### **1. Objectives of the inQuiry release 4.8.0**
+### **1. Summary of the Product Features**&#x20;
 
-inQuiry release version 4.8.0, as an upgrade to the inQuiry release 4.7.0 has been updated with enhancement to add instructions and details in section level of question set.
+This document contains information about the new features and enhancements planned to the inQuiry building block as part of release 4.8.0:
 
-### 2. Scope
-
-inQuiry product release features and issues are described in this version 4.8.0. This document contains a short description of enhancements to the inQuiry product.
-
-### **3. Summary of the Product Features**&#x20;
-
-This document contains information on the following new features and enhancements to the existing features of the inQuiry product:
-
-* Enable section level instructions and details.
-* QUML player enhancements.
-* Telemetry for skipped questions in QuML.
-* QuestionSet import API enhancement.
-* Next content to come at end page of QUML player in a collection.
+* Enable creators to include section level instructions for question sets.
+* QUML player minor UI enhancements.
+* Enable capturing telemetry for skipped questions.
+* QuestionSet import API enhancement to validate the question/question set status and throw Client Error if the source question/question set status is not Live/Unlisted.
+* Ability for consumption apps to display the 'Next content' in a collection at the question set end page in the QUML player.
 * Bug Fixes
-  * [SB-29231](https://project-sunbird.atlassian.net/browse/SB-29231) : Unable to play the question created on Cokreat portal to Consumption mobile App.
+  * [SB-29231](https://project-sunbird.atlassian.net/browse/SB-29231) : Unable to play the questions created on Cokreat portal in the SunbirdEd Consumption apps.
 
-### 4. **Description of the Product Features**
+### 2. **Description of the Product Features**
 
 ****
 
