@@ -81,7 +81,7 @@ The various section level configurations available to the creator are:
 
 1. **Count of questions to be displayed in this section** - By default, all questions in the section are shown to the user. However, creators have an option to show only a sub-set of questions by using this property.
 2. **Shuffle questions** - If enabled, users are presented with questions in a random order whenever they attempt the assessment.
-3. **Show Feedback** - If enabled, users are informed whether they have correctly answered questions or not.&#x20;
+3. **Show feedback** - If enabled, users are informed whether they have correctly answered questions or not.&#x20;
 4. **Show solution** - If enabled, solutions to each question are shown to the users.
 
 ![](../../../.gitbook/assets/section-config.png)

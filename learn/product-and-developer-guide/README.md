@@ -18,4 +18,4 @@ The components of inQuiry building block that enable the key capabilities outlin
 [analytics.md](analytics.md)
 {% endcontent-ref %}
 
-In the subsequent pages you will find detailed functional and technical documentation of these components.&#x20;
+In the subsequent pages you will find detailed functional and technical documentation about these components.&#x20;

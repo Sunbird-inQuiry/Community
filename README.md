@@ -33,7 +33,7 @@ Key capabilities offered by Sunbird inQuiry are:&#x20;
 
 
 
-Sunbird inQuiry is leveraged in DIKSHA - Digital Infrastructure for Knowledge Sharing, the national school education platform of India. &#x20;
+Sunbird InQuiry is leveraged in DIKSHA - Digital Infrastructure for Knowledge Sharing, the national school education platform of India. &#x20;
 
 _**Contributors:**_ EkStep, Samagra & Shikshalokam
 

@@ -1,12 +1,6 @@
----
-description: >-
-  In this section, we have covered various key features of the question set
-  editor.
----
-
 # Source Code
 
-Here is the link to the source code:
+Here is the link to the source code. Currently, inQuiry leverages collection editor source code from Sunbird Knowlg for this purpose. This will be decoupled from Knowlg in the future.
 
 
 
