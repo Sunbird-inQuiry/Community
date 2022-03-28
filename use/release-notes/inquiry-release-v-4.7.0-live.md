@@ -6,20 +6,17 @@
 | ------- | ------------- | --------------- |
 | inQuiry | 01 March 2022 | V 4.7.0         |
 
-### **1. Objectives of the inQuiry release 4.7.0**
+### **1. Summary of the changes**&#x20;
 
-inQuiry release version 4.7.0, as an upgrade to the inQuiry release 4.6.0 has been updated with enhancement to add accessibility changes to Question set editor.
+In 4.7.0, following two changes were done by the inQuiry building block team:
 
-### 2. Scope
+* Changes to the Question set editor to improve the accessibility capabilities when questions are rendered in the QuML player
+* Extensive updates to the inQuiry microsite documentation ([https://inquiry.sunbird.org/](https://inquiry.sunbird.org))
 
-inQuiry product release features and issues are described in this version 4.7.0. This document contains a short description of enhancements to the inQuiry product.
-
-### **3. Summary of the Product Features**&#x20;
-
-This document contains information on the following new features and enhancements to the existing features of the inQuiry product:
-
-* Accessibility changes to Question set editor
-
-### 4. **Description of the Product Feature**
+### 2. **Details of the changes**
 
 <table><thead><tr><th data-type="number">SI No</th><th>JIRA ID</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td><a href="https://project-sunbird.atlassian.net/browse/SB-28090">SB-28090</a></td><td>Accessibility changes to Question set editor</td></tr><tr><td>2</td><td></td><td>Extensive documentation updates to the inQuiry microsite</td></tr></tbody></table>
+
+### 3. Test Scenarios
+
+Link to the test scenarios/cases validated by the inQuiry building block QA team as part of 4.7.0 release:&#x20;
