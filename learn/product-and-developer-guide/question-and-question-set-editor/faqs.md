@@ -1,30 +1,5 @@
 # FAQ's
 
-### **How to enable the Question set editor on Workspace?**&#x20;
-
-To enable the Question set editor on Workspace, the create form has to be configured on Workspace for that tenant as:
-
-```
-"form": {
-            "type": "questionset",
-            "subtype": "editor",
-            "action": "display",
-            "component": "*",
-            "framework": "*",
-            "data": {
-                "templateName": "defaultTemplate",
-                "action": "display",
-                "fields": [
-                    {
-                        "type": "questionset",
-                        "display": true
-                    }
-                ]
-            }
-            "rootOrgId": "*"
-        }
-```
-
 ### **How to configure a new metadata field and define its attributes in the question set editor?**
 
 The config for new fields has to be added in the object category definition. This can be done at the system level or at the individual channel level.
