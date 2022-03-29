@@ -23,7 +23,7 @@
 
 ## ENGAGE
 
-* [Engage](engage/engage.md)
+* [Discuss](https://github.com/Sunbird-inQuiry/Community/discussions)
 
 ## Use
 
