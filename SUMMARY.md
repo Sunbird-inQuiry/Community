@@ -25,6 +25,7 @@
 
 * [Overview](use/overview.md)
 * [System Requirements](use/system-requirements.md)
+* [Installation guide](use/installation-guide.md)
 * [Developer Installation](use/developer-installation/README.md)
   * [Question & Question Set Service](use/developer-installation/question-and-question-set-service/README.md)
     * [Server Installation](use/developer-installation/question-and-question-set-service/server-installation.md)
@@ -34,7 +35,6 @@
     * [Installation](use/developer-installation/question-set-editor/installation.md)
   * [Question set Player](use/developer-installation/question-set-player/README.md)
     * [Installation](use/developer-installation/question-set-player/installation.md)
-* [Installation guide](use/installation-guide.md)
 * [Release notes](use/release-notes/README.md)
   * [inQuiry - Release V 4.8.0 (Upcoming)](use/release-notes/inquiry-release-v-4.8.0-upcoming.md)
   * [inQuiry - Release V 4.7.0 (Live)](use/release-notes/inquiry-release-v-4.7.0-live.md)

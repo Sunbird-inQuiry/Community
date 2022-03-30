@@ -1,4 +1,4 @@
-# Installation and Contribution Guide
+# Installation
 
 ## :diamond\_shape\_with\_a\_dot\_inside: QuestionSet Editor library for Sunbird platform
 

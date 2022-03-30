@@ -1,2 +1,2 @@
-# Installation Guide
+# Developer Installation
 
