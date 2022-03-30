@@ -21,10 +21,6 @@
     * [FAQ's](learn/product-and-developer-guide/question-set-player/faqs.md)
   * [Analytics](learn/product-and-developer-guide/analytics.md)
 
-## ENGAGE
-
-* [Discuss](https://github.com/Sunbird-inQuiry/Community/discussions)
-
 ## Use
 
 * [Overview](use/overview.md)
@@ -41,6 +37,10 @@
 * [Release notes](use/release-notes/README.md)
   * [inQuiry - Release V 4.8.0 (Upcoming)](use/release-notes/inquiry-release-v-4.8.0-upcoming.md)
   * [inQuiry - Release V 4.7.0 (Live)](use/release-notes/inquiry-release-v-4.7.0-live.md)
+
+## ENGAGE
+
+* [Discuss](https://github.com/Sunbird-inQuiry/Community/discussions)
 
 ## Guidelines or Best practices&#x20;
 
