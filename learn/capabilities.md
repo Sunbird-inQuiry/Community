@@ -79,9 +79,9 @@ Every single user interaction is instrumented as per the Sunbird telemetry spec.
 * SUMMARY - It used to log telemetry summary event
 * END - end of a question/question set session.
 
-Click [here](https://github.com/sunbird-specs/Telemetry/blob/3.3.0/specification.md) to know more about Sunbird telemetry spec.
+Click [here](https://telemetry.sunbird.org) to know more about Sunbird telemetry spec.
 
-Click [`here`](product-and-developer-guide/analytics.md) to check sample the telemetry events
+Click [`here`](product-and-developer-guide/analytics.md) to check sample telemetry events
 
 
 
