@@ -1,14 +1,23 @@
 # Installation
 
+## :label: System requirements <a href="#system-requirements" id="system-requirements"></a>
+
+The following are prerequisites to use question set editor&#x20;
+
+| Softwares / Frameworks | Version    |
+| ---------------------- | ---------- |
+| Node                   | 10x to 12x |
+| Angular                | 9.1.12     |
+
 ## :diamond\_shape\_with\_a\_dot\_inside: QuestionSet Editor library for Sunbird platform
 
-## :bookmark\_tabs: Getting Started
+### :bookmark\_tabs: Getting Started
 
 For getting started with a new Angular app, check out the [Angular CLI](https://angular.io/tutorial/toh-pt0).
 
 For existing apps, follow the below-mentioned steps:
 
-### :label: Step 1: Install the packages
+#### :label: Step 1: Install the packages
 
 These are the peerDependencies of the library, that need to be installed in order to use this library.
 
@@ -46,7 +55,7 @@ npm i @project-sunbird/sb-styles
 Note: _As QuestionSet Editor library is build with angular version 9, we are using **ngx-bootstrap@6.0.0 and ngx-chips@2.2.0** which are the compatible versions._\
 _For more reference Check compatibility document for ng-bootstrap_ [_here_](https://valor-software.com/ngx-bootstrap/#/documentation#compatibility)
 
-### :label: **Step 2: Add the required services and QuestionSet editor config**
+#### :label: **Step 2: Add the required services and QuestionSet editor config**
 
 * Create a **editor-cursor-implementation.service.ts** in a project and which will implement the `QuestionCursor` and `EditorCursor` abstract class. _Refer:_ [**editor-cursor-implementation.service.ts**](https://github.com/Sunbird-Ed/sunbird-collection-editor/blob/release-4.7.0/src/app/editor-cursor-implementation.service.ts)
 
@@ -63,7 +72,7 @@ _For more reference Check compatibility document for ng-bootstrap_ [_here_](http
 * Create **server.js** in root folder. _Refer:_ [_**server.js**_](https://github.com/Sunbird-Ed/sunbird-collection-editor/blob/release-4.7.0/server.js)
 * Copy the **assets** from: [**assets**](https://github.com/Sunbird-Ed/sunbird-collection-editor/tree/release-4.7.0/src/assets)
 
-### :label: Step 3: Include the styles, scripts and assets in angular.json
+#### :label: Step 3: Include the styles, scripts and assets in angular.json
 
 ```
 {
@@ -132,7 +141,7 @@ _For more reference Check compatibility document for ng-bootstrap_ [_here_](http
 }
 ```
 
-### :label: Step 4: Change in package.json
+#### :label: Step 4: Change in package.json
 
 ```
 {
@@ -156,7 +165,7 @@ _For more reference Check compatibility document for ng-bootstrap_ [_here_](http
   }
 ```
 
-### :label: Step 5: Import the modules and components
+#### :label: Step 5: Import the modules and components
 
 Import the required modules such as below::
 
@@ -203,13 +212,13 @@ export class AppComponent {
 }
 ```
 
-### :label: __ Step 6: Send input to render QuestionSet Editor
+#### :label: __ Step 6: Send input to render QuestionSet Editor
 
 ```
 <lib-editor [editorConfig]="editorConfig" (editorEmitter)="editorEventListener($event)" ></lib-editor>
 ```
 
-### :label:Step 7: Set the auth token and questionset identifier
+#### :label:Step 7: Set the auth token and questionset identifier
 
 From the root directory - go to `server.js` file
 
@@ -239,7 +248,7 @@ export const questionSetEditorConfig = {
   };
 ```
 
-### :label: Setp 8: Run the application
+#### :label: Setp 8: Run the application
 
 From the root directory - Start the server (Open terminal in root folder and start the application) as:
 
@@ -255,9 +264,9 @@ Run Node server to proxy the APIs (Open another terminal in root folder and run 
 nodemon server.js
 ```
 
-## :bookmark\_tabs: Questionset Editor Contribution Guide <a href="#questionset-editor-contribution-guide" id="questionset-editor-contribution-guide"></a>
+### :bookmark\_tabs: Questionset Editor Contribution Guide <a href="#questionset-editor-contribution-guide" id="questionset-editor-contribution-guide"></a>
 
-### Repo Setup <a href="#questionset-editor-contribution-guide" id="questionset-editor-contribution-guide"></a>
+#### Repo Setup <a href="#questionset-editor-contribution-guide" id="questionset-editor-contribution-guide"></a>
 
 Clone the Repo with the desired release branch: [  https://github.com/Sunbird-Ed/sunbird-collection-editor.git](https://github.com/Sunbird-Ed/sunbird-collection-editor.git)
 
@@ -281,7 +290,7 @@ Build the library
 
 It will create a `/dist/collection-editor-library` folder at the root directory and also copy all the required assets.
 
-### Starting up the Sample application <a href="#starting-up-the-sample-application" id="starting-up-the-sample-application"></a>
+#### Starting up the Sample application <a href="#starting-up-the-sample-application" id="starting-up-the-sample-application"></a>
 
 A sample angular application is included as part of this repo
 
@@ -295,7 +304,7 @@ From the root directory - Start the server
 
 The demo app will launch at `http://localhost:4200`
 
-### Set the auth token and questionset identifier <a href="#set-the-auth-token-and-questionset-identifier" id="set-the-auth-token-and-questionset-identifier"></a>
+#### Set the auth token and questionset identifier <a href="#set-the-auth-token-and-questionset-identifier" id="set-the-auth-token-and-questionset-identifier"></a>
 
 From the root directory - go to `server.js` file
 

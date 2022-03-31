@@ -33,8 +33,7 @@
 * [Installation guide](use/installation-guide.md)
 * [Developer Installation](use/developer-installation/README.md)
   * [Question & Question Set Service](use/developer-installation/question-and-question-set-service/README.md)
-    * [Server Installation](use/developer-installation/question-and-question-set-service/server-installation.md)
-    * [Local Installation](use/developer-installation/question-and-question-set-service/local-installation.md)
+    * [Installation](use/developer-installation/question-and-question-set-service/installation.md)
     * [Configuration](use/developer-installation/question-and-question-set-service/configuration.md)
   * [Question Set Editor](use/developer-installation/question-set-editor/README.md)
     * [Installation](use/developer-installation/question-set-editor/installation.md)
@@ -55,4 +54,5 @@
 
 * [Use Cases](archived/use-cases.md)
 * [Components](archived/components.md)
+* [Server Installation](archived/server-installation.md)
 * [Capabilities](archived/capabilities.md)
