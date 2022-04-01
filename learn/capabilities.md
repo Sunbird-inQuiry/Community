@@ -37,7 +37,7 @@ Question editor enables you to create **diverse question types:**
 
 * Allows you to create questions with rich media, scientific formulae, math equations amongst others with proper metadata tagging.
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
 ### ****![](<../.gitbook/assets/image (13).png>)****
 

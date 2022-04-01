@@ -67,7 +67,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../.gitbook/assets/text.png)
+![](../../../../.gitbook/assets/text.png)
 
 ### **Textarea**
 
@@ -95,7 +95,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../.gitbook/assets/textarea.png)
+![](../../../../.gitbook/assets/textarea.png)
 
 ### **Richtext**
 
@@ -123,7 +123,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](<../../../.gitbook/assets/richText (1).png>)
+![](<../../../../.gitbook/assets/richText (1).png>)
 
 ### **Keywords**
 
@@ -146,7 +146,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../.gitbook/assets/keywords.png)
+![](../../../../.gitbook/assets/keywords.png)
 
 ### Multi Select
 
@@ -169,7 +169,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../.gitbook/assets/nestedselect.png)
+![](../../../../.gitbook/assets/nestedselect.png)
 
 ### **Single Select**
 
@@ -193,7 +193,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../.gitbook/assets/select.png)
+![](../../../../.gitbook/assets/select.png)
 
 ### **Topic Selector**
 
@@ -222,9 +222,9 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../.gitbook/assets/topicselect1.png)
+![](../../../../.gitbook/assets/topicselect1.png)
 
-![](../../../.gitbook/assets/topicselect2.png)
+![](../../../../.gitbook/assets/topicselect2.png)
 
 ### **Checkbox**
 
@@ -246,7 +246,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../.gitbook/assets/checkbox.png)
+![](../../../../.gitbook/assets/checkbox.png)
 
 **Timer**
 
@@ -284,7 +284,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../.gitbook/assets/timer.png)
+![](../../../../.gitbook/assets/timer.png)
 
 ## How to define the width of fields and add asterisks(<mark style="color:red;">\*</mark>) on field label <a href="#root-node-form" id="root-node-form"></a>
 
@@ -298,7 +298,7 @@ In QuestionSet Editor these are the following of fields which we are using:
                    }
 ```
 
-![sb-g-col-lg-2](../../../.gitbook/assets/richText.png)
+![sb-g-col-lg-2](../../../../.gitbook/assets/richText.png)
 
 * One column space fields should have renderHints as:
 
@@ -308,7 +308,7 @@ In QuestionSet Editor these are the following of fields which we are using:
                    }
 ```
 
-![sb-g-col-lg-1](../../../.gitbook/assets/sb-col-lg1.png)
+![sb-g-col-lg-1](../../../../.gitbook/assets/sb-col-lg1.png)
 
 * For adding asterisks in the Label of field
 
@@ -383,12 +383,12 @@ In the case of timer warningTime should be less than or equal to maxTime so in w
 
 ## Sample QuestionSet form <a href="#root-node-form" id="root-node-form"></a>
 
-![QuestionSet form](../../../.gitbook/assets/rootNodeForm.png)
+![QuestionSet form](../../../../.gitbook/assets/rootNodeForm.png)
 
 ## **Sample Section Form**
 
-![Sample section form](../../../.gitbook/assets/sectionForm.png)
+![Sample section form](../../../../.gitbook/assets/sectionForm.png)
 
 ## Sample Publish Check List <a href="#publish-check-list" id="publish-check-list"></a>
 
-![Sample publish checklist](../../../.gitbook/assets/publishChecklist.png)
+![Sample publish checklist](../../../../.gitbook/assets/publishChecklist.png)

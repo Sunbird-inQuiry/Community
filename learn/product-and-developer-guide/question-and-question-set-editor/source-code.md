@@ -7,3 +7,7 @@ Here is the link to the source code. Currently, inQuiry leverages collection edi
 {% embed url="https://github.com/Sunbird-Ed/sunbird-collection-editor" %}
 Source Code
 {% endembed %}
+
+## NPM Repository
+
+{% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9" %}

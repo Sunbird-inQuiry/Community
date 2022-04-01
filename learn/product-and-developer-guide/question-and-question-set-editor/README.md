@@ -1,33 +1,41 @@
+---
+description: >-
+  Multilevel hierarchy contents like Practise Questionset, Exam Questionset,
+  etc.
+---
+
 # Question & Question Set Editor
 
-### Key Features:
+## Key Features:
 
 Question set editor is a powerful tool that provides various features:-
 
-#### a) Enables the creation of different types of questions.
+#### a) Ability to load dynamic reactive forms with configuration fields and validations.
+
+#### b) Enables the creation of different types of questions.
 
 The inQuiry comes with two pre-built question types:
 
-* Multiple Choice Question, and
-* Subjective Question.
+* Multiple Choice Question (interactive) and
+* Subjective Question (non-interactive).
 
-![](<../../../.gitbook/assets/image (19).png>)
+![](<../../../.gitbook/assets/image (19) (1).png>)
 
-#### b) Ability to create a question(s) that have images & rich text.
+#### c) Ability to create a question(s) that have images & rich text.
 
 Question set editor provides features to add images, mathematical formula, formatting of texts as per the needs, etc.
 
-![](<../../../.gitbook/assets/image (12).png>)
+![](<../../../.gitbook/assets/image (12) (1).png>)
 
-#### c) Ability to add and customize scientific and mathematical formulae in the question text.
+#### d) Ability to add and customize scientific and mathematical formulae in the question text.
 
 ![](<../../../.gitbook/assets/image (11).png>)
 
-#### d) Flexibility for creators to choose to render their questions in one of the three different layouts:&#x20;
+#### e) Flexibility for creators to choose to render their questions in one of the three different layouts:&#x20;
 
 * &#x20;Vertical layout
 
-![Vertical layout](<../../../.gitbook/assets/image (20).png>)
+![Vertical layout](<../../../.gitbook/assets/image (20) (1).png>)
 
 * Grid layout
 
@@ -35,9 +43,9 @@ Question set editor provides features to add images, mathematical formula, forma
 
 * &#x20;Horizontal layout
 
-![](<../../../.gitbook/assets/image (18).png>)
+![](<../../../.gitbook/assets/image (18) (1).png>)
 
-#### e) Ability to include 'Solutions' - either 'text+image' only solutions or 'video' solutions to the question(s)
+#### f) Ability to include 'Solutions' - either 'text+image' only solutions or 'video' solutions to the question(s)
 
 During the question creation solution can be added to the question, the solution can have text and image or the video which can be shown in the player on enabling the **Show Solution** in the editor.
 
@@ -47,21 +55,23 @@ During the question creation solution can be added to the question, the solution
 
 ![](../../../.gitbook/assets/Mcq-video-solution.png)
 
-#### f) Allows for question level metadata tagging against system defined taxonomy. Below is a screenshot of question tagging enabled using the Indian K-12 taxonomy.
+#### g) Allows for question level metadata tagging against system defined taxonomy. Below is a screenshot of question tagging enabled using the Indian K-12 taxonomy.
 
 ![](../../../.gitbook/assets/question-metadata.png)
 
-#### g) Ability to preview questions
+#### h) Ability to preview questions
 
 ![](../../../.gitbook/assets/question-preview.png)
 
-#### h) Ability to create question sets with ease using the tree structure
+#### i) Ability to create question sets with ease using the tree structure
 
-The WYSIWYG editor makes the creation experience easier and faster for creators.
+The WYSIWYG editor makes the creation experience easier and faster for creators. For acheving this we are using [fancy tree](https://github.com/mar10/fancytree/wiki),  which provides efficient and performance handling of large data sets, It also provides the ability to drag and drop any question in a multi-level hierarchy.
+
+
 
 ![](../../../.gitbook/assets/Questionset.png)
 
-#### i) Configuration behaviour of the question set and section
+#### j) Configuration behaviour of the question set and section
 
 The various question set level configurations available to the creator are:
 
@@ -75,7 +85,7 @@ The various question set level configurations available to the creator are:
 
 ![](../../../.gitbook/assets/questionset-preview.png)
 
-#### j) Ability to group questions into multiple sections with each section having its own specific behaviour.
+#### k) Ability to group questions into multiple sections with each section having its own specific behaviour.
 
 The various section level configurations available to the creator are:
 
@@ -85,6 +95,3 @@ The various section level configurations available to the creator are:
 4. **Show solution** - If enabled, solutions to each question are shown to the users.
 
 ![](../../../.gitbook/assets/section-config.png)
-
-
-

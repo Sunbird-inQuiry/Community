@@ -1,6 +1,8 @@
 # FAQ's
 
-### **How to configure a new metadata field and define its attributes in the question set editor?**
+<details>
+
+<summary>How to configure a new metadata field and define its attributes in the question set editor?</summary>
 
 The config for new fields has to be added in the object category definition. This can be done at the system level or at the individual channel level.
 
@@ -56,7 +58,11 @@ Suppose you want to add a name field in the metadata field, it can be added as:
 }
 ```
 
-### How to enable Submit page?
+</details>
+
+<details>
+
+<summary>How to enable Submit page?</summary>
 
 Submit page provides users the option to review their attempt details and submit the assessment.
 
@@ -80,7 +86,11 @@ To enable/disable the submit page in the player, we can add the requiresSubmit f
                 }
 ```
 
-### How to configure attempts?
+</details>
+
+<details>
+
+<summary>How to configure attempts?</summary>
 
 The number of times users can play the question set can be defined using the attribute called max attempt. We can add the requiresSubmit field in the meta form as:&#x20;
 
@@ -111,7 +121,11 @@ The number of times users can play the question set can be defined using the att
                 }
 ```
 
-### **How to configure Timer for a question set?**
+</details>
+
+<details>
+
+<summary>How to configure Timer for a question set?</summary>
 
 The timer is one of the question set behavior fields. It can be updated on the root node of the question set i.e. on the create form of the question set as part of the question set object category definition.
 
@@ -216,9 +230,11 @@ Three attributes are there wrt to the timer:
                 }
 ```
 
+</details>
 
+<details>
 
-### How to configure Section Level configurations?
+<summary>How to configure Section Level configurations?</summary>
 
 Attributes/question set behaviour can be modified based on the section level as well. It can be updated in the object category definition of the question set under the unit metadata form. Under unit metadata, the attributes or the behavior can be defined. Each field has a code and it can be updated with the question set configuration.
 
@@ -369,7 +385,11 @@ Below is the config to the section form config:
 
 * **Max question within the section** - Number of questions that can be created under each section can be defined on the system level configuration in the git repo with the help of DevOps under sunbird\_questionset\_children\_limit: 10
 
-### **How to configure Question Set TOC**
+</details>
+
+<details>
+
+<summary>How to configure Question Set TOC?</summary>
 
 The maximum number of levels in the question set has to be defined using the max depth property. This has to be updated in the object metadata of the primary category definition under hierarchy.
 
@@ -427,7 +447,11 @@ If max depth is set as 1, then we need to add the hierarchy with level 1 node de
 }
 ```
 
-### **Question Configurations**
+</details>
+
+<details>
+
+<summary>How to enable Question Creation?</summary>
 
 To enable the question creation under each section or root node, the children field needs to be enabled with required question types under each required level node.&#x20;
 
@@ -514,4 +538,8 @@ If the children field is made empty, then "Create New" button will not be enable
     ....
 }
 ```
+
+</details>
+
+
 
