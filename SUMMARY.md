@@ -10,7 +10,7 @@
     * [Architecture](learn/product-and-developer-guide/question-and-question-set-editor/architecture.md)
     * [Feature](learn/product-and-developer-guide/question-and-question-set-editor/feature.md)
     * [Source Code](learn/product-and-developer-guide/question-and-question-set-editor/source-code.md)
-    * [Question Set Editor Configuration](learn/product-and-developer-guide/question-and-question-set-editor/question-set-editor-configuration.md)
+    * [Configuration](learn/product-and-developer-guide/question-and-question-set-editor/configuration.md)
     * [FAQ's](learn/product-and-developer-guide/question-and-question-set-editor/faqs.md)
   * [Question & Question Set Service](learn/product-and-developer-guide/question-and-question-set-service/README.md)
     * [Architecture](learn/product-and-developer-guide/question-and-question-set-service/architecture.md)

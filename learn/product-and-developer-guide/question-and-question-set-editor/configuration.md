@@ -4,7 +4,7 @@ description: >-
   questionset editor to enable and disable some functionalities.
 ---
 
-# Question Set Editor Configuration
+# Configuration
 
 Question Set Editor is an angular library built with Angular version 9, and it exports some modules and components.
 
