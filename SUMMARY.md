@@ -17,6 +17,7 @@
       * [Question Schema](learn/product-and-developer-guide/question-and-question-set-service/schema/question-schema.md)
       * [QuestionSet Schema](learn/product-and-developer-guide/question-and-question-set-service/schema/questionset-schema.md)
   * [Question Set Player](learn/product-and-developer-guide/question-set-player/README.md)
+    * [Architecture](learn/product-and-developer-guide/question-set-player/architecture.md)
     * [Source Code](learn/product-and-developer-guide/question-set-player/source-code.md)
     * [Player Configuration](learn/product-and-developer-guide/question-set-player/player-configuration.md)
     * [FAQ's](learn/product-and-developer-guide/question-set-player/faqs.md)
