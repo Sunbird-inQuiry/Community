@@ -25,3 +25,5 @@ This document contains information about the new features and enhancements plann
 ### 3. Test Scenarios
 
 Link to the test scenarios/cases validated by the inQuiry building block QA team as part of 4.8.0 release:&#x20;
+
+Test scenarios : [Link](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3092611090/4.8+Test+Scenarios)

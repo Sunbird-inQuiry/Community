@@ -20,3 +20,5 @@ In 4.7.0, following two changes were done by the inQuiry building block team:
 ### 3. Test Scenarios
 
 Link to the test scenarios/cases validated by the inQuiry building block QA team as part of 4.7.0 release:&#x20;
+
+Test scenarios : [Link](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3067772963/4.7+Test+Scenarios)
