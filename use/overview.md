@@ -1,5 +1,7 @@
 # Overview
 
+Currently inQuiry components are part of SunbirdEd and hence can't be deployed alone. These components will be decoupled and moved as part of inQuiry in the future.&#x20;
+
 Below deployment view diagram will explain how inQuiry Building block components are deployed in SunbirdEd.&#x20;
 
 * Question & Question Set Service (assessment-service):
