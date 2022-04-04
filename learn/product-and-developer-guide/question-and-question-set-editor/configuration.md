@@ -58,7 +58,6 @@ export interface Context {
     cloudStorageUrls?: string[];
     labels?: any;
     targetFWIds?: string[];
-    mode?: string;
     board?: any;
     medium?: any;
     gradeLevel?: any;
@@ -74,7 +73,6 @@ export interface Context {
     unitIdentifier?: string;
     collectionObjectType?: string;
     collectionPrimaryCategory?: string;
-    
 }
 ```
 

@@ -8,19 +8,9 @@ To install the player, ensure that your laptop or desktop has the following mini
 * RAM: >2GB
 * CPU: 2 cores, >2 GHz
 
-### Dependency
+### How to setup
 
-#### [Question and Question Set Service](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service)
-
-Question and Question set service is a micro-service which provides APIs to manage the lifecycle and workflows of creation and consumption of question & question set objects.
-
-#### [Sunbird QuML](https://quml.sunbird.org)
-
-Sunbird QuML (Question Markup Language) is a specification for creating, rendering and re-using questions and question sets.
-
-#### [Sunbird Telemetry](https://telemetry.sunbird.org)
-
-Sunbird Telemetry is a specification to instrument all the key events. Using this specification reference applications & services will generate telemetry events.
+{% embed url="https://inquiry.sunbird.org/use/developer-installation/question-set-player/installation" %}
 
 ### NPM Repository
 

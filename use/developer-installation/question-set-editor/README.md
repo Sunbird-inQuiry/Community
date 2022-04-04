@@ -22,24 +22,6 @@ To know more about different types of form field configuration refer the [Sample
 
 To know more about Question Set Editor configuration, please refer the link  (coming soon...)
 
-### Dependency
-
-#### [Question and Question Set Service](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service)
-
-Question and Question set service is a micro-service which provides APIs to manage the lifecycle and workflows of creation and consumption of question & question set objects.
-
-#### [Question Set Player](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-set-player)
-
-Question set player (QuML player) is responsible for rendering questions & question sets created as per the QuML spec.
-
-#### [SunbirdEd-Forms](https://ed.sunbird.org/use-1/independent-libraries/sunbirded-forms)
-
-Contains Form component powered by angular. This component expects a configuration and renders form according to the view.
-
-#### [Sunbird Telemetry](https://telemetry.sunbird.org)
-
-Sunbird Telemetry is a specification to instrument all the key events. Using this specification reference applications & services will generate telemetry events.
-
 ### NPM Repository
 
 {% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9" %}
