@@ -31,12 +31,7 @@ Along with this it also provides the channel level config, if available.
 
 ```
 export interface Context {
-    programId?: string;
-    contributionOrgId?: string;
-    user: User;
-    identifier?: string;
-    mode?: string;
-    authToken?: string;
+    env: string;
     sid: string;
     did: string;
     uid: string;
@@ -44,6 +39,8 @@ export interface Context {
     pdata: Pdata;
     contextRollup: ContextRollup;
     tags: string[];
+    identifier?: string;
+    authToken?: string;
     cdata?: Cdata[];
     timeDiff?: number;
     objectRollup?: ObjectRollup;
@@ -53,17 +50,21 @@ export interface Context {
         firstName: string;
         lastName: string;
     };
-    env: string;
+    framework: string;
+    user: User;
+    programId?: string;
+    contributionOrgId?: string;
     defaultLicense?: any;
+    cloudStorageUrls?: string[];
+    labels?: any;
+    targetFWIds?: string[];
+    mode?: string;
     board?: any;
     medium?: any;
     gradeLevel?: any;
     subject?: any;
     topic?: any;
-    framework: string;
-    cloudStorageUrls?: string[];
     additionalCategories?: any[];
-    labels?: any;
     actor?: any;
     channelData?: any;
     correctionComments?: any;
@@ -73,7 +74,7 @@ export interface Context {
     unitIdentifier?: string;
     collectionObjectType?: string;
     collectionPrimaryCategory?: string;
-    targetFWIds?: string[];
+    
 }
 ```
 
@@ -115,8 +116,8 @@ The editor context is used while launching the editor. Let's understand the desc
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `framework`            | It is `string` and Organisation framework id. **For example:** `ekstep_ncert_k-12`                                                                                                                      | true     |                                                                                                                                                                                                                    |
 | `user`                 | It is an `object` which defines user data which contains users id, fullName, lastName, orgIds.                                                                                                          | true     | **For example:** `{ id: '5a587cc1-e018-4859-a0a8-e842650b9d64', orgIds: [ '01309282781705830427' ], organisations: {}, fullName: 'Vaibhav Bhuva', firstName: 'Vaibhav', lastName: 'Bhuva', isRootOrgAdmin: true }` |
-| `programId`            | It is `string` and program id in which questionset is created. For example: `f72ad8b0-36df-11ec-a56f-4b503455085f`                                                                                      | false    | `''`                                                                                                                                                                                                               |
-| `contributionOrgId`    | It is `string` and Organisation id of the contributor.                                                                                                                                                  | false    | `''`                                                                                                                                                                                                               |
+| `programId`            | <p>It is <code>string</code> and program id in which questionset is created. This value required for coKreat flows.</p><p>For example: <code>f72ad8b0-36df-11ec-a56f-4b503455085f</code></p>            | false    | `''`                                                                                                                                                                                                               |
+| `contributionOrgId`    | It is `string` and Organisation id of the contributor. This value required for coKreat flows.                                                                                                           | false    | `''`                                                                                                                                                                                                               |
 | `identifier`           | It is `string` and Identifier of collection. For example: `do_1134357224765685761203`                                                                                                                   | false    | `''`                                                                                                                                                                                                               |
 | `defaultLicense`       | It is `string` and default license of editor. For example: `CC BY 4.0`                                                                                                                                  | false    | `''`                                                                                                                                                                                                               |
 | `cloudStorageUrls`     | It is `array` and Array of cloud storage urls                                                                                                                                                           | false    | `[]`                                                                                                                                                                                                               |
