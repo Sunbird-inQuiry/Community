@@ -39,3 +39,7 @@ Contains Form component powered by angular. This component expects a configurati
 #### [Sunbird Telemetry](https://telemetry.sunbird.org)
 
 Sunbird Telemetry is a specification to instrument all the key events. Using this specification reference applications & services will generate telemetry events.
+
+### NPM Repository
+
+{% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9" %}
