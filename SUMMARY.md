@@ -36,7 +36,6 @@
 ## Use
 
 * [Overview](use/overview.md)
-* [Installation guide](use/installation-guide.md)
 * [Developer Installation](use/developer-installation/README.md)
   * [Question & Question Set Service](use/developer-installation/question-and-question-set-service/README.md)
     * [Installation](use/developer-installation/question-and-question-set-service/installation.md)
