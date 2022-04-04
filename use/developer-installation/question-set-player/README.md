@@ -2,7 +2,7 @@
 
 ### System Requirements <a href="#system-requirements" id="system-requirements"></a>
 
-To install the editor, ensure that your laptop or desktop has the following minimum system requirements:
+To install the player, ensure that your laptop or desktop has the following minimum system requirements:
 
 * Operating System: Windows 7 and above, or 4.2 Mac OS X 10.0 and above/Linux
 * RAM: >2GB

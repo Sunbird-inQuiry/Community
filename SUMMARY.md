@@ -24,7 +24,7 @@
     * [FAQs](learn/product-and-developer-guide/question-and-question-set-service/faqs.md)
   * [Question Set Player](learn/product-and-developer-guide/question-set-player/README.md)
     * [Architecture](learn/product-and-developer-guide/question-set-player/architecture.md)
-    * [Configuration](learn/product-and-developer-guide/question-set-player/configuration.md)
+    * [Configuration](learn/product-and-developer-guide/question-set-player/player-configuration.md)
     * [Source Code](learn/product-and-developer-guide/question-set-player/source-code.md)
     * [FAQ's](learn/product-and-developer-guide/question-set-player/faqs.md)
   * [Analytics](learn/product-and-developer-guide/analytics.md)
