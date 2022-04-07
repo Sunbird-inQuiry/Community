@@ -19,4 +19,4 @@ Below deployment view diagram will explain how inQuiry Building block components
     * auto-crerator-v2:
       * This job is used during the movement of a question/ question set from one instance to another ( import QuestionSet)
 
-![](../.gitbook/assets/inQuiry\_Deployemnt\_Viewnew.png)
+![](../.gitbook/assets/inQuiry.png)
