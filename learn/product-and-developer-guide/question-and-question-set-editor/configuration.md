@@ -192,3 +192,146 @@ config: {
 | `hierarchy`                      | It is an `object` and If maxdepth is > 0 then hierarchy should have definiton of the levels. **For example:** `{ "level1": { "name": "Section", "type": "Unit", "mimeType": "application/vnd.sunbird.questionset", "primaryCategory": "Practice Question Set", "iconClass": "fa fa-folder-o", "children": { "Question": [ "Multiple Choice Question", "Subjective Question" ] } } }` | false    | `{}`                                                 |
 | `enableQuestionCreation`         | It enables or disables the creation of question in questionset                                                                                                                                                                                                                                                                                                                       | false    | true                                                 |
 | `questionSet. maxQuestionsLimit` | It defines the limit of total number of question to be created inside questionset.                                                                                                                                                                                                                                                                                                   | false    |                                                      |
+
+###
+
+Here is the sample configuration for Practise Question Set:
+
+[**Practise Question Set**](https://inquiry.sunbird.org/use/developer-installation/question-set-editor/installation/object-category-definition)****
+
+## **Recommended Configuration for Question Set:**
+
+We can creation interactive as well as non-interactive type question in the Question Set. And the creation of question in Question Set is possible in "without Sections" as well as "with Sections". It is recommened that we should not enable creation of both interactive and non-interactive type question in a Question Set as both are for different use case.
+
+### **1.) Configuration for Question Set without Sections:**
+
+* For enabling creation of **"Multiple Choice Question"** (interactive question) in Question Set, **objectCategoryDefinition.objectMetadata.config** is to be set as:
+
+```
+{
+   "sourcingSettings": {
+       "collection": {
+           "maxDepth": 0,
+           "objectType": "QuestionSet",
+           "primaryCategory": "Practice Question Set",
+           "isRoot": true,
+           "iconClass": "fa fa-book",
+           "children": {
+               "Question": [
+                   "Multiple Choice Question"
+               ]
+           },
+           "hierarchy": {}
+       }
+   }
+}
+```
+
+* For enabling creation of **"Subjective Question"** (non-interactive question) in Question Set, **objectCategoryDefinition.objectMetadata.config** is to be set as:
+
+```
+{
+   "sourcingSettings": {
+       "collection": {
+           "maxDepth": 0,
+           "objectType": "QuestionSet",
+           "primaryCategory": "Practice Question Set",
+           "isRoot": true,
+           "iconClass": "fa fa-book",
+           "children": {
+               "Question": [
+                   "Subjective Question"
+               ]
+           },
+           "hierarchy": {}
+       }
+   }
+}
+
+```
+
+### **2.) Configuration for Question Set with Sections.**
+
+* For enabling creation of **"Multiple Choice Question"** (interactive question) in the Section of Question Set, **objectCategoryDefinition.objectMetadata.config** is to be set as:
+
+```
+{
+   "sourcingSettings": {
+       "collection": {
+           "maxDepth": 1,
+           "objectType": "QuestionSet",
+           "primaryCategory": "Practice Question Set",
+           "isRoot": true,
+           "iconClass": "fa fa-book",
+           "children": {},
+           "hierarchy": {
+               "level1": {
+                   "name": "Section",
+                   "type": "Unit",
+                   "mimeType": "application/vnd.sunbird.questionset",
+                   "primaryCategory": "Practice Question Set",
+                   "iconClass": "fa fa-folder-o",
+                   "children": {
+                       "Question": [
+                           "Multiple Choice Question"
+                       ]
+                   }
+               }
+           }
+       }
+   }
+}
+```
+
+* For enabling creation of **"Subjective Question"** (non-interactive question) in the Section of Question Set, **objectCategoryDefinition.objectMetadata.config** is to be set as:
+
+```
+{
+   "sourcingSettings": {
+       "collection": {
+           "maxDepth": 1,
+           "objectType": "QuestionSet",
+           "primaryCategory": "Practice Question Set",
+           "isRoot": true,
+           "iconClass": "fa fa-book",
+           "children": {},
+           "hierarchy": {
+               "level1": {
+                   "name": "Section",
+                   "type": "Unit",
+                   "mimeType": "application/vnd.sunbird.questionset",
+                   "primaryCategory": "Practice Question Set",
+                   "iconClass": "fa fa-folder-o",
+                   "children": {
+                       "Question": [
+                           "Subjective Question"
+                       ]
+                   }
+               }
+           }
+       }
+   }
+}
+
+```
+
+**Note:-** <mark style="color:red;">**It is recommended to add  children as either of these (and not to mix "Multiple Choice Question" and "Subjective Question" questions).**</mark>
+
+```
+"children": {
+               "Question": [
+                   "Multiple Choice Question"
+               ]
+             }
+```
+
+&#x20;or&#x20;
+
+```
+"children": {
+               "Question": [
+                   "Subjective Question"
+               ]
+             }
+```
+
