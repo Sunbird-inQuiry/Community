@@ -21,6 +21,7 @@ Review
 Reject
 Publish
 Retire
+Copy
 ```
 
 **Question Lifecycle:**
@@ -69,6 +70,14 @@ Retire
 * In this operation, logical delete operation is performed on the question asset. The asset status changed from Live to Retired.
 * This operation can be performed on question asset having any status (e.g: Draft, Review)
 * The Question asset having the status Retired can't be discovered for consumption/adoption.
+
+**Copy:**
+
+* Question asset having visibility other than Parent can be copied with question copy API.
+* Question asset having visibility Parent cannot be copied individually and must be copied as part of questionSet copy.
+* New asset status will be set as Draft.
+* Fields "createdBy" and "createdFor" are mandatory and must be provided in the request.
+* Any metadata field provided in the request will be updated in the metadata of the new asset.
 
 **QuestionSet Lifecycle:**
 
@@ -121,6 +130,13 @@ Retire
 * The asset status changed from Live to Retired.&#x20;
 * This operation can be performed on QuestionSet asset having any status (e.g: Draft, Review)
 * The QuestionSet asset having the status Retired can't be discovered for consumption/adoption.
+
+**Copy:**
+
+* QuestionSet asset can be copied with questionSet copy API.
+* New asset and all sub-assets will have the status as Draft, except for sub-assets having the visibility Default.
+* Fields "createdBy" and "createdFor" are mandatory and must be provided in the request.
+* Any metadata field provided in the request will be updated in the metadata of the new asset.
 
 #### For API Specification & Examples, Please use the below link:
 

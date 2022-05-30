@@ -45,7 +45,7 @@ Question editor enables you to create **diverse question types:**
 
 It enables the **End-to-end publishing process**. These are microservices that allow you to: ****&#x20;
 
-* Create, collaborate, curate & publish question(s) and question set(s).&#x20;
+* Create, copy, collaborate, curate & publish question(s) and question set(s).&#x20;
 * Easily scale as per your needs.
 
 ### **d) Question Set Player (QuML player)**&#x20;

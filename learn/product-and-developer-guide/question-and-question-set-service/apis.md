@@ -17,6 +17,7 @@ Question & QuestionSet Service have below API's to manage Question & QuestionSet
 * Retire Question
 * Import Question
 * List Question
+* Copy Question
 
 ### **QuestionSet Management API's**
 
@@ -32,5 +33,6 @@ Question & QuestionSet Service have below API's to manage Question & QuestionSet
 * Add Children To QuestionSet Hierarchy
 * Remove Children From QuestionSet Hierarchy
 * Read QuestionSet Hierarchy
+* Copy QuestionSet
 
 **For Question & QuestionSet API's Specification, Please visit** [**here**](http://docs.sunbird.org/latest/apis/questionapi/)
