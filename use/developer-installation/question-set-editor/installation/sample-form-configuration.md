@@ -123,7 +123,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](<../../../../.gitbook/assets/richText (1).png>)
+![](../../../../.gitbook/assets/richText.png)
 
 ### **Keywords**
 
@@ -246,7 +246,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../../.gitbook/assets/checkbox.png)
+![](<../../../../.gitbook/assets/checkbox (1).png>)
 
 **Timer**
 
@@ -298,7 +298,7 @@ In QuestionSet Editor these are the following of fields which we are using:
                    }
 ```
 
-![sb-g-col-lg-2](../../../../.gitbook/assets/richText.png)
+![sb-g-col-lg-2](<../../../../.gitbook/assets/richText (1).png>)
 
 * One column space fields should have renderHints as:
 

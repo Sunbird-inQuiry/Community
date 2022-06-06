@@ -1,4 +1,4 @@
-# inQuiry - Release V 4.7.0 (Live)
+# inQuiry - Release V 4.7.0
 
 ### Document Release Version
 
@@ -11,7 +11,7 @@
 In 4.7.0, following two changes were done by the inQuiry building block team:
 
 * Changes to the Question set editor to improve the accessibility capabilities when questions are rendered in the QuML player
-* Extensive updates to the inQuiry microsite documentation ([https://inquiry.sunbird.org/](https://inquiry.sunbird.org))
+* Extensive updates to the inQuiry microsite documentation ([https://inquiry.sunbird.org/](https://inquiry.sunbird.org/))
 
 ### 2. **Details of the changes**
 

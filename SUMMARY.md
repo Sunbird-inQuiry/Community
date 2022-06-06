@@ -47,12 +47,14 @@
   * [Question set Player](use/developer-installation/question-set-player/README.md)
     * [Installation](use/developer-installation/question-set-player/installation.md)
 * [Release notes](use/release-notes/README.md)
-  * [inQuiry - Release V 4.8.0 (Upcoming)](use/release-notes/inquiry-release-v-4.8.0-upcoming.md)
-  * [inQuiry - Release V 4.7.0 (Live)](use/release-notes/inquiry-release-v-4.7.0-live.md)
+  * [inQuiry - Release V 4.10.0 (Upcoming)](use/release-notes/inquiry-release-v-4.8.0-upcoming.md)
+  * [inQuiry - Release V 4.9.0 (Live)](use/release-notes/inquiry-release-v-4.8.0-upcoming-1.md)
+  * [inQuiry - Release V 4.8.0](use/release-notes/inquiry-release-v-4.8.0-upcoming-2.md)
+  * [inQuiry - Release V 4.7.0](use/release-notes/inquiry-release-v-4.7.0-live.md)
 * [Learn More](use/learn-more/README.md)
   * [Dependencies](use/learn-more/dependencies.md)
 
-## Guidelines or Best practices&#x20;
+## Guidelines or Best practices
 
 * [Testing QA guidelines](guidelines-or-best-practices/testing-qa-guidelines.md)
 * [Developer coding guidelines](guidelines-or-best-practices/developer-coding-guidelines.md)

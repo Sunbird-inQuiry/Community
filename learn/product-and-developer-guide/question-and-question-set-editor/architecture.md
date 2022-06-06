@@ -18,6 +18,6 @@ The sunbird players is used to preview Question and Questionset.
 
 Use Common Forms to define the dynamic layout of a page that contains fields and sections. What makes this dynamic is you can show/hide the sections & fields based on certain criteria, which currently is not possible with static page layouts.
 
-#### [Telemetry SDK](https://telemetry.sunbird.org)
+#### [Telemetry SDK](https://telemetry.sunbird.org/)
 
 Telemetry SDK is a standalone telemetry JS library allows to capture telemetry data.

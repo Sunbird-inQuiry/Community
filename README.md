@@ -23,7 +23,7 @@ This building block consists of pluggable tools and microservices that enable cr
 
 Key capabilities offered by Sunbird inQuiry are:&#x20;
 
-* **Question banks:** Create question(s) as per an interoperable [QuML spec](https://quml.sunbird.org) by using the pluggable editor, bulk import through APIs, tag them to rich metadata, and organize them into question sets.&#x20;
+* **Question banks:** Create question(s) as per an interoperable [QuML spec](https://quml.sunbird.org/) by using the pluggable editor, bulk import through APIs, tag them to rich metadata, and organize them into question sets.&#x20;
 * **End-to-end publishing process:** Enable question(s) and question set(s) creation, curation and publish process workflows.&#x20;
 * **Diverse question types:** inQuiry comes with two pre-built question types - Multiple choice questions (MCQ) and subjective questions. It can be extended to build new question types, basis your needs.
 * **Engaging & inclusive experiences:** Configure features like randomizing questions, timer, hints, etc using a pluggable player to enable various use cases. Player is built as per the WCAG AA guidelines which enables you to reach more learners.&#x20;
