@@ -10,7 +10,7 @@
 
 This document contains information about the new features and enhancements planned to the inQuiry building block as part of release 4.10.0:
 
-* Bug Fixes - click [here](https://project-sunbird.atlassian.net/browse/SB-30018?filter=12537) to see the list of bugs fixed in this release.
+* Bug Fixes - click [here](https://project-sunbird.atlassian.net/issues/?filter=12544) to see the list of bugs fixed in this release.
 * inQuiry as an independent building block: As part of this larger goal, in this release the following items are targeted:
   * Separate dev & staging environments for inQuiry building block
   * Code repo separation for inQuiry question set service component
