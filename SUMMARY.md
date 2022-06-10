@@ -47,7 +47,7 @@
   * [Question set Player](use/developer-installation/question-set-player/README.md)
     * [Installation](use/developer-installation/question-set-player/installation.md)
 * [Release notes](use/release-notes/README.md)
-  * [coKreat - Release v5.0.0 (Future)](use/release-notes/cokreat-release-v5.0.0-future.md)
+  * [inQuiry - Release v5.0.0 (Future)](use/release-notes/inquiry-release-v5.0.0-future.md)
   * [inQuiry - Release V 4.10.0 (Upcoming)](use/release-notes/inquiry-release-v-4.8.0-upcoming.md)
   * [inQuiry - Release V 4.9.0 (Live)](use/release-notes/inquiry-release-v-4.8.0-upcoming-1.md)
   * [inQuiry - Release V 4.8.0](use/release-notes/inquiry-release-v-4.8.0-upcoming-2.md)
