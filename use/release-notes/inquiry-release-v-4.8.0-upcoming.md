@@ -6,6 +6,33 @@
 | ------- | -------------------- | --------------- |
 | inQuiry | 10-06-22 (tentative) | V 4.10.0        |
 
+### Release Tags:
+
+#### Question Set Player:
+
+Tag: v4.10.0
+
+Install: `npm i @project-sunbird/sunbird-quml-player-v9@4.10.0`
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-v9/v/4.10.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-v9/v/4.10.0)
+
+#### Question Set Editor:
+
+Tag: v4.10.6
+
+Install: `npm i @project-sunbird/sunbird-collection-editor-v9`
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9/v/4.10.6](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9/v/4.10.6)&#x20;
+
+#### Question & Question Set Service:
+
+| Service to be Build             | Build Tag                                                                                                          | Service to Deploy | Deploy Tag                                                                                                           | Comments                                    |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Assessment                      | [release-4.10.0\_RC1](https://github.com/project-sunbird/knowledge-platform/releases/tag/release-4.10.0\_RC1)      | Assessment        | [release-4.10.0](https://github.com/project-sunbird/sunbird-devops/tree/release-4.10.0)                              |                                             |
+| Questionset-publish : FlinkJobs | [reelase-4.10.0\_RC1](https://github.com/project-sunbird/knowledge-platform-jobs/releases/tag/release-4.10.0\_RC1) | FlinkJobs         | [release-4.10.0\_RC1](https://github.com/project-sunbird/sunbird-learning-platform/releases/tag/release-4.10.0\_RC1) | job\_names\_to\_deploy: questionset-publish |
+
+****
+
 ### **1. Summary of the changes**&#x20;
 
 This document contains information about the new features and enhancements planned to the inQuiry building block as part of release 4.10.0:
