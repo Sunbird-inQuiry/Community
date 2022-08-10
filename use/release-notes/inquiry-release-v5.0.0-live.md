@@ -6,6 +6,24 @@
 | ------- | ------------ | --------------- |
 | inQuiry | 09-08-22     | V 5.0.0         |
 
+### Release Tags:
+
+#### Question Set Player:
+
+Tag: v5.0.3
+
+Install: `npm i @project-sunbird/sunbird-quml-player-v9@5.0.3`
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-v9/v/5.0.3](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-v9/v/5.0.3)
+
+#### Question Set Editor:
+
+Tag: v5.0.4
+
+Install: `npm i @project-sunbird/sunbird-collection-editor-v9@5.0.4`
+
+URL: [ ](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9/v/5.0.4)[https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9/v/5.0.4](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9/v/5.0.4)
+
 ### **1. Summary of the changes**&#x20;
 
 This document contains information about the new features and enhancements planned to the inQuiry building block as part of release 5.0.0:
