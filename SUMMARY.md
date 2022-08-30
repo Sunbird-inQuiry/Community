@@ -46,6 +46,7 @@
       * [Sample Form Configuration](use/developer-installation/question-set-editor/installation/sample-form-configuration.md)
   * [Question set Player](use/developer-installation/question-set-player/README.md)
     * [Installation](use/developer-installation/question-set-player/installation.md)
+* [Release Plan & Calendar](use/release-plan-and-calendar.md)
 * [Release notes](use/release-notes/README.md)
   * [inQuiry - Release v5.1.0(Future)](use/release-notes/inquiry-release-v5.1.0-future.md)
   * [inQuiry - Release v5.0.0 (Live)](use/release-notes/inquiry-release-v5.0.0-live.md)
