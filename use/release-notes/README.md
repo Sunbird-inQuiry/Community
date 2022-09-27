@@ -2,8 +2,8 @@
 
 ### This section represents the release versions of inQuiry build block:
 
-{% content-ref url="inquiry-release-v5.1.0-future.md" %}
-[inquiry-release-v5.1.0-future.md](inquiry-release-v5.1.0-future.md)
+{% content-ref url="inquiry-release-v5.1.0.md" %}
+[inquiry-release-v5.1.0.md](inquiry-release-v5.1.0.md)
 {% endcontent-ref %}
 
 {% content-ref url="inquiry-release-v5.0.0-live.md" %}

@@ -1,4 +1,4 @@
-# inQuiry - Release v5.1.0(Future)
+# inQuiry - Release v5.1.0
 
 ### Document Release Version
 
@@ -14,8 +14,7 @@ This document contains information about the new features and enhancements plann
 
 * Bug Fixes - click [here](https://project-sunbird.atlassian.net/issues/?filter=12625) to see the list of bugs fixed in this release.
 * inQuiry as an independent building block: As part of this larger goal, in this release, the following items are targeted:
-  * Making Sunbird inQuiry Cloud agnostic : Code changes to generalise CSP support in Question & Question set service
-  * inQuiry-service: API test scenarios & tests update in postman
+  * Making Sunbird inQuiry Cloud agnostic : Code changes to generalise CSP support in Question & Question set service.
   * Update of inQuiry editor & player to angular 12
   * Adopters Experience for the sunbird-inquiry
   * inQuiry-service: Question Management API's positive and negative scenarios
@@ -25,4 +24,5 @@ This document contains information about the new features and enhancements plann
 
 Link to the test scenarios/cases validated by the inQuiry building block QA team as part of the 5.1.0 release:&#x20;
 
-Test scenarios : here
+Test scenarios : [Link](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3238002689/Inquiry+Release+5.1.0+Test+Scenarios)
+
