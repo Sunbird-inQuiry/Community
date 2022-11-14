@@ -28,6 +28,7 @@
     * [Source Code](learn/product-and-developer-guide/question-set-player/source-code.md)
     * [FAQ's](learn/product-and-developer-guide/question-set-player/faqs.md)
   * [Analytics](learn/product-and-developer-guide/analytics.md)
+* [🚀 Product Roadmap](learn/product-roadmap.md)
 
 ## ENGAGE
 
@@ -49,9 +50,9 @@
 * [Release Plan & Calendar](use/release-plan-and-calendar/README.md)
   * [Release calendar 5.2.0, 5.3.0, 5.4.0, 5.5.0, 5.6.0 & 5.7.0](use/release-plan-and-calendar/release-calendar-5.2.0-5.3.0-5.4.0-5.5.0-5.6.0-and-5.7.0.md)
 * [Release notes](use/release-notes/README.md)
-  * [inQuiry - Release v5.2.0](use/release-notes/inquiry-release-v5.2.0.md)
+  * [inQuiry - Release v5.2.0 (Live)](use/release-notes/inquiry-release-v5.2.0-live.md)
   * [inQuiry - Release v5.1.0](use/release-notes/inquiry-release-v5.1.0.md)
-  * [inQuiry - Release v5.0.0 (Live)](use/release-notes/inquiry-release-v5.0.0-live.md)
+  * [inQuiry - Release v5.0.0](use/release-notes/inquiry-release-v5.0.0.md)
   * [inQuiry - Release V 4.10.0](use/release-notes/inquiry-release-v-4.8.0-upcoming.md)
   * [inQuiry - Release V 4.9.0](use/release-notes/inquiry-release-v-4.8.0-upcoming-1.md)
   * [inQuiry - Release V 4.8.0](use/release-notes/inquiry-release-v-4.8.0-upcoming-2.md)

@@ -6,8 +6,8 @@
 [inquiry-release-v5.1.0.md](inquiry-release-v5.1.0.md)
 {% endcontent-ref %}
 
-{% content-ref url="inquiry-release-v5.0.0-live.md" %}
-[inquiry-release-v5.0.0-live.md](inquiry-release-v5.0.0-live.md)
+{% content-ref url="inquiry-release-v5.0.0.md" %}
+[inquiry-release-v5.0.0.md](inquiry-release-v5.0.0.md)
 {% endcontent-ref %}
 
 {% content-ref url="inquiry-release-v-4.8.0-upcoming.md" %}

@@ -1,4 +1,4 @@
-# inQuiry - Release v5.2.0
+# inQuiry - Release v5.2.0 (Live)
 
 ### Document Release Version
 
@@ -10,9 +10,21 @@
 
 #### Question Set **Editor**:
 
+Tag: v5.2.3
+
+Install: _`npm i @project-sunbird/`sunbird-collection-editor`@5.2.3`_
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.2.3](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.2.3)
+
 
 
 #### Question Set Player:
+
+Tag: v5.2.0
+
+Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.2.0`_
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0)
 
 ### **1. Summary of the changes**
 
