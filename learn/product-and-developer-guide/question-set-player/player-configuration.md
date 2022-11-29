@@ -63,7 +63,7 @@ Description of the properties for the config
 | duration              | 0             | false    | Last player duration in miliseconds.                                                                            |
 | traceId               | null          | false    | To trace the error                                                                                              |
 
-### **2. Context** - Required
+### **2. Context** - (Optional)
 
 This Required property from the `playerConfig` provides the context to the player mostly in terms of the telemetry.
 

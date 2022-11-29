@@ -28,6 +28,7 @@
     * [Source Code](learn/product-and-developer-guide/question-set-player/source-code.md)
     * [FAQ's](learn/product-and-developer-guide/question-set-player/faqs.md)
   * [Analytics](learn/product-and-developer-guide/analytics.md)
+  * [Code Coverage Stats](learn/product-and-developer-guide/code-coverage-stats.md)
 * [🚀 Product Roadmap](learn/product-roadmap.md)
 
 ## ENGAGE
