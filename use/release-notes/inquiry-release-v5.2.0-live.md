@@ -6,57 +6,7 @@
 | ------- | --------------- | ------- |
 | inQuiry | 9 December 2022 | v5.2.0  |
 
-**Release Tags:**
-
-#### Question Set **Editor**:
-
-Tag: v5.2.3
-
-Install: _`npm i @project-sunbird/`sunbird-collection-editor`@5.2.3`_
-
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.2.3](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.2.3)
-
-#### Question Set Player:
-
-Tag: v5.2.0
-
-Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.2.0`_
-
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0)
-
-#### Question & Question Set Service:
-
-| Service/ Flink job name   | Build Repo                                                                                                               | Build Tag          | Deploy Repo                                                                                                    | Deploy Tag                 |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| assessment                | [https://github.com/Sunbird-inQuiry/inquiry-api-service.git](https://github.com/Sunbird-inQuiry/inquiry-api-service.git) | Release-5.2.0\_RC2 | [https://github.com/project-sunbird/sunbird-devops.git](https://github.com/project-sunbird/sunbird-devops.git) | release-5.2.0-inquiry\_RC1 |
-| async-questionset-publish | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)             | Release-5.2.0\_RC1 | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)   | Release-5.2.0\_RC1         |
-
-#### Configuration:
-
-| Service/ Flink job name   | Config file                                                                                                                                                                                                                                                                                                                  |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| assessment                | [https://github.com/project-sunbird/sunbird-devops/blob/release-5.2.0-inquiry\_RC1/ansible/roles/stack-sunbird/templates/assessment-service\_application.conf](https://github.com/project-sunbird/sunbird-devops/blob/release-5.2.0-inquiry\_RC1/ansible/roles/stack-sunbird/templates/assessment-service\_application.conf) |
-| async-questionset-publish | [https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L118](https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L118)         |
-
-#### CSP migration tools:
-
-
-
-| Service/ Flink job name | Build Repo                                                                                                                           | Build Tag          | Deploy Repo                                                                                                                          | Deploy Tag         |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| sync-tool               | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 |
-| csp-migrator            | [https://github.com/project-sunbird/knowledge-platform-jobs.git](https://github.com/project-sunbird/knowledge-platform-jobs.git)     | release-5.2.0\_RC3 | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 |
-| questionset-republish   | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)                         | Release-5.2.0\_RC1 | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)                         | Release-5.2.0\_RC1 |
-
-#### Configuration:
-
-| Tool name             | Config files                                                                                                                                                                                                                                                                                                                                                     |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sync-tool             | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/ansible/roles/lp-synctool-deploy/templates/application.conf.j2#L119](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/ansible/roles/lp-synctool-deploy/templates/application.conf.j2#L119) |
-| csp-migrator          | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101)                   |
-| questionset-republish | [https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164](https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164)                                             |
-
-
+****
 
 ### **1. Summary of the changes**
 
@@ -84,4 +34,82 @@ Test scenarios: [Link](https://project-sunbird.atlassian.net/wiki/spaces/Sunbird
 Execution Sheet: [Link](https://docs.google.com/spreadsheets/d/1Vbw9bIMO\_bGs4GawSqTkKfvuzDuo7R9wzQRWtBE359M/edit#gid=0)
 
 Defects Converted to Bugs and Enhancements: [Link](https://project-sunbird.atlassian.net/issues/?filter=12681)
+
+
+
+## Release Tags:
+
+### Question Set **Editor**:
+
+Tag: v5.2.3
+
+Install: _`npm i @project-sunbird/`sunbird-collection-editor`@5.2.3`_
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.2.3](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.2.3)
+
+### Question Set Player:
+
+Tag: v5.2.0
+
+Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.2.0`_
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0)
+
+### Question & Question Set Service:
+
+| Service/ Flink job name   | Build Repo                                                                                                               | Build Tag          | Deploy Repo                                                                                                    | Deploy Tag                 |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| assessment                | [https://github.com/Sunbird-inQuiry/inquiry-api-service.git](https://github.com/Sunbird-inQuiry/inquiry-api-service.git) | Release-5.2.0\_RC2 | [https://github.com/project-sunbird/sunbird-devops.git](https://github.com/project-sunbird/sunbird-devops.git) | release-5.2.0-inquiry\_RC1 |
+| async-questionset-publish | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)             | Release-5.2.0\_RC1 | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)   | Release-5.2.0\_RC1         |
+
+<mark style="color:red;">**Note:**</mark> Existing questionset-publish Flink job has been renamed to async-questionset-publish.
+
+#### Configuration:
+
+| Service/ Flink job name   | Config file                                                                                                                                                                                                                                                                                                                  |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| assessment                | [https://github.com/project-sunbird/sunbird-devops/blob/release-5.2.0-inquiry\_RC1/ansible/roles/stack-sunbird/templates/assessment-service\_application.conf](https://github.com/project-sunbird/sunbird-devops/blob/release-5.2.0-inquiry\_RC1/ansible/roles/stack-sunbird/templates/assessment-service\_application.conf) |
+| async-questionset-publish | [https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L118](https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L118)         |
+
+#### Jenkins Job details:
+
+Service name: assessment
+
+Build job path: Build/job/Core/job/Assessment/&#x20;
+
+Artifact Upload job path: ArtifactUpload/job/dev/job/Core/job/Assessment/
+
+Deploy job path:  Deploy/job/dev/job/Kubernetes/job/Assessment/
+
+Build variables:&#x20;
+
+| Key                   | Value                                                                                                                  |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| core\_release\_tag    | Release-5.2.0\_RC2                                                                                                     |
+| core\_repo\_link      | [https://github.com/project-sunbird/knowledge-platform.git](https://github.com/project-sunbird/knowledge-platform.git) |
+| inquiry\_release\_tag | Release-5.2.0\_RC2                                                                                                     |
+
+### CSP migration tools:
+
+We have created 3 tools for CSP migration&#x20;
+
+1. sync-tool (for CSP migration Kafka event generation )
+2. csp-migrator (Flink Job Created for CSP Migration)
+3. questionset-republish (Flink Job Created for CSP Migration Republish)
+
+| Service/ Flink job name | Build Repo                                                                                                                           | Build Tag          | Deploy Repo                                                                                                                          | Deploy Tag         |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| sync-tool               | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 |
+| csp-migrator            | [https://github.com/project-sunbird/knowledge-platform-jobs.git](https://github.com/project-sunbird/knowledge-platform-jobs.git)     | release-5.2.0\_RC3 | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 |
+| questionset-republish   | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)                         | Release-5.2.0\_RC1 | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)                         | Release-5.2.0\_RC1 |
+
+#### Configuration:
+
+| Tool name             | Config files                                                                                                                                                                                                                                                                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sync-tool             | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/ansible/roles/lp-synctool-deploy/templates/application.conf.j2#L119](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/ansible/roles/lp-synctool-deploy/templates/application.conf.j2#L119) |
+| csp-migrator          | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101)                   |
+| questionset-republish | [https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164](https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164)                                             |
+
+
 
