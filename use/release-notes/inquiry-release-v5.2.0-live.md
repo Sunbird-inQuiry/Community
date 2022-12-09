@@ -16,8 +16,6 @@ Install: _`npm i @project-sunbird/`sunbird-collection-editor`@5.2.3`_
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.2.3](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.2.3)
 
-
-
 #### Question Set Player:
 
 Tag: v5.2.0
@@ -25,6 +23,29 @@ Tag: v5.2.0
 Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.2.0`_
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0)
+
+#### Question & Question Set Service:
+
+| assessment                | [https://github.com/Sunbird-inQuiry/inquiry-api-service.git](https://github.com/Sunbird-inQuiry/inquiry-api-service.git) | Release-5.2.0\_RC2 | [https://github.com/project-sunbird/sunbird-devops.git](https://github.com/project-sunbird/sunbird-devops.git) | release-5.2.0-inquiry\_RC1 |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| async-questionset-publish | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)             | Release-5.2.0\_RC1 | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)   | Release-5.2.0\_RC1         |
+
+#### CSP migration tools:
+
+| sync-tool             | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| csp-migrator          | [https://github.com/project-sunbird/knowledge-platform-jobs.git](https://github.com/project-sunbird/knowledge-platform-jobs.git)     | release-5.2.0\_RC3 | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 |
+| questionset-republish | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)                         | Release-5.2.0\_RC1 | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)                         | Release-5.2.0\_RC1 |
+
+#### Configuration:
+
+| Tool name             | Config files                                                                                                                                                                                                                                                                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sync-tool             | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/ansible/roles/lp-synctool-deploy/templates/application.conf.j2#L119](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/ansible/roles/lp-synctool-deploy/templates/application.conf.j2#L119) |
+| csp-migrator          | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101)                   |
+| questionset-republish | [https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164](https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164)                                             |
+
+
 
 ### **1. Summary of the changes**
 
@@ -35,7 +56,7 @@ Bug Fixes - click [here](https://project-sunbird.atlassian.net/issues/?filter=12
 * inQuiry as an independent building block: As part of this larger goal, in this release, the following items are targeted:
   * Update of inQuiry editor & player to angular 12.
   * Inquiry portal version 2.
-  * inQuiry: Question-set publish flink job changes.
+  * inQuiry: Question-set publish Flink job changes.
 * New features and enhancements: Click [here](https://project-sunbird.atlassian.net/issues/?filter=12655) to view the list.
 
 **CSP Related Features:**
@@ -43,15 +64,11 @@ Bug Fixes - click [here](https://project-sunbird.atlassian.net/issues/?filter=12
 1. Inquiry: Remove cloud dependency on Question/QuestionSet DataInquiry: Remove cloud dependency on Question/QuestionSet Data ([IQ-193](https://project-sunbird.atlassian.net/browse/IQ-193))
 2. CSP Data Migration Script For Question & QuestionSet ([IQ-149](https://project-sunbird.atlassian.net/browse/IQ-149))
 
-****
-
-****
-
 ### **2. Test Scenarios:**
 
 Link to the test scenarios/cases validated by the inQuiry building block QA team as part of the 5.2.0 release:&#x20;
 
-Test scenarios : [Link](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3242328065/Inquiry+5.2+Test+Scenarios)
+Test scenarios: [Link](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3242328065/Inquiry+5.2+Test+Scenarios)
 
 Execution Sheet: [Link](https://docs.google.com/spreadsheets/d/1Vbw9bIMO\_bGs4GawSqTkKfvuzDuo7R9wzQRWtBE359M/edit#gid=0)
 
