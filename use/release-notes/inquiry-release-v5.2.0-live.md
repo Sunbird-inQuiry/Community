@@ -150,5 +150,9 @@ We have created 3 tools for CSP migration&#x20;
 | csp-migrator          | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101)                   |
 | questionset-republish | [https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164](https://github.com/Sunbird-inQuiry/data-pipeline/blob/2c752e2063671ca17baee195285b4f20d9e26832/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164)                                             |
 
+For more details about the configuration, please [click here](https://project-sunbird.atlassian.net/wiki/spaces/SBDES/pages/3259138061/inQuiry+Release-5.2.0+Configuration+details)
 
+#### CSP migration & verification Steps:
+
+Please [click here](https://project-sunbird.atlassian.net/wiki/spaces/SBDES/pages/3259105331/inQuiry+CSP+migration+verification+steps)
 
