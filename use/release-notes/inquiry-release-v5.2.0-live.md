@@ -4,7 +4,7 @@
 
 | Project | Date            | Release |
 | ------- | --------------- | ------- |
-| inQuiry | 7 November 2022 | v5.2.0  |
+| inQuiry | 9 December 2022 | v5.2.0  |
 
 **Release Tags:**
 
@@ -37,6 +37,15 @@ Bug Fixes - click [here](https://project-sunbird.atlassian.net/issues/?filter=12
   * Inquiry portal version 2.
   * inQuiry: Question-set publish flink job changes.
 * New features and enhancements: Click [here](https://project-sunbird.atlassian.net/issues/?filter=12655) to view the list.
+
+**CSP Related Features:**
+
+1. Inquiry: Remove cloud dependency on Question/QuestionSet DataInquiry: Remove cloud dependency on Question/QuestionSet Data ([IQ-193](https://project-sunbird.atlassian.net/browse/IQ-193))
+2. CSP Data Migration Script For Question & QuestionSet ([IQ-149](https://project-sunbird.atlassian.net/browse/IQ-149))
+
+****
+
+****
 
 ### **2. Test Scenarios:**
 
