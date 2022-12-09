@@ -1,5 +1,7 @@
 # inQuiry - Release v5.2.0 (Live)
 
+###
+
 ### Document Release Version
 
 | Project | Date            | Release |
@@ -73,6 +75,8 @@ URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0
 
 #### Jenkins Job details:
 
+#### **assessment Service:**
+
 Service name: assessment
 
 Build job path: Build/job/Core/job/Assessment/&#x20;
@@ -88,6 +92,41 @@ Build variables:&#x20;
 | core\_release\_tag    | Release-5.2.0\_RC2                                                                                                     |
 | core\_repo\_link      | [https://github.com/project-sunbird/knowledge-platform.git](https://github.com/project-sunbird/knowledge-platform.git) |
 | inquiry\_release\_tag | Release-5.2.0\_RC2                                                                                                     |
+
+**Schema Upload:**
+
+Service name: Schema Upload
+
+Build job path: NA
+
+Artifact Upload job path: NA
+
+Deploy job path:  Deploy/job/dev/job/Kubernetes/job/InquiryUploadSchema/
+
+Deploy variables:&#x20;
+
+| Key                           | Value                                                                                                                    |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| schema\_repo                  | [https://github.com/Sunbird-inQuiry/inquiry-api-service.git](https://github.com/Sunbird-inQuiry/inquiry-api-service.git) |
+| schema\_repo\_branch\_or\_tag | Release-5.2.0\_RC2                                                                                                       |
+
+**async-questionset-publish:**
+
+Service name: async-questionset-publish
+
+Build job path: Build/job/KnowledgePlatform/job/InquiryFlinkJob/
+
+Artifact Upload job path: ArtifactUpload/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob
+
+Deploy job path:  Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/
+
+Build variables:&#x20;
+
+| Key                   | Value              |
+| --------------------- | ------------------ |
+| inquiry\_release\_tag | Release-5.2.0\_RC1 |
+
+
 
 ### CSP migration tools:
 
