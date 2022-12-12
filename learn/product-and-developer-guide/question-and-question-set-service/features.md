@@ -42,7 +42,7 @@ Question & QuestionSet Asset publishing can be done in two ways: Public (status:
 
 **Question & QuestionSet Life Cycle**
 
-Below diagram illustrate the life cycle of Question & QuestionSet Asset
+Below diagram illustrate the status and actions during the life cycle of Question & QuestionSet Asset
 
 ![](../../../.gitbook/assets/Generalisation@2x.png)
 

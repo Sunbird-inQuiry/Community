@@ -4,11 +4,12 @@
 
 * [Overview](README.md)
 * [Capabilities](learn/capabilities.md)
+* [Components](learn/capabilities-1.md)
 * [Technical Architecture](learn/technical-architecture.md)
 * [Product & Developer Guide](learn/product-and-developer-guide/README.md)
   * [Question & Question Set Editor](learn/product-and-developer-guide/question-and-question-set-editor/README.md)
     * [Architecture](learn/product-and-developer-guide/question-and-question-set-editor/architecture.md)
-    * [Feature](learn/product-and-developer-guide/question-and-question-set-editor/feature.md)
+    * [Features](learn/product-and-developer-guide/question-and-question-set-editor/feature.md)
     * [Configuration](learn/product-and-developer-guide/question-and-question-set-editor/configuration.md)
     * [Source Code](learn/product-and-developer-guide/question-and-question-set-editor/source-code.md)
     * [FAQ's](learn/product-and-developer-guide/question-and-question-set-editor/faqs.md)

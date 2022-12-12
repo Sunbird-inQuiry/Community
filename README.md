@@ -2,8 +2,6 @@
 
 ## _**What is Sunbird inQuiry?**_
 
-
-
 Sunbird inQuiry is a software building block that enables setting up of question banks for various use cases such as assessments, quizzes, practice worksheets, surveys, and many more. These are applicable in multiple domains related to education and human development.&#x20;
 
 Here are some examples of solutions that can be enabled through Sunbird inQuiry:
@@ -23,11 +21,11 @@ This building block consists of pluggable tools and microservices that enable cr
 
 Key capabilities offered by Sunbird inQuiry are:&#x20;
 
-* **Question banks:** Create question(s) as per an interoperable [QuML spec](https://quml.sunbird.org/) by using the pluggable editor, bulk import through APIs, tag them to rich metadata, and organize them into question sets.&#x20;
-* **End-to-end publishing process:** Enable question(s) and question set(s) creation, curation and publish process workflows.&#x20;
+* **Question banks:** Reuse and organize question(s) into question sets. Question(s) are tagged to rich metadata and created as per the interoperable[ QuML spec](https://quml.sunbird.org/).
+* **Authoring and Publishing:** Enable question(s) and question set(s) creation, curation and publish workflows using the pluggable editor and microservice ; and/or bulk import existing questions through APIs.
 * **Diverse question types:** inQuiry comes with two pre-built question types - Multiple choice questions (MCQ) and subjective questions. It can be extended to build new question types, basis your needs.
 * **Engaging & inclusive experiences:** Configure features like randomizing questions, timer, hints, etc using a pluggable player to enable various use cases. Player is built as per the WCAG AA guidelines which enables you to reach more learners.&#x20;
-* **Analytics:** Make meaning of the user's actions, generate reports & dashboards, and derive insights by leveraging telemetry data e.g. user response, result, and summary data. &#x20;
+* **Observability:** Make meaning of the user's actions and derive insights by leveraging telemetry data e.g. user response, result, and summary data. &#x20;
 
 ## _**Where has Sunbird inQuiry been used?**_&#x20;
 

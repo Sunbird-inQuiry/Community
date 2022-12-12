@@ -4,15 +4,11 @@ Question and Question set service is a micro-service which provides APIs to mana
 
 In the current implementation, the assessment APIs from Sunbird Knowlg are utilized for this purpose. (It will be decoupled and moved as part of inQuiry in the future.)
 
-#### Features:
+#### Capabilities:
 
 1. Provides APIs to manage the lifecycle of Question Set(s).
-
-![Lifecycle Management of a Question Set](<../../../.gitbook/assets/Screen Shot 2022-03-14 at 9.55.13 PM.png>)
-
-2\.  Enables offline consumption via generation of ECAR files in the packaging stage of the publish lifecycle.
-
-3\. A Question/QuestionSet can have the below operation throughout its creation Lifecycle:
+2. Enables offline consumption via generation of ECAR files in the packaging stage of the publish lifecycle.
+3. A Question/QuestionSet can have the below operation throughout its creation Lifecycle:
 
 ```
 Create
@@ -38,7 +34,7 @@ Copy
 * Question asset having visibility other than Parent, metadata can be updated using question update api.
 * Question asset having visibility Parent, metadata can be updated using QuestionSet update hierarchy api only.
 * There is no change in asset status if update operation is applied on Non Published asset or Image Node of Published assset (if exist)
-* Asset status will be changed from Live to Draft, if update operation is applied on Published Version of asset. System creates a copy of published asset and apply the update.&#x20;
+* Asset status will be changed from Live to Draft, if update operation is applied on Published Version of asset. System creates a copy of published asset and apply the update.
 * The data of copied asset gets populated to the original asset and then copied asset gets deleted, when the updated copied asset goes for publish operation.
 
 **Review:**
@@ -85,7 +81,7 @@ Copy
 
 * QuestionSet can be created using QuestionSet create API with minimal data like name, code, mimeType, primaryCategory.
 * Using QuestionSet create API, only public, private and protected QuestionSet (visibility: Default, Private, Protected) can be created.
-* In order to create QuestionSet (visibility: Parent) which can be discoverable only within specific QuestionSet (e.g: section/units), QuestionSet object should be created using QuestionSet update hierarchy API.&#x20;
+* In order to create QuestionSet (visibility: Parent) which can be discoverable only within specific QuestionSet (e.g: section/units), QuestionSet object should be created using QuestionSet update hierarchy API.
 * QuestionSet asset status will be Draft
 
 **Update:**
@@ -96,7 +92,7 @@ Copy
 * Any Change in the hierarchal structure like the addition of children or removal of children can be performed using QuestionSet update hierarchy API.
 * Children can be added to QuestionSet using add node API and children can be removed using delete node API of QuestionSet. Only Public children can be added/removed using these API's.
 * There is no change in asset status if update operation is applied on Non Published asset or Image Node of Published asset (if exist).
-* Asset status will be changed from Live to `Draft`, if update operation is applied on Published Version of asset. System creates a copy of published asset and apply the update.&#x20;
+* Asset status will be changed from Live to `Draft`, if update operation is applied on Published Version of asset. System creates a copy of published asset and apply the update.
 * The data of copied asset gets populated to the original asset and then copied asset gets deleted, when the updated copied asset goes for publish operation.
 
 **Review:**
@@ -126,8 +122,8 @@ Copy
 **Retire:**
 
 * QuestionSet asset can be sent for retire using QuestionSet retire API.
-* In this operation, logical delete operation performed on the QuestionSet asset.&#x20;
-* The asset status changed from Live to Retired.&#x20;
+* In this operation, logical delete operation performed on the QuestionSet asset.
+* The asset status changed from Live to Retired.
 * This operation can be performed on QuestionSet asset having any status (e.g: Draft, Review)
 * The QuestionSet asset having the status Retired can't be discovered for consumption/adoption.
 

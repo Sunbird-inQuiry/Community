@@ -4,9 +4,9 @@ Question set player (QuML player) is responsible for rendering questions & quest
 
 ### Key Features:
 
-**Inclusivity:**
+#### **Inclusivity:**
 
-Question set player  is built as per WCAG AA guidelines such as:
+Question set player is built as per WCAG AA guidelines such as:
 
 * Text alternatives for all non-text content
 * Enables consumption of the assessment using a keyboard
@@ -14,21 +14,19 @@ Question set player  is built as per WCAG AA guidelines such as:
 * Compatible with assistive technologies such as screen readers
 * Screen readers can be used in both mobile app and browser.
 
-**Embeddable:**
+#### **Embeddable:**
 
 Can be easily embedded in any hybrid mobile app or angular based web applications
 
-**Supports offline consumption**
+#### **Supports offline consumption**
 
 Question set player is build to support offline consumption
 
-**Creates engaging learning by allowing users to:**&#x20;
+#### **Creates engaging learning by allowing users to:**&#x20;
 
-****
-
-* View their progress
 * Navigate to any question within the question set&#x20;
-* View hints, solutions, and prompt feedback&#x20;
+* View their progress
+* View hints, solutions, and prompt feedback if allowed
 * Keep track of their time
 * Review and submit their answers to assessments
 * Keep track of the skipped question

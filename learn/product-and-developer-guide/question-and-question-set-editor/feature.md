@@ -1,10 +1,10 @@
-# Feature
+# Features
 
-Following the features and related configuration to enable these features in question set editor:
+Following are the features and related configuration to enable these features in question set editor:
 
 ## Mode
 
-The editor can be set into **** different type of mode, we can achive this by changing the value of the Config#mode property. \
+The editor can be set into **** different type of mode, we can achieve this by changing the value of the Config#mode property. \
 \
 Following are types of mode:\
 1\.  read\
