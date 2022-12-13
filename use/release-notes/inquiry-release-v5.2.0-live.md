@@ -105,6 +105,8 @@ Artifact Upload job path: NA
 
 Deploy job path:  Deploy/job/dev/job/Kubernetes/job/InquiryUploadSchema/
 
+Folders to be uploaded: question & questionset
+
 Deploy variables:&#x20;
 
 | Key                           | Value                                                                                                                    |
