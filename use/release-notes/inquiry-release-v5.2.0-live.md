@@ -1,6 +1,6 @@
 # inQuiry - Release v5.2.0 (Live)
 
-###
+
 
 ### Document Release Version
 
@@ -59,102 +59,48 @@ URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0
 
 ### Question & Question Set Service:
 
-| Service/ Flink job name   | Build Repo                                                                                                               | Build Tag          | Deploy Repo                                                                                                    | Deploy Tag                 |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| assessment                | [https://github.com/Sunbird-inQuiry/inquiry-api-service.git](https://github.com/Sunbird-inQuiry/inquiry-api-service.git) | Release-5.2.0\_RC3 | [https://github.com/project-sunbird/sunbird-devops.git](https://github.com/project-sunbird/sunbird-devops.git) | release-5.2.0-inquiry\_RC1 |
-| async-questionset-publish | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)             | Release-5.2.0\_RC2 | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)   | Release-5.2.0\_RC2         |
+#### Configuration Details:
 
-<mark style="color:red;">**Note:**</mark> Existing questionset-publish Flink job has been renamed to async-questionset-publish.
+For Configuration Details, Please [Click Here](https://project-sunbird.atlassian.net/wiki/spaces/SBDES/pages/3259138061/inQuiry+Release-5.2.0+Configuration+details)
 
-#### Configuration:
+#### Jenkins Jobs:
 
-| Service/ Flink job name   | Config file                                                                                                                                                                                                                                                                                                                  |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| assessment                | [https://github.com/project-sunbird/sunbird-devops/blob/release-5.2.0-inquiry\_RC1/ansible/roles/stack-sunbird/templates/assessment-service\_application.conf](https://github.com/project-sunbird/sunbird-devops/blob/release-5.2.0-inquiry\_RC1/ansible/roles/stack-sunbird/templates/assessment-service\_application.conf) |
-| async-questionset-publish | [https://github.com/Sunbird-inQuiry/data-pipeline/blob/834e031b931e935a52883ffd103f3e5e9f8b3ddb/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L118](https://github.com/Sunbird-inQuiry/data-pipeline/blob/834e031b931e935a52883ffd103f3e5e9f8b3ddb/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L118)         |
+Below Jobs Need to be created/modified
 
-#### Jenkins Job details:
+| Job Name            | Job Path                                                         | Description          |
+| ------------------- | ---------------------------------------------------------------- | -------------------- |
+| Assessment          | Build/job/Core/job/Assessment/                                   | Build Job            |
+| Assessment          | ArtifactUpload/job/dev/job/Core/job/Assessment/                  | Artifact Upload Job  |
+| Assessment          | Deploy/job/dev/job/Kubernetes/job/Assessment/                    | Deployment Job       |
+| InquiryUploadSchema | Deploy/job/dev/job/Kubernetes/job/InquiryUploadSchema/           | Upload Schema Job    |
+| InquiryFlinkJob     | Build/job/KnowledgePlatform/job/InquiryFlinkJob                  | Flink Build Job      |
+| InquiryFlinkJob     | ArtifactUpload/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob | Artifact Upload Job  |
+| InquiryFlinkJob     | Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/        | Flink Deployment Job |
 
-For Jenkins Job Script: [Click Here](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-5.2.0\_RC3/scripts/jenkins-jobs)
+For Jenkins Job Script, Please [Click Here](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-5.2.0/scripts/jenkins-jobs)
 
-#### **assessment Service:**
+#### Deployment:
 
-Service name: assessment
+| Component        | Service To Build                                | Build Tag                                                                                            | Service To Deploy                                         | Deploy Tag                                                                                                      | Comment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ---------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kafka setup      | NA                                              | NA                                                                                                   | Deploy/KnowledgePlatform/KafkaSetup                       | NA                                                                                                              | <p>Please add below kafka topic under processing kafka cluster with num_of_partitions=1 &#x26; replication_factor=1:</p><pre><code>{{ env_name }}.assessment.republish.request
+{{ env_name }}.assessment.postpublish.request
+</code></pre>                                                                                                                                                                                                                                                                            |
+| Schema Upload    | NA                                              | NA                                                                                                   | Deploy/job/dev/job/Kubernetes/job/InquiryUploadSchema/    | NA                                                                                                              | <p>Please add below script to public devops repo: <br><a href="https://github.com/project-sunbird/sunbird-devops/blob/release-5.2.0-inquiry_RC1/pipelines/upload/schema/knowledge-platform/schema.Jenkinsfile">https://github.com/project-sunbird/sunbird-devops/blob/release-5.2.0-inquiry_RC1/pipelines/upload/schema/knowledge-platform/schema.Jenkinsfile</a><br><br>schema_repo_branch_or_tag: <a href="https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-5.2.0_RC3">release-5.2.0_RC3</a></p> |
+| Assessment       | Build/job/Core/job/Assessment/                  | [Release-5.2.0\_RC3](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-5.2.0\_RC3) | Deploy/job/dev/job/Kubernetes/job/Assessment/             | [release-5.2.0-inquiry\_RC1](https://github.com/project-sunbird/sunbird-devops/tree/release-5.2.0-inquiry\_RC1) | Deploy Tag is given for reference only. Please do not use directly for deployment. For Detailed Configuration Details, Please refer to Configuration Section                                                                                                                                                                                                                                                                                                                                                          |
+| InQuiryFlink Job | Build/job/KnowledgePlatform/job/InquiryFlinkJob | [Release-5.2.0\_RC3](https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-5.2.0\_RC3)       | Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/ | [Release-5.2.0\_RC3](https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-5.2.0\_RC3)                  | <p>Please deploy below jobs:<br><code>async-questionset-publish</code><br><code>questionset-republish</code></p>                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-Build job path: Build/job/Core/job/Assessment/&#x20;
+<mark style="color:red;">**Note:**</mark>&#x20;
 
-Artifact Upload job path: ArtifactUpload/job/dev/job/Core/job/Assessment/
+* Existing flink job questionset-publish re-named to async-questionset-publish.
 
-Deploy job path:  Deploy/job/dev/job/Kubernetes/job/Assessment/
-
-Build variables:&#x20;
-
-| Key                   | Value                                                                                                                  |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| core\_release\_tag    | Release-5.2.0\_RC2                                                                                                     |
-| core\_repo\_link      | [https://github.com/project-sunbird/knowledge-platform.git](https://github.com/project-sunbird/knowledge-platform.git) |
-| inquiry\_release\_tag | Release-5.2.0\_RC2                                                                                                     |
-
-**Schema Upload:**
-
-Service name: Schema Upload
-
-Build job path: NA
-
-Artifact Upload job path: NA
-
-Deploy job path:  Deploy/job/dev/job/Kubernetes/job/InquiryUploadSchema/
-
-Folders to be uploaded: question & questionset
-
-Deploy variables:&#x20;
-
-| Key                           | Value                                                                                                                    |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| schema\_repo                  | [https://github.com/Sunbird-inQuiry/inquiry-api-service.git](https://github.com/Sunbird-inQuiry/inquiry-api-service.git) |
-| schema\_repo\_branch\_or\_tag | Release-5.2.0\_RC2                                                                                                       |
-
-**async-questionset-publish:**
-
-Service name: async-questionset-publish
-
-Build job path: Build/job/KnowledgePlatform/job/InquiryFlinkJob/
-
-Artifact Upload job path: ArtifactUpload/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob
-
-Deploy job path:  Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/
-
-Build variables:&#x20;
-
-| Key                   | Value              |
-| --------------------- | ------------------ |
-| inquiry\_release\_tag | Release-5.2.0\_RC1 |
-
-
-
-### CSP migration tools:
+**CSP migration tools:**
 
 We have created 3 tools for CSP migration&#x20;
 
-1. sync-tool (for CSP migration Kafka event generation )
-2. csp-migrator (Flink Job Created for CSP Migration)
+1. sync-tool (for CSP migration Kafka event generation ) - Please deploy from [Knowlg](https://knowlg.sunbird.org/use/release-notes/release-5.2.0-ongoing).
+2. csp-migrator (Flink Job Created for CSP Migration) - Please deploy from [Knowlg](https://knowlg.sunbird.org/use/release-notes/release-5.2.0-ongoing).
 3. questionset-republish (Flink Job Created for CSP Migration Republish)
-
-| Service/ Flink job name | Build Repo                                                                                                                           | Build Tag          | Deploy Repo                                                                                                                          | Deploy Tag         |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| sync-tool               | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 |
-| csp-migrator            | [https://github.com/project-sunbird/knowledge-platform-jobs.git](https://github.com/project-sunbird/knowledge-platform-jobs.git)     | release-5.2.0\_RC5 | [https://github.com/project-sunbird/sunbird-learning-platform.git](https://github.com/project-sunbird/sunbird-learning-platform.git) | release-5.2.0\_RC3 |
-| questionset-republish   | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)                         | Release-5.2.0\_RC2 | [https://github.com/Sunbird-inQuiry/data-pipeline.git](https://github.com/Sunbird-inQuiry/data-pipeline.git)                         | Release-5.2.0\_RC2 |
-
-#### Configuration:
-
-| Tool name             | Config files                                                                                                                                                                                                                                                                                                                                                     |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sync-tool             | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/ansible/roles/lp-synctool-deploy/templates/application.conf.j2#L119](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/ansible/roles/lp-synctool-deploy/templates/application.conf.j2#L119) |
-| csp-migrator          | [https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101](https://github.com/project-sunbird/sunbird-learning-platform/blob/efde7083ac33979d2bec686a139237fbd8a2ece3/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L1101)                   |
-| questionset-republish | [https://github.com/Sunbird-inQuiry/data-pipeline/blob/834e031b931e935a52883ffd103f3e5e9f8b3ddb/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164](https://github.com/Sunbird-inQuiry/data-pipeline/blob/834e031b931e935a52883ffd103f3e5e9f8b3ddb/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L164)                                             |
-
-For more details about the configuration, please [click here](https://project-sunbird.atlassian.net/wiki/spaces/SBDES/pages/3259138061/inQuiry+Release-5.2.0+Configuration+details)
 
 #### CSP migration & verification Steps:
 
