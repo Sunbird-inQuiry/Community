@@ -37,7 +37,7 @@ Question editor enables you to create **diverse question types:**
 
 ### **c) Question & Question Set services**
 
-It enables the **End-to-end publishing process**. These are microservices that allow you to: \*\*\*\*
+It enables the **** question(s) and question set(s) **publishing process**. These are microservices that allow you to: \*\*\*\*
 
 * Create, copy, collaborate, curate & publish question(s) and question set(s).
 * Easily scale as per your needs.

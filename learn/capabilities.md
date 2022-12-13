@@ -18,9 +18,9 @@ Inquiry enables users to create, reuse and organize question(s) into question se
 Enables question(s) and questions set(s) creation, curation and publishing
 
 * Question(s) can be created using the pluggable editor and/or can be bulk imported through APIs.
-* Questions set(s) (which is a collection of questions) can be created using the question set editor, and can be configured for the required behaviour. For eg, if the question set is curated for conducting a test, the solutions should not be displayed for user who is playing with it. Whereas, for a student using the question set to practice for a topic, it can be configured to show hints, or show solution and get feedback as and when they respond.
+* Questions set(s) (which is a collection of questions) can be created using the question set editor, and can be configured for the required behaviour. For eg, if the question set is curated for conducting a test, the solutions should not be displayed to the user who is playing with it. Whereas, for a student using the question set to practice for a topic, it can be configured to show hints, or show solution and get feedback as and when they respond.
 * Question set can be curated by creating new questions or by reusing questions from the questions bank.
-* The question and question(s) go through a review workflow, where once the creator saves the updates, it is sent for review and a reviewer has the capability to either accept and publish the question(s) or question set(s) or reject the questions. Only the published ones will be available for consumption.
+* The question(s) and question set(s) go through a review workflow, where once the creator saves the updates, it is sent for review and a reviewer has the capability to either accept and publish the question(s) or question set(s), or reject the them. Only the published ones will be available for consumption.
 
 ### c) **Diverse question types:**&#x20;
 
