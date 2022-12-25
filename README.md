@@ -37,4 +37,8 @@ _**Contributors:**_ EkStep, Samagra & Shikshalokam
 
 _**Last release date & version:**_ 01-Mar-2022, 4.7.0
 
+**A short video on the overview of inQuiry**
+
+{% embed url="https://youtu.be/JYpSbefHDOA" %}
+
 ## &#x20;<a href="#last-release-date" id="last-release-date"></a>
