@@ -1,4 +1,4 @@
-# inQuiry - Release v5.2.0 (Live)
+# inQuiry - Release v5.2.0
 
 
 

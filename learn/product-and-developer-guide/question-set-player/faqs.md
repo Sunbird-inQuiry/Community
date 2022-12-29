@@ -84,7 +84,7 @@ To enable this feature, the player accepts the following configs :point\_down:
 }
 ```
 
-![Feedback popup](<../../../.gitbook/assets/feedback-popup (2).png>)
+![Feedback popup](<../../../.gitbook/assets/feedback-popup (1).png>)
 
 ### How to show solutions?
 
