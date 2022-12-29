@@ -1,7 +1,5 @@
 # inQuiry - Release v5.2.0
 
-
-
 ### Document Release Version
 
 | Project | Date            | Release |
@@ -14,18 +12,17 @@
 
 This document contains information about the new features and enhancements planned to the inQuiry building block as part of release 5.2.0:
 
-Bug Fixes - click [here](https://project-sunbird.atlassian.net/issues/?filter=12655\&jql=project%20%3D%20IQ%20AND%20issuetype%20%3D%20Bug%20AND%20labels%20%3D%20QA\_Required%20AND%20%22Contributor%20Type%5BSelect%20List%20\(cascading\)%5D%22%20in%20cascadeOption\(10441%2C%2010443\)%20AND%20Sprint%20in%20\(281%2C%20280\)%20ORDER%20BY%20created%20DESC) to see the list of bugs fixed in this release.
+**1.1 inQuiry as an independent building block**: As part of this larger goal, in this release, the following items are targeted:
 
-* inQuiry as an independent building block: As part of this larger goal, in this release, the following items are targeted:
-  * Update of inQuiry editor & player to angular 12.
-  * Inquiry portal version 2.
-  * inQuiry: Question-set publish Flink job changes.
-* New features and enhancements: Click [here](https://project-sunbird.atlassian.net/issues/?filter=12655) to view the list.
+1. Update of inQuiry editor & player to angular 12 so that it is up-to-date with the latest security & performance patches in Angular and also compatible with the newest Sunbird coKreat & ED versions.
+2. Inquiry portal version 2 so that end-to-end creation & publishing workflows can be tested independently.&#x20;
 
-**CSP Related Features:**
+**1.2 CSP-Related Changes:**
 
 1. Inquiry: Remove cloud dependency on Question/QuestionSet DataInquiry: Remove cloud dependency on Question/QuestionSet Data ([IQ-193](https://project-sunbird.atlassian.net/browse/IQ-193))
 2. CSP Data Migration Script For Question & QuestionSet ([IQ-149](https://project-sunbird.atlassian.net/browse/IQ-149))
+
+A full list of New features and enhancements is available [here](https://project-sunbird.atlassian.net/issues/?filter=12655). The full list of Bug Fixes is [here](https://project-sunbird.atlassian.net/issues/?filter=12655\&jql=project%20%3D%20IQ%20AND%20issuetype%20%3D%20Bug%20AND%20labels%20%3D%20QA\_Required%20AND%20%22Contributor%20Type%5BSelect%20List%20\(cascading\)%5D%22%20in%20cascadeOption\(10441%2C%2010443\)%20AND%20Sprint%20in%20\(281%2C%20280\)%20ORDER%20BY%20created%20DESC).
 
 ### **2. Test Scenarios:**
 
@@ -65,7 +62,7 @@ For Configuration Details, Please [Click Here](https://project-sunbird.atlassian
 
 #### Jenkins Jobs:
 
-Below Jobs Need to be created/modified
+The below Jobs Need to be created/modified
 
 | Job Name            | Job Path                                                         | Description          |
 | ------------------- | ---------------------------------------------------------------- | -------------------- |

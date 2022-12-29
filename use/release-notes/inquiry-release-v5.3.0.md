@@ -12,16 +12,15 @@
 
 This document contains information about the new features and enhancements planned to the inQuiry building block as part of release 5.3.0:
 
-Bug Fixes - click [here](https://project-sunbird.atlassian.net/browse/IQ-68) to see the list of bugs fixed in this release.
+* Publish test-coverage reports on the microsite
+* QuML player mandatory & optional configuration error handling and also updated on the microsite.
+* QuML player Publishing as NG module using Schematics so that integration is more automated (reduced the manual steps required in integration).
+* (Bug) The question is not displayed completely in Portrait mode.
+* (Bug) In Question Set Editor, the page is not getting auto-scrolled while previewing the questions.
 
-* inQuiry: Publish test-coverage reports in micro site
-* Page is not getting auto scrolled while previewing the questions.
-* QuML player Mandatory & optional configuration
-* Tech Item: QuML player Publishing as NG module using Schematics
-* Question is not displayed completely on Portrait mode.
-* New features and enhancements: Click [here](https://project-sunbird.atlassian.net/issues/?filter=12678) to view the list.
+New features and enhancements: Click [here](https://project-sunbird.atlassian.net/issues/?filter=12678) to view the list. Bug Fixes - click [here](https://project-sunbird.atlassian.net/browse/IQ-68) to see the list of bugs fixed in this release.
 
-**Test Scenarios:** [**Link**](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3255566352/Inquiry+Release+5.3.0+Test+Scenarios) **(Include ekstep contributor test scenarios)**
+**Test Scenarios:** [**Link**](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3255566352/Inquiry+Release+5.3.0+Test+Scenarios) **(Include EkStep contributor test scenarios)**
 
 **Documentation issue, release 5.3.0:**  [**IQ:200**](https://project-sunbird.atlassian.net/browse/IQ-200)****
 
