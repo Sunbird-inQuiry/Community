@@ -55,7 +55,7 @@ Copy
 
 * Question asset having visibility other than Parent, can be sent for publish using question publish API.
 * Question asset having visibility Parent, cannot be set for publish using question publish API. All Children Question with visibility Parent published automatically when Parent QuestionSet sent for Publish using QuestionSet publish API.
-* On Completion of Publish operation,
+* On Completion of Publish operation :
   * Question asset will have Live status.
   * Question asset will have the bundle path for offline consumption (downloadUrl, variants (Multiple Packages such as spine, online, full) )
   * It can be discovered for consumption

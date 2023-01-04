@@ -1,6 +1,6 @@
 # Architecture
 
-![Question Set Editor - Architecture](<../../../.gitbook/assets/image (13).png>)
+![Question Set Editor - Architecture](<../../../.gitbook/assets/image (35).png>)
 
 #### [FancyTree](https://github.com/mar10/fancytree/wiki)
 
