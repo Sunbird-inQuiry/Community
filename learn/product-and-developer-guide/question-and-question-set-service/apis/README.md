@@ -48,14 +48,6 @@ Question & QuestionSet Service has below API's to manage Question & QuestionSet 
 [import-question.md](question-apis/import-question.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 ### **Question Set Management API's**
 
 {% content-ref url="questionset-apis/create-questionset.md" %}
