@@ -12,9 +12,14 @@
 
 This document contains information about the new features and enhancements planned to the inQuiry building block as part of release 5.3.0:
 
-* Publish test-coverage reports on the microsite
-* QuML player mandatory & optional configuration error handling and also updated on the microsite.
+**1.1 Ease of installation:** As part of this goal, in this release, the following item are targeted:
+
 * QuML player Publishing as NG module using Schematics so that integration is more automated (reduced the manual steps required in integration).
+
+**1.2 Ease of adoption:** As part of this goal, in this release, the following item are targeted:
+
+* QuML player mandatory & optional configuration error handling and also updated on the microsite.
+* Publish test-coverage reports on the microsite
 * (Bug) The question is not displayed completely in Portrait mode.
 * (Bug) In Question Set Editor, the page is not getting auto-scrolled while previewing the questions.
 
