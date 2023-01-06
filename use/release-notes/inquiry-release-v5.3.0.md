@@ -20,8 +20,11 @@ This document contains information about the new features and enhancements plann
 
 * QuML player mandatory & optional configuration error handling and also updated on the microsite.
 * Publish test-coverage reports on the microsite
-* (Bug) The question is not displayed completely in Portrait mode.
-* (Bug) In Question Set Editor, the page is not getting auto-scrolled while previewing the questions.
+
+**1.3 Bugs:**
+
+* The question is not displayed completely in Portrait mode.
+* In Question Set Editor, the page is not getting auto-scrolled while previewing the questions.
 
 New features and enhancements: Click [here](https://project-sunbird.atlassian.net/issues/?filter=12678) to view the list. Bug Fixes - click [here](https://project-sunbird.atlassian.net/browse/IQ-68) to see the list of bugs fixed in this release.
 
