@@ -23,12 +23,6 @@
 8. Logstash
 9. Flink
 
-#### For more details on server and its component installation, Please refer to below link:
-
-{% hint style="info" %}
-[http://docs.sunbird.org/latest/developer-docs/server-installation/](http://docs.sunbird.org/latest/developer-docs/server-installation/)
-{% endhint %}
-
 ### :label: **Service Configuration**
 
 * For Service Configuration, Please visit below links:\

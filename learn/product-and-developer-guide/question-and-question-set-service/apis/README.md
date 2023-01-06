@@ -94,6 +94,3 @@ Question & QuestionSet Service has below API's to manage Question & QuestionSet 
 [read-questionset-hierarchy.md](questionset-apis/read-questionset-hierarchy.md)
 {% endcontent-ref %}
 
-
-
-**For Question & QuestionSet API's Specification, Please visit** [**here**](http://docs.sunbird.org/latest/apis/questionapi/)

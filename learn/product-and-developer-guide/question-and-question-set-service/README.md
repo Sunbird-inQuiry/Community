@@ -134,12 +134,6 @@ Copy
 * Fields "createdBy" and "createdFor" are mandatory and must be provided in the request.
 * Any metadata field provided in the request will be updated in the metadata of the new asset.
 
-#### For API Specification & Examples, Please use the below link:
-
-{% hint style="info" %}
-[Question and Question set Service API Documentation](http://docs.sunbird.org/latest/apis/questionapi/)
-{% endhint %}
-
 #### For Source Code, Please use the below link:
 
 {% embed url="https://github.com/project-sunbird/knowledge-platform" %}
