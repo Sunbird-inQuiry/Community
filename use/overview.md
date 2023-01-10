@@ -1,6 +1,6 @@
 # Overview
 
-There are two options to deploy Knowlg:
+There are two options to deploy Sunbird inQuiry:
 
 **Option 1: Independently deploy Sunbird inQuiry building block**
 
