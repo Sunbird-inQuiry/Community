@@ -8,7 +8,7 @@ Please use the below community forums link for any quires related to deployment,
 
 [https://github.com/orgs/Sunbird-inQuiry/discussions](https://github.com/orgs/Sunbird-inQuiry/discussions)
 
-**Option 2: Independently deploy Sunbird inQuiry  building block**
+**Option 2: Deploying Sunbird inQuiry as part of Sunbird-ED**
 
 Please refer to the [Sunbird-Ed deployment ](https://ed.sunbird.org/use/prerequisites-for-your-own-sunbird-ed-instance)for more details.
 
