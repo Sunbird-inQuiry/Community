@@ -56,6 +56,10 @@ Question set player is a player provided by inQuiry to create **engaging & inclu
   * Built to support both online and offline modes of consumption.
 * Enables a variety of solutions:
   * Allows you to use question sets for different use cases. For example:- the user experience for practice worksheets can be configured to show feedback, hints for each question. However, a high stake assessment can be configured to have a completely different consumption behaviour with randomization of questions, a limited number of attempts, and a completion timer.
-*   Responsive to different resolutions and orientations.
+* Responsive to different resolutions and orientations.
 
-    ***
+**A short video on the components of inQuiry**
+
+{% embed url="https://youtu.be/8j1gr3LzlS8" %}
+
+***
