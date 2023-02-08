@@ -6,6 +6,24 @@
 | --------------- | --------------- | ---------------- |
 | Sunbird Inquiry | R5.3.0          | 26 December 2022 |
 
+## Release Tags:
+
+### Question Set **Editor**:
+
+Tag: v5.3.3
+
+Install: _`npm i @project-sunbird/`sunbird-collection-editor`@5.3.2`_
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.3.2](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.3.2)
+
+### Question Set Player:
+
+Tag: v5.3.0
+
+Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.3.0`_
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.3.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.3.0)
+
 ****
 
 ### **1. Summary of the changes**
