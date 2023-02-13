@@ -24,6 +24,13 @@ Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.4.0`_
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.4.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.4.0)
 
+### Question & Question Set Service:
+
+| Component        | Service To Build                                | Build Tag                                                                                            | Service To Deploy                                         | Deploy Tag                                                                                                      | Comment                                                                                                                                                      |
+| ---------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Assessment       | Build/job/Core/job/Assessment/                  | [Release-5.4.0\_RC1](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-5.4.0\_RC1) | Deploy/job/dev/job/Kubernetes/job/Assessment/             | [release-5.2.0-inquiry\_RC1](https://github.com/project-sunbird/sunbird-devops/tree/release-5.2.0-inquiry\_RC1) | Deploy Tag is given for reference only. Please do not use directly for deployment. For Detailed Configuration Details, Please refer to Configuration Section |
+| InQuiryFlink Job | Build/job/KnowledgePlatform/job/InquiryFlinkJob | [Release-5.2.0\_RC3](https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-5.2.0\_RC3)       | Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/ | [Release-5.2.0\_RC3](https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-5.2.0\_RC3)                  | <p>Please deploy below jobs:<br><code>async-questionset-publish</code><br><code>questionset-republish</code></p>                                             |
+
 ### **1. Summary of the changes**
 
 This document contains information about the new features and enhancements planned to the inQuiry building block as part of release 5.4.0:

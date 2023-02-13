@@ -24,7 +24,9 @@ Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.3.0`_
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.3.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.3.0)
 
-****
+### Question Set Service:
+
+There is no change in this release. So Please use [release-5.2.0](inquiry-release-v5.2.0.md#question-and-question-set-service) Tags.
 
 ### **1. Summary of the changes**
 
