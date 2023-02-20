@@ -84,6 +84,8 @@
   * [inQuiry - Release V 4.9.0](use/release-notes/inquiry-release-v-4.8.0-upcoming-1.md)
   * [inQuiry - Release V 4.8.0](use/release-notes/inquiry-release-v-4.8.0-upcoming-2.md)
   * [inQuiry - Release V 4.7.0](use/release-notes/inquiry-release-v-4.7.0-live.md)
+* [Deprecations](use/deprecations/README.md)
+  * [Release-5.5.0](use/deprecations/release-5.5.0.md)
 * [Learn More](use/learn-more/README.md)
   * [Dependencies](use/learn-more/dependencies.md)
 

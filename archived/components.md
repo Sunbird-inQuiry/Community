@@ -32,9 +32,7 @@ Today it leverages collection editor from Sunbird Knowlg for this purpose.
 3. Ability to preview Questions and Sets as part of creation flow.
 4. Ability to add and customise scientific and mathematical formulae.
 
-{% embed url="https://github.com/Sunbird-Ed/sunbird-collection-editor" %}
-Source Code
-{% endembed %}
+{% embed url="https://github.com/Sunbird-inQuiry/editor" %}
 
 ### Question set player
 

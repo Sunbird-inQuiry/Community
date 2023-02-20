@@ -22,7 +22,7 @@ For existing apps, follow the below-mentioned steps:
 These are the peerDependencies of the library, that need to be installed in order to use this library.
 
 ```
-npm i @project-sunbird/sunbird-collection-editor-v9 --save
+npm i @project-sunbird/sunbird-questionset-editor --save
 npm i common-form-elements-web-v9 --save
 npm i ng2-semantic-ui-v9 --save
 npm i ngx-infinite-scroll --save
@@ -39,7 +39,6 @@ npm i @project-sunbird/sunbird-video-player-v9 --save
 npm i @project-sunbird/sunbird-quml-player-v9 --save
 npm i ngx-bootstrap@6.0.0 --save
 npm i ng2-cache-service --save
-npm i fine-uploader --save
 npm i ngx-chips@2.2.0 --save
 npm i epubjs --save
 npm i videojs-contrib-quality-levels --save
@@ -57,20 +56,20 @@ _For more reference Check compatibility document for ng-bootstrap_ [_here_](http
 
 #### :label: **Step 2: Add the required services and QuestionSet editor config**
 
-* Create a **editor-cursor-implementation.service.ts** in a project and which will implement the `QuestionCursor` and `EditorCursor` abstract class. _Refer:_ [**editor-cursor-implementation.service.ts**](https://github.com/Sunbird-Ed/sunbird-collection-editor/blob/release-4.7.0/src/app/editor-cursor-implementation.service.ts)
+* Create a **editor-cursor-implementation.service.ts** in a project and which will implement the `QuestionCursor` and `EditorCursor` abstract class. _Refer:_ [**editor-cursor-implementation.service.ts**](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/src/app/editor-cursor-implementation.service.ts)
 
 > Remember `EditorCursor` is to be imported like this
 >
-> `import { EditorCursor } from '@project-sunbird/sunbird-collection-editor-v9';`
+> `import { EditorCursor } from '@project-sunbird/sunbird-questionset-editor';`
 
-* Create a **data.ts** file which contains the `questionSetEditorConfig` _Refer:_ [_**data.ts**_](https://github.com/Sunbird-Ed/sunbird-collection-editor/blob/release-4.7.0/src/app/data.ts)
+* Create a **data.ts** file which contains the `questionSetEditorConfig` _Refer:_ [_**data.ts**_](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/src/app/data.ts)
 
-> Note: `questionSetEditorConfig`in data.ts contains the mock config used in component to send it as input to QuestionSet Editor. We need only [questionSetEditorConfig](https://github.com/Sunbird-Ed/sunbird-collection-editor/blob/release-4.7.0/src/app/data.ts#L143)
+> Note: `questionSetEditorConfig`in data.ts contains the mock config used in component to send it as input to QuestionSet Editor. We need only [questionSetEditorConfig](https://github.com/Sunbird-inQuiry/editor/blob/0e9cf5c9f000754d94618eb1975fb9dc1aba8ec8/src/app/data.ts#L143)
 
-* Create a **latexService.js** in root folder. _Refer:_ [_**latexService.js**_](https://github.com/Sunbird-Ed/sunbird-collection-editor/blob/release-4.7.0/latexService.js)
-* Create a **proxy.conf.json** in root folder. _Refer:_ [_**proxy.conf.json**_](https://github.com/Sunbird-Ed/sunbird-collection-editor/blob/release-4.7.0/proxy.conf.json)
-* Create **server.js** in root folder. _Refer:_ [_**server.js**_](https://github.com/Sunbird-Ed/sunbird-collection-editor/blob/release-4.7.0/server.js)
-* Copy the **assets** from: [**assets**](https://github.com/Sunbird-Ed/sunbird-collection-editor/tree/release-4.7.0/src/assets)
+* Create a **latexService.js** in root folder. _Refer:_ [_**latexService.js**_](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/latexService.js)
+* Create a **proxy.conf.json** in root folder. _Refer:_ [_**proxy.conf.json**_](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/proxy.conf.json)
+* Create **server.js** in root folder. _Refer:_ [_**server.js**_](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/server.js)
+* Copy the **assets** from: [**assets**](https://github.com/Sunbird-inQuiry/editor/tree/release-4.7.0/src/assets)
 
 #### :label: Step 3: Include the styles, scripts and assets in angular.json
 
@@ -98,7 +97,7 @@ _For more reference Check compatibility document for ng-bootstrap_ [_here_](http
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/@project-sunbird/sunbird-collection-editor-v9/lib/assets",
+                "input": "node_modules/@project-sunbird/sunbird-questionset-editor/lib/assets",
                 "output": "/assets/"
               },
               {
@@ -171,16 +170,16 @@ Import the required modules such as below::
 
 ```
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CollectionEditorLibraryModule, EditorCursor } from '@project-sunbird/sunbird-collection-editor-v9';
+import { QuestionsetEditorLibraryModule, EditorCursor } from '@project-sunbird/sunbird-questionset-editor';
 import { RouterModule } from '@angular/router';
-import { QuestionCursor } from '@project-sunbird/sunbird-quml-player-v9';
+import { QuestionCursor } from '@project-sunbird/sunbird-quml-player';
 import { EditorCursorImplementationService } from './editor-cursor-implementation.service';
 
   @NgModule({
    ...
 
    imports: [ 
-      CollectionEditorLibraryModule,
+      QuestionsetEditorLibraryModule,
       BrowserAnimationsModule,
       RouterModule.forRoot([])
       ],
@@ -214,9 +213,36 @@ export class AppComponent {
 
 #### :label: __ Step 6: Send input to render QuestionSet Editor
 
+Once your library is imported, you can use its main component, `lib-questionset-editor` in your Angular application.
+
+Add the tag to the `app.component.html` like so:
+
 ```
-<lib-editor [editorConfig]="editorConfig" (editorEmitter)="editorEventListener($event)" ></lib-editor>
+<lib-questionset-editor [editorConfig]="editorConfig" (editorEmitter)="editorEventListener($event)" ></lib-questionset-editor>
 ```
+
+#### Available components
+
+| Feature            | Notes                        | Selector               | Code                                                                                | Input        | Output        |
+| ------------------ | ---------------------------- | ---------------------- | ----------------------------------------------------------------------------------- | ------------ | ------------- |
+| QuestionSet Editor | Can be used to render Editor | lib-questionset-editor | _`<lib-questionset-editor [editorConfig]="editorConfig"></lib-questionset-editor>`_ | editorConfig | editorEmitter |
+
+#### 🔻 Input Parameters
+
+1. editorConfig: Object - \[`Required`]
+
+```
+{
+  context: Object   // Information about the telemetry and default settings for editor API requests
+  config: Object    // default editor config such as sidebar menu list
+}
+```
+
+For more information refer this documentation: [CONFIGURATION.MD](../../../../learn/product-and-developer-guide/question-and-question-set-editor/configuration.md)
+
+#### 🔻 Output Events
+
+1. editorEmitter() - It emits event for each action performed in the editor.
 
 #### :label:Step 7: Set the auth token and questionset identifier
 
@@ -268,12 +294,12 @@ nodemon server.js
 
 #### Repo Setup <a href="#questionset-editor-contribution-guide" id="questionset-editor-contribution-guide"></a>
 
-Clone the Repo with the desired release branch: [  https://github.com/Sunbird-Ed/sunbird-collection-editor.git](https://github.com/Sunbird-Ed/sunbird-collection-editor.git)
+Clone the Repo with the desired release branch: [  ](https://github.com/Sunbird-Ed/sunbird-collection-editor.git)[https://github.com/Sunbird-inQuiry/editor](https://github.com/Sunbird-inQuiry/editor)
 
 Go to the root directory
 
 ```
-  cd sunbird-collection-editor
+  cd editor
 ```
 
 Install dependencies
@@ -288,7 +314,7 @@ Build the library
   npm run build-lib
 ```
 
-It will create a `/dist/collection-editor-library` folder at the root directory and also copy all the required assets.
+It will create a `/dist/questionset-editor-library` folder at the root directory and also copy all the required assets.
 
 #### Starting up the Sample application <a href="#starting-up-the-sample-application" id="starting-up-the-sample-application"></a>
 

@@ -2,7 +2,7 @@
 
 ## Question Set Editor
 
-* Overall Code Coverage:  [61.3%](https://sonarcloud.io/summary/overall?id=Sunbird-Ed\_sunbird-collection-editor)
+* Overall Code Coverage:  [61.3%](https://sonarcloud.io/summary/overall?id=Sunbird-inQuiry\_editor)
 * Lines of code: 4.8K
 
 ## Question Set Player
