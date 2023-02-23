@@ -4,7 +4,23 @@
 
 | Project         | Release Version | Date        |
 | --------------- | --------------- | ----------- |
-| Sunbird Inquiry | R5.4.0          | 30 Jan 2022 |
+| Sunbird Inquiry | R5.4.0          | 08 Feb 2023 |
+
+Following are the Tickets of R5.4.0
+
+| Sl.no | JIRA Id                                                       | Issue Type        | Description                                                                                                       |
+| ----- | ------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 1     | [IQ-31](https://project-sunbird.atlassian.net/browse/IQ-31)   | RFC               | inQuiry: Sonar & Circle CI integration for pipeline                                                               |
+| 2     | [IQ-1](https://project-sunbird.atlassian.net/browse/IQ-1)     | RFC               | Moving the inQuiry-service API documentation to microsite.                                                        |
+| 3     | [IQ-185](https://project-sunbird.atlassian.net/browse/IQ-185) | Minor-Enhancement | Design: Separation of question-set components from Collection-Editor components                                   |
+| 4     | [IQ-78](https://project-sunbird.atlassian.net/browse/IQ-78)   | Minor-Enhancement | inQuiry: Identify list of Metadata not as per QuML specification                                                  |
+| 5     | [IQ-244](https://project-sunbird.atlassian.net/browse/IQ-244) | Bug               | fix of spelling and grammatical mistake in QuML-player's read me file                                             |
+| 6     | [IQ-220](https://project-sunbird.atlassian.net/browse/IQ-220) | Bug               | Media proxy url conversion is not happening correctly                                                             |
+| 7     | [IQ-213](https://project-sunbird.atlassian.net/browse/IQ-213) | Bug               | Previously added from library Question is not visible when adding new question form library for live Question set |
+| 8     | [IQ-204](https://project-sunbird.atlassian.net/browse/IQ-204) | Bug               | Image size is not as provided in the MCQ Question's option field.                                                 |
+| 9     | [IQ-199](https://project-sunbird.atlassian.net/browse/IQ-199) | Bug               | Formula is not visible properly when Previewing in Portrait mode for Grid and Horizontal layout Questions         |
+| 10    | [IQ-198](https://project-sunbird.atlassian.net/browse/IQ-198) | Bug               | Multiple options are getting selected with horizontal layout when the Options are having same data                |
+| 11    | [IQ-196](https://project-sunbird.atlassian.net/browse/IQ-196) | Bug               | Unable to add the question from library for the live Question set.                                                |
 
 ## Release Tags:
 

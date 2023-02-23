@@ -6,11 +6,23 @@
 | --------------- | --------------- | ---------------- |
 | Sunbird Inquiry | R5.3.0          | 26 December 2022 |
 
+
+
+Following are the Tickets of R5.3
+
+| Sl.no | JIRA Id                                                       | Issue Type          | Description                                                       |
+| ----- | ------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------- |
+| 1     | [IQ-176](https://project-sunbird.atlassian.net/browse/IQ-176) | Minor-enhancement   | Tech Item: QuML player Publishing as NG module using Schematics   |
+| 2     | [IQ-177](https://project-sunbird.atlassian.net/browse/IQ-177) | Minor-enhancement   | QuML player Mandatory & optional configuration                    |
+| 3     | [IQ-182](https://project-sunbird.atlassian.net/browse/IQ-182) | Minor-enhancement   | Page is not getting auto scrolled while previewing the questions. |
+| 4     | [IQ-184](https://project-sunbird.atlassian.net/browse/IQ-184) | Documentation-issue | inQuiry: Publish test-coverage reports in micro site              |
+| 5     | [IQ-68](https://project-sunbird.atlassian.net/browse/IQ-68)   | Bug                 | Question is not displayed completely on Portrait mode.            |
+
 ## Release Tags:
 
 ### Question Set **Editor**:
 
-Tag: v5.3.3
+Tag: v5.3.2
 
 Install: _`npm i @project-sunbird/`sunbird-collection-editor`@5.3.2`_
 
