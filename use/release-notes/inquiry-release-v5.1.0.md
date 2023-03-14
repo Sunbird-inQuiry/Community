@@ -30,6 +30,16 @@ Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.1.1`_
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.1.1](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.1.1)
 
+
+
+#### Resource Library:
+
+Tag: v5.1.0
+
+Install: `npm i @project-sunbird/sunbird-resource-library@5.1.0`
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/5.1.0](https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/5.1.0)
+
 ****
 
 ### **1. Summary of the changes**

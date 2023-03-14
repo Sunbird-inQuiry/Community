@@ -54,6 +54,14 @@ Install: _`npm i @project-sunbird/`sunbird-quml-player`@5.2.0`_
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.2.0)
 
+### Resource Library:&#x20;
+
+Tag: v5.2.0
+
+Install: `npm i @project-sunbird/sunbird-resource-library@5.2.0`
+
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/5.2.0](https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/5.2.0)
+
 ### Question & Question Set Service:
 
 #### Configuration Details:
