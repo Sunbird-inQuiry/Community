@@ -50,12 +50,6 @@ description: >-
 \
 
 
-<mark style="color:red;">
-
-
-
-</mark>
-
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -485,7 +479,6 @@ The following request is for updating the existing question set. Here, a new que
 }
 ```
 
-****
 
-****\
-****
+
+\

@@ -4,7 +4,7 @@
 
 | Project         | Release Version | Date             |
 | --------------- | --------------- | ---------------- |
-| Sunbird Inquiry | R5.3.0          | 26 December 2022 |
+| Sunbird Inquiry | R 5.3.0         | 26 December 2022 |
 
 
 
@@ -70,6 +70,5 @@ New features and enhancements: Click [here](https://project-sunbird.atlassian.ne
 
 **Test Scenarios:** [**Link**](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3255566352/Inquiry+Release+5.3.0+Test+Scenarios) **(Include EkStep contributor test scenarios)**
 
-**Documentation issue, release 5.3.0:**  [**IQ:200**](https://project-sunbird.atlassian.net/browse/IQ-200)****
+**Documentation issue, release 5.3.0:**  [**IQ:200**](https://project-sunbird.atlassian.net/browse/IQ-200)
 
-****

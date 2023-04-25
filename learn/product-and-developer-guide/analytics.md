@@ -137,7 +137,7 @@ This method is used to capture user interactions on a page. For example, the nex
 }
 ```
 
-****
+
 
 #### **IMPRESSION**
 
@@ -562,7 +562,7 @@ This method is used to log telemetry summary events, which includes the progress
 
 #### END
 
-This method is used to capture closure after all the activities are completed which includes the summary object and duration to complete the question **** set
+This method is used to capture closure after all the activities are completed which includes the summary object and duration to complete the question set
 
 ```json
 {

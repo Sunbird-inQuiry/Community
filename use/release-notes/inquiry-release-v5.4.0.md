@@ -1,10 +1,10 @@
-# inQuiry - Release v5.4.0 (Latest)
+# inQuiry - Release v5.4.0
 
 ### Document Release Version
 
 | Project         | Release Version | Date        |
 | --------------- | --------------- | ----------- |
-| Sunbird Inquiry | R5.4.0          | 08 Feb 2023 |
+| Sunbird Inquiry | R 5.4.0         | 08 Feb 2023 |
 
 Following are the Tickets of R5.4.0
 
@@ -87,6 +87,5 @@ New features ,Enhancements and Bugs: Click [here](https://project-sunbird.atlass
 
 **Test Scenarios:**[ **Link** ](https://project-sunbird.atlassian.net/wiki/spaces/SunbirdinQuiry/pages/3270672405/inQuiry+Release+R.5.4.0+Test+Scenarios)**(Include EkStep contributor test scenarios)**
 
-**Documentation issue, release 5.4.0:** [**IQ-249**](https://project-sunbird.atlassian.net/browse/IQ-249)****
+**Documentation issue, release 5.4.0:** [**IQ-249**](https://project-sunbird.atlassian.net/browse/IQ-249)
 
-****

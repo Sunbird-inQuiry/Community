@@ -20,8 +20,7 @@ The question and answer can contain this mathematical notation. KaTeX is a cross
 
 **`CarouselModule`** is getting used from the `ngx-bootstrap` to show the carousel (slides) in the player.
 
-****
 
-****
 
-****
+
+

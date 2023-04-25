@@ -1,4 +1,4 @@
-# inQuiry - Release V 4.10.0 (Upcoming)
+# inQuiry - Release V 4.10.0
 
 ### Document Release Version
 
@@ -31,7 +31,7 @@ URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v
 | Assessment                      | [release-4.10.0\_RC1](https://github.com/project-sunbird/knowledge-platform/releases/tag/release-4.10.0\_RC1)      | Assessment        | [release-4.10.0](https://github.com/project-sunbird/sunbird-devops/tree/release-4.10.0)                              |                                             |
 | Questionset-publish : FlinkJobs | [reelase-4.10.0\_RC1](https://github.com/project-sunbird/knowledge-platform-jobs/releases/tag/release-4.10.0\_RC1) | FlinkJobs         | [release-4.10.0\_RC1](https://github.com/project-sunbird/sunbird-learning-platform/releases/tag/release-4.10.0\_RC1) | job\_names\_to\_deploy: questionset-publish |
 
-****
+
 
 ### **1. Summary of the changes**&#x20;
 

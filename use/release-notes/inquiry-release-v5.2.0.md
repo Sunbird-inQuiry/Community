@@ -6,7 +6,7 @@
 | ------- | --------------- | ------- |
 | inQuiry | 9 December 2022 | v5.2.0  |
 
-****
+
 
 ### **1. Summary of the changes**
 

@@ -4,7 +4,7 @@ Following are the features and related configuration to enable these features in
 
 ## Mode
 
-The editor can be set into **** different type of mode, we can achieve this by changing the value of the Config#mode property. \
+The editor can be set into different type of mode, we can achieve this by changing the value of the Config#mode property. \
 \
 Following are types of mode:\
 1\.  read\
@@ -12,7 +12,7 @@ Following are types of mode:\
 3\. review\
 \
 **- read**\
-****The read mode is a feature within the editor that allows users to see the editor. But you cannot edit it.\
+The read mode is a feature within the editor that allows users to see the editor. But you cannot edit it.\
 Here’s the configuration:
 
 ```
@@ -24,7 +24,7 @@ Here’s the configuration:
 ![](<../../../.gitbook/assets/image (37).png>)
 
 **- edit**\
-****All the fields will be enabled to edit for the collection creator.\
+All the fields will be enabled to edit for the collection creator.\
 Here’s the configuration:
 
 ```
@@ -36,7 +36,7 @@ Here’s the configuration:
 ![](<../../../.gitbook/assets/image (1) (2).png>)
 
 **- review**\
-****It’s similar to read mode only. but here users can perform some actions such as publish, reject. \
+It’s similar to read mode only. but here users can perform some actions such as publish, reject. \
 Here’s the configuration:
 
 ```
@@ -92,7 +92,7 @@ The maximum number of levels in the questionset has to be defined using the `max
 
 ![](<../../../.gitbook/assets/image (10).png>)
 
-Note: children at root node is to be defined which defines the type of question can be created at root node. Here is the default value **** to be used for children.
+Note: children at root node is to be defined which defines the type of question can be created at root node. Here is the default value to be used for children.
 
 ```
 children: {

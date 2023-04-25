@@ -2,16 +2,25 @@
 
 ## :label: System requirements <a href="#system-requirements" id="system-requirements"></a>
 
-The following are prerequisites to use question set editor&#x20;
+The following are prerequisites to using the QuML player&#x20;
 
-| Softwares / Frameworks | Version    |
-| ---------------------- | ---------- |
-| Node                   | 10x to 12x |
-| Angular                | 9.1.12     |
+| Softwares / Frameworks | Version |
+| ---------------------- | ------- |
+| Angular                | 12.2.16 |
 
-## :diamond\_shape\_with\_a\_dot\_inside: QuML player library for Sunbird platform
+{% hint style="info" %}
+The QuML player is tested against the above version of angular. Updating to latest versions needs further testing.
 
-The QUML player library components are powered by Angular. These components are designed to be used in sunbird consumption platforms _(mobile app, web portal, offline desktop app)_ to drive reusability, maintainability hence reducing the redundant development effort significantly.
+For more information on installing angular, see [angular.io/cli](https://angular.io/cli). If you are unsure what version of Angular runs on your system, run “ng version” in a command prompt (terminal) window.\
+\
+Angular requires an [active LTS or maintenance LTS](https://nodejs.org/about/releases) version of Node.js.\
+\
+Refer here for more details on [Angular CLI dependencies](https://www.npmjs.com/package/@angular/cli/v/9.1.12?activeTab=readme)
+{% endhint %}
+
+## :diamond\_shape\_with\_a\_dot\_inside: QuML player library for the Sunbird platform
+
+The QUML player library components are powered by Angular. These components are designed to be used in Sunbird consumption platforms _(mobile app, web portal, offline desktop app)_ to drive reusability, and maintainability hence reducing the redundant development effort significantly.
 
 ### :bookmark\_tabs: Getting Started
 
@@ -24,33 +33,31 @@ For existing apps, follow the below-mentioned steps:
 These are the peerDependencies of the library, that need to be installed in order to use this library.
 
 ```
-npm install @project-sunbird/sunbird-quml-player-v9 --save
+npm install @project-sunbird/sunbird-quml-player --save
 npm install @project-sunbird/sb-styles --save
 npm install @project-sunbird/client-services --save
-npm install bootstrap@4.6.1 --save
+npm install bootstrap@^4.6.2 --save
 npm install jquery --save
 npm install katex --save
 npm install lodash-es --save
-npm install ngx-bootstrap@6.0.0 --save
+npm install ngx-bootstrap@^7.1.0 --save
 ```
 
-Note: _As the QuML library is built with angular version 9, we are using **bootstrap@4.6.1** and **ngx-bootstrap@6.0.0** which are the compatible versions._\
+Note: _As the QuML library is built with angular version 12, we are using **bootstrap@^4.6.2** and **ngx-bootstrap@^7.1.0** which are compatible versions._\
 _For more reference check the compatibility document for ng-bootstrap_ [_here_](https://valor-software.com/ngx-bootstrap/#/documentation#compatibility)
 
 #### :label: Step 2: Add CSS
 
-Copy CSS code from the below given `styles.css` to app's default `styles.css` or `styles.scss`\
-keep `quml-carousel.css` in the root folder.
+Copy the CSS code from the below given `styles.css` to the app's default `styles.css` or `styles.scss`
 
-* [styles.css](https://github.com/project-sunbird/sunbird-quml-player/blob/release-4.7.0/projects/quml-demo-app/src/styles.css)
-* [quml-carousel.css](https://github.com/project-sunbird/sunbird-quml-player/blob/release-4.7.0/quml-carousel.css)
+* [styles.css](https://github.com/Sunbird-inQuiry/player/blob/release-5.5.0/projects/quml-demo-app/src/styles.css)
 
 #### :label: Step 3: Add question-cursor-implementation.service
 
 Create a **question-cursor-implementation.service.ts** in a project that will implement the `QuestionCursor` abstract class.\
 `QuestionCursor` is an abstract class, exported from the library, which needs to be implemented. Basically, it has some methods which should make an API request over HTTP
 
-For more information refer [question-cursor-implementation.service.ts](https://github.com/project-sunbird/sunbird-quml-player/blob/release-4.7.0/projects/quml-demo-app/src/app/question-cursor-implementation.service.ts) and do not forget to add your question list API URL here, for example: [https://staging.sunbirded.org/api/question/v1/list](https://staging.sunbirded.org/api/question/v1/list)
+For more information refer [question-cursor-implementation.service.ts](https://github.com/Sunbird-inQuiry/player/blob/release-5.5.0/projects/quml-demo-app/src/app/question-cursor-implementation.service.ts) and do not forget to add your question list API URL here, for example: [https://staging.sunbirded.org/api/question/v1/list](https://staging.sunbirded.org/api/question/v1/list)
 
 #### :label: Step 4: Include the styles, scripts, and assets in angular.json
 
@@ -69,7 +76,7 @@ Add the following under `architect.build.assets` for default project
         ...
         {
          "glob": "**/*.*",
-         "input": "./node_modules/@project-sunbird/sunbird-quml-player-v9/lib/assets/",
+         "input": "./node_modules/@project-sunbird/sunbird-quml-player/lib/assets/",
          "output": "/assets/"
         }
       ],
@@ -77,7 +84,7 @@ Add the following under `architect.build.assets` for default project
         ...
         "src/styles.css",
         "./node_modules/@project-sunbird/sb-styles/assets/_styles.scss",
-        "./quml-carousel.css",
+        "./node_modules/@project-sunbird/sunbird-quml-player/lib/assets/styles/quml-carousel.css",
         "./node_modules/katex/dist/katex.min.css"
       ],
       "scripts": [
@@ -98,7 +105,7 @@ Import the required modules such as **CarouselModule**, **QumlLibraryModule**, *
 
 ```javascript
   import { HttpClientModule } from '@angular/common/http';
-  import { QumlLibraryModule, QuestionCursor } from '@project-sunbird/sunbird-quml-player-v9';
+  import { QumlLibraryModule, QuestionCursor } from '@project-sunbird/sunbird-quml-player';
   import { CarouselModule } from 'ngx-bootstrap/carousel';
   import { QuestionCursorImplementationService } from './question-cursor-implementation.service';
 
@@ -122,10 +129,10 @@ Import the required modules such as **CarouselModule**, **QumlLibraryModule**, *
 Users can get a response from the `api/questionset/v1/hierarchy/:do_id` or can use the provided mock config for demo
 
 Use the mock config in your component to send input to Quml player as `playerConfig`\
-Click to see the mock - [playerConfig1](https://github.com/project-sunbird/sunbird-quml-player/blob/release-4.7.0/projects/quml-demo-app/src/app/quml-library-data.ts#L5305)
+Click to see the mock - [samplePlayerConfig](https://github.com/Sunbird-inQuiry/player/blob/release-5.5.0/projects/quml-demo-app/src/app/quml-library-data.ts#L495)
 
 ```html
-<quml-main-player [playerConfig]="playerConfig" ><quml-main-player>
+<quml-main-player [playerConfig]="samplePlayerConfig" ><quml-main-player>
 ```
 
 ### :orange\_circle: Available components
@@ -157,13 +164,13 @@ Click to see the mock - [playerConfig1](https://github.com/project-sunbird/sunbi
 
 The QuML Library can also be used as a web component which means users can import this library in any web application and use these custom components. Follow the below-mentioned steps to use it in plain javascript project:
 
-*   Insert [library](https://github.com/project-sunbird/sunbird-quml-player/blob/release-4.7.0/web-component/sunbird-quml-player.js) as below:
+*   Insert [library](https://github.com/Sunbird-inQuiry/player/blob/release-5.5.0/web-component/sunbird-quml-player.js) as below:
 
     ```javascript
     <script  type="text/javascript"  src="sunbird-quml-player.js"></script>
     ```
-* Create an asset folder and copy all the files from [here](https://github.com/project-sunbird/sunbird-quml-player/tree/release-4.7.0/web-component/assets), the library requires these assets internally to work well.
-* Get sample playerConfig from here: [playerConfig](https://github.com/project-sunbird/sunbird-quml-player/blob/release-4.7.0/projects/quml-demo-app/src/app/quml-library-data.ts)
+* Create an asset folder and copy all the files from [here](https://github.com/Sunbird-inQuiry/player/tree/main/web-component/assets), the library requires these assets internally to work well.
+* Get sample playerConfig from here: [playerConfig](https://github.com/Sunbird-inQuiry/player/blob/release-5.5.0/projects/quml-demo-app/src/app/quml-library-data.ts#L495)
 * Pass the QuestionListAPI baseUrl for eg. [https://staging.sunbirded.org/api/question/v1/list](https://staging.sunbirded.org/api/question/v1/list)
 *   Create a custom html element: `sunbird-quml-player`
 
@@ -193,7 +200,7 @@ The QuML Library can also be used as a web component which means users can impor
     const myPlayer = document.getElementById("my-player");
     myPlayer.appendChild(qumlPlayerElement);
     ```
-* :arrow\_forward: Refer demo [example](https://github.com/project-sunbird/sunbird-quml-player/blob/release-4.7.0/web-component/index.html)
+* :arrow\_forward: Refer demo [example](https://github.com/Sunbird-inQuiry/player/blob/main/web-component-examples/vanilla-js/index.html)
 
 ***
 
@@ -201,12 +208,12 @@ The QuML Library can also be used as a web component which means users can impor
 
 ### Repo Setup
 
-* Clone the Repo with the desired release branch - https://github.com/project-sunbird/sunbird-quml-player
+* Clone the Repo with the desired release branch - [https://github.com/Sunbird-inQuiry/player](https://github.com/Sunbird-inQuiry/player)
 * Add your questionList API\_URL in `/projects/quml-demo-app/src/app/question-cursor-implementation.service.ts`
 * Run `npm i` in root folder
 * Run `npm i` in `projects/quml-library`
 * Open two terminal windows (on root folder)
-* Run `npm run mybuild` once this run completes, run the next command - let it be running on 1st terminal window
+* Run `npm run build` once this run completes, run the next command - let it be running on 1st terminal window
 * Run `npm run serve` on second terminal window (This will copy assets from the `quml-library` to the library dist folder)
 * Now it will be served on `http://localhost:4200/`
 * To run the web-component `npm run build-web-component`

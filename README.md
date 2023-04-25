@@ -8,11 +8,11 @@ Here are some examples of solutions that can be enabled through Sunbird inQuiry:
 
 * Conduct assessments which can evaluate users’ understanding of concepts and issue certificates based on assessment score.&#x20;
 * Evaluate assessment data to take informed decisions and plan for interventions.&#x20;
-* Launch surveys to collect feedback and analyse responses. <mark style="color:green;"></mark>&#x20;
+* Launch surveys to collect feedback and analyse responses.&#x20;
 
 Further, Sunbird inQuiry can be extended for use cases like adaptive tests, gamified quizzes, rubric-driven assessments, competitions, etc.
 
-_****_
+
 
 ## _**What does Sunbird inQuiry offer?**_
 

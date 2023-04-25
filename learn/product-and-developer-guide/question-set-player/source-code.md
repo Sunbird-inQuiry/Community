@@ -1,5 +1,5 @@
 # Source Code
 
-Here is the link to the source code of the Question set player:
+Here is the link to the source code of the QuML player:
 
-{% embed url="https://github.com/project-sunbird/sunbird-quml-player" %}
+{% embed url="https://github.com/Sunbird-inQuiry/player" %}

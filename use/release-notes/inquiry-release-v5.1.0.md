@@ -8,7 +8,9 @@
 
 ### **NOTE:**&#x20;
 
-Deprecation Warning**:** From release-5.1.0, [<mark style="color:red;">@project-sunbird/sunbird-collection-editor-v9</mark>](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9) <mark style="color:red;"></mark> and <mark style="color:red;"></mark> [<mark style="color:red;">@project-sunbird/sunbird-quml-player-v9</mark>](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-v9) <mark style="color:red;"></mark> are <mark style="color:red;">deprecated.</mark> \ <mark style="color:red;"></mark>\ <mark style="color:red;"></mark>Please use [@project-sunbird/sunbird-collection-editor](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.1.3) and <mark style="color:red;"></mark> [@project-sunbird/sunbird-quml-player](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.1.1) for the latest version with **angular 12**
+Deprecation Warning**:** From release-5.1.0, [<mark style="color:red;">@project-sunbird/sunbird-collection-editor-v9</mark>](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v9) and [<mark style="color:red;">@project-sunbird/sunbird-quml-player-v9</mark>](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-v9) are <mark style="color:red;">deprecated.</mark> \
+\
+Please use [@project-sunbird/sunbird-collection-editor](https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor/v/5.1.3) and [@project-sunbird/sunbird-quml-player](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/5.1.1) for the latest version with **angular 12**
 
 ### **Release Tags:**
 
@@ -40,7 +42,7 @@ Install: `npm i @project-sunbird/sunbird-resource-library@5.1.0`
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/5.1.0](https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/5.1.0)
 
-****
+
 
 ### **1. Summary of the changes**
 

@@ -45,12 +45,6 @@ description: >-
 \
 
 
-<mark style="color:orange;">
-
-``
-
-</mark>
-
 • It points to inquiry-api-service (assessment service)  - 
 
 <mark style="color:orange;">
@@ -61,12 +55,6 @@ description: >-
 
 \
 
-
-<mark style="color:orange;">
-
-
-
-</mark>
 
 • You need to provide a valid QuestionSet Id value in 
 
@@ -91,12 +79,6 @@ description: >-
 
 \
 
-
-<mark style="color:red;">
-
-
-
-</mark>
 
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}

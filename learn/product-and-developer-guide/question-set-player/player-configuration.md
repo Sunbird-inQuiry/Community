@@ -2,20 +2,20 @@
 
 
 
-The QuML player is an angular library built with Angular version 9, and it exports some modules and components. It has a component that accepts the input from the user. The followings are the list of all the configurations on which the QuML player is working.
+The QuML player is an angular library built with Angular version 12, and it exports some modules and components. It has a component that accepts input from the user. The followings are the list of all the configurations on which the QuML player works.
 
-## ****:notebook\_with\_decorative\_cover:**Component:** _quml-main-player_&#x20;
+## :notebook\_with\_decorative\_cover:**Component:** _quml-main-player_&#x20;
 
 \
-&#x20; This is the main player Component that accepts some configuration (here `playerConfig`) based on it will render the player.  \
-&#x20; While rendering the player it also emits some events such as `playerEvent` and `telemetryEvent quml-main-player`
+&#x20; This is the main player Component that accepts some configurations (here `playerConfig`) based on it will render the player.  \
+&#x20; While rendering the player it also emits some events such as `playerEvent` and `telemetryEvent`
 
 Let's deep dive into the player input configuration:
 
 ```typescript
   export interface QumlPlayerConfig = {
     config: Config;
-    context: Context;
+    context?: Context;
     metadata: Metadata;
   }
 ```

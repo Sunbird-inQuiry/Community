@@ -175,7 +175,7 @@ config: {
 
 **Description of the properties for the config:**
 
-****
+
 
 | Property Name                    | Description                                                                                                                                                                                                                                                                                                                                                                          | Required | Default Value                                        |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ---------------------------------------------------- |
@@ -199,7 +199,7 @@ config: {
 
 Here is the sample configuration for Practise Question Set:
 
-[**Practise Question Set**](https://inquiry.sunbird.org/use/developer-installation/question-set-editor/installation/object-category-definition)****
+[**Practise Question Set**](https://inquiry.sunbird.org/use/developer-installation/question-set-editor/installation/object-category-definition)
 
 ## **Recommended Configuration for Question Set:**
 

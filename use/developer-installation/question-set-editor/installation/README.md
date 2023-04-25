@@ -4,10 +4,20 @@
 
 The following are prerequisites to use question set editor&#x20;
 
-| Softwares / Frameworks | Version    |
-| ---------------------- | ---------- |
-| Node                   | 10x to 12x |
-| Angular                | 9.1.12     |
+| Softwares / Frameworks | Version |
+| ---------------------- | ------- |
+| Angular                | 12.2.16 |
+
+{% hint style="info" %}
+The Question Set Editor is tested against the above version of angular. Updating to latest versions needs further testing.
+
+For more information on installing angular, see [angular.io/cli](https://angular.io/cli). If you are unsure what version of Angular runs on your system, run “ng version” in a command prompt (terminal) window.
+
+\
+Angular requires an [active LTS or maintenance LTS](https://nodejs.org/about/releases) version of Node.js.\
+\
+Refer here for more details on [Angular CLI dependencies](https://www.npmjs.com/package/@angular/cli/v/9.1.12?activeTab=readme)
+{% endhint %}
 
 ## :diamond\_shape\_with\_a\_dot\_inside: QuestionSet Editor library for Sunbird platform
 
@@ -56,19 +66,19 @@ _For more reference Check compatibility document for ng-bootstrap_ [_here_](http
 
 #### :label: **Step 2: Add the required services and QuestionSet editor config**
 
-* Create a **editor-cursor-implementation.service.ts** in a project and which will implement the `QuestionCursor` and `EditorCursor` abstract class. _Refer:_ [**editor-cursor-implementation.service.ts**](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/src/app/editor-cursor-implementation.service.ts)
+* Create a **editor-cursor-implementation.service.ts** in a project and which will implement the `QuestionCursor` and `EditorCursor` abstract class. _Refer:_ [**editor-cursor-implementation.service.ts**](https://github.com/Sunbird-inQuiry/editor/blob/release-5.5.0/src/app/editor-cursor-implementation.service.ts)
 
 > Remember `EditorCursor` is to be imported like this
 >
 > `import { EditorCursor } from '@project-sunbird/sunbird-questionset-editor';`
 
-* Create a **data.ts** file which contains the `questionSetEditorConfig` _Refer:_ [_**data.ts**_](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/src/app/data.ts)
+* Create a **data.ts** file which contains the `questionSetEditorConfig` _Refer:_ [_**data.ts**_](https://github.com/Sunbird-inQuiry/editor/blob/release-5.5.0/src/app/data.ts)
 
 > Note: `questionSetEditorConfig`in data.ts contains the mock config used in component to send it as input to QuestionSet Editor. We need only [questionSetEditorConfig](https://github.com/Sunbird-inQuiry/editor/blob/0e9cf5c9f000754d94618eb1975fb9dc1aba8ec8/src/app/data.ts#L143)
 
-* Create a **latexService.js** in root folder. _Refer:_ [_**latexService.js**_](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/latexService.js)
-* Create a **proxy.conf.json** in root folder. _Refer:_ [_**proxy.conf.json**_](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/proxy.conf.json)
-* Create **server.js** in root folder. _Refer:_ [_**server.js**_](https://github.com/Sunbird-inQuiry/editor/blob/release-4.7.0/server.js)
+* Create a **latexService.js** in root folder. _Refer:_ [_**latexService.js**_](https://github.com/Sunbird-inQuiry/editor/blob/release-5.5.0/latexService.js)
+* Create a **proxy.conf.json** in root folder. _Refer:_ [_**proxy.conf.json**_](https://github.com/Sunbird-inQuiry/editor/blob/release-5.5.0/proxy.conf.json)
+* Create **server.js** in root folder. _Refer:_ [_**server.js**_](https://github.com/Sunbird-inQuiry/editor/blob/release-5.5.0/server.js)
 * Copy the **assets** from: [**assets**](https://github.com/Sunbird-inQuiry/editor/tree/release-4.7.0/src/assets)
 
 #### :label: Step 3: Include the styles, scripts and assets in angular.json
@@ -211,7 +221,7 @@ export class AppComponent {
 }
 ```
 
-#### :label: __ Step 6: Send input to render QuestionSet Editor
+#### :label: Step 6: Send input to render QuestionSet Editor
 
 Once your library is imported, you can use its main component, `lib-questionset-editor` in your Angular application.
 
