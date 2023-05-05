@@ -6,7 +6,7 @@ The following are prerequisites to using the QuML player&#x20;
 
 | Softwares / Frameworks | Version |
 | ---------------------- | ------- |
-| Angular                | 12.2.16 |
+| Angular                | 15.2.3  |
 
 {% hint style="info" %}
 The QuML player is tested against the above version of angular. Updating to the latest versions needs further testing.
