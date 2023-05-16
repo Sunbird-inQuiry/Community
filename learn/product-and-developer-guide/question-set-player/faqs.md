@@ -43,7 +43,8 @@ To show these options in the menubar add the following config in the input of th
 
 ### How to enable maximum attempts allowed?
 
-The QuML player expects two config properties in metadata to enable the maximum attempts allowed viz. <mark style="color:red;">maxAttempt</mark> and <mark style="color:red;">currentAttempt</mark>\ <mark style="color:red;"></mark>
+The QuML player expects two config properties in metadata to enable the maximum attempts allowed viz. <mark style="color:red;">maxAttempt</mark> and <mark style="color:red;">currentAttempt</mark>\
+
 
 maxAttempt is total maximum attempt allowed\
 currentAttempt is a count of the current attempt number.
@@ -84,7 +85,11 @@ To enable this feature, the player accepts the following configs :point\_down:
 }
 ```
 
-![Feedback popup](<../../../.gitbook/assets/feedback-popup (2).png>)
+<div align="center">
+
+<img src="../../../.gitbook/assets/feedback-popup (2).png" alt="Feedback popup">
+
+</div>
 
 ### How to show solutions?
 
@@ -130,7 +135,11 @@ _<mark style="color:red;">Submit page</mark>_ provides an option to users to rev
 }
 ```
 
-![Submit page with feedback enabled](../../../.gitbook/assets/submit-page.png)
+<div align="left">
+
+<img src="../../../.gitbook/assets/submit-page.png" alt="Submit page with feedback enabled">
+
+</div>
 
 ### How to handle telemetry events?
 

@@ -2,6 +2,34 @@
 
 ### This section represents the release versions of inQuiry build block:
 
+{% content-ref url="inquiry-release-v6.0.0-ongoing.md" %}
+[inquiry-release-v6.0.0-ongoing.md](inquiry-release-v6.0.0-ongoing.md)
+{% endcontent-ref %}
+
+{% content-ref url="inquiry-release-v5.7.0-ongoing.md" %}
+[inquiry-release-v5.7.0-ongoing.md](inquiry-release-v5.7.0-ongoing.md)
+{% endcontent-ref %}
+
+{% content-ref url="inquiry-release-v5.6.0-latest.md" %}
+[inquiry-release-v5.6.0-latest.md](inquiry-release-v5.6.0-latest.md)
+{% endcontent-ref %}
+
+{% content-ref url="inquiry-release-v5.5.0.md" %}
+[inquiry-release-v5.5.0.md](inquiry-release-v5.5.0.md)
+{% endcontent-ref %}
+
+{% content-ref url="inquiry-release-v5.4.0.md" %}
+[inquiry-release-v5.4.0.md](inquiry-release-v5.4.0.md)
+{% endcontent-ref %}
+
+{% content-ref url="inquiry-release-v5.3.0.md" %}
+[inquiry-release-v5.3.0.md](inquiry-release-v5.3.0.md)
+{% endcontent-ref %}
+
+{% content-ref url="inquiry-release-v5.2.0.md" %}
+[inquiry-release-v5.2.0.md](inquiry-release-v5.2.0.md)
+{% endcontent-ref %}
+
 {% content-ref url="inquiry-release-v5.1.0.md" %}
 [inquiry-release-v5.1.0.md](inquiry-release-v5.1.0.md)
 {% endcontent-ref %}
