@@ -62,4 +62,4 @@ URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/
 ### Question & Question Set Service:
 
 \
-There is no change in this release. So Please use release-5.4.0 Tags.
+There is no change in this release. So Please use release-5.6.0 Tags.
