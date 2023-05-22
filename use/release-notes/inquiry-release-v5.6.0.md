@@ -1,4 +1,4 @@
-# inQuiry - Release v5.6.0 (Latest)
+# inQuiry - Release v5.6.0
 
 ### Document Release Version
 
@@ -53,5 +53,8 @@ URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/
 
 ### Question & Question Set Service:
 
-
+| Component        | Service To Build                                | Build Tag                                                                                            | Service To Deploy                                         | Deploy Tag                                                                                                      | Comment                                                                                                                                                                                                                                                                    |
+| ---------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Assessment       | Build/job/Core/job/Assessment/                  | [release-5.6.0\_RC1](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-5.6.0\_RC1) | Deploy/job/dev/job/Kubernetes/job/Assessment/             | [release-5.6.0-inquiry\_RC1](https://github.com/project-sunbird/sunbird-devops/tree/release-5.6.0-inquiry\_RC1) | <p>New Configuration Added:<br>question.list.limit={{ question_list_api_request_limit | default('20') }}<br>Ref: <a href="https://github.com/project-sunbird/sunbird-devops/pull/3770/files">https://github.com/project-sunbird/sunbird-devops/pull/3770/files</a><br></p> |
+| InQuiryFlink Job | Build/job/KnowledgePlatform/job/InquiryFlinkJob | NA                                                                                                   | Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/ | NA                                                                                                              | No Changes for Release 5.6.0                                                                                                                                                                                                                                               |
 
