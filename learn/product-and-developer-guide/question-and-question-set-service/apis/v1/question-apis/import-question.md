@@ -21,12 +21,6 @@ description: >-
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It points to inquiry-api-service (assessment service) - 
 
 <mark style="color:orange;">

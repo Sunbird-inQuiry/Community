@@ -32,12 +32,6 @@ description: >-
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It points to inquiry-api-service (assessment service) - 
 
 <mark style="color:orange;">
@@ -74,12 +68,6 @@ description: >-
 
 \
 
-
-<mark style="color:red;">
-
-
-
-</mark>
 
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}

@@ -4,7 +4,7 @@
 
 | Project         | Release Version | Date        |
 | --------------- | --------------- | ----------- |
-| Sunbird Inquiry | R 6.0.0         | 12 Jun 2023 |
+| Sunbird Inquiry | R 6.0.0         | 3 July 2023 |
 
 #### Following are the Planned Tickets of R 6.0.0
 

@@ -78,7 +78,7 @@
     * [Installation](use/developer-installation/question-set-player/installation.md)
 * [Release Plan & Calendar](use/release-plan-and-calendar/README.md)
   * [Release calendar 5.2.0, 5.3.0, 5.4.0, 5.5.0, 5.6.0](use/release-plan-and-calendar/release-calendar-5.2.0-5.3.0-5.4.0-5.5.0-5.6.0.md)
-* [Release calendar 5.7.0, 6.0.0,6.1.0 and 6.2.0](use/release-calendar-5.7.0-6.0.0-6.1.0-and-6.2.0.md)
+  * [Release calendar 5.7.0, 6.0.0,6.1.0 and 6.2.0](use/release-plan-and-calendar/release-calendar-5.7.0-6.0.0-6.1.0-and-6.2.0.md)
 * [Release notes](use/release-notes/README.md)
   * [inQuiry - Release v6.0.0 (Ongoing)](use/release-notes/inquiry-release-v6.0.0-ongoing.md)
   * [inQuiry - Release v5.7.0 (latest)](use/release-notes/inquiry-release-v5.7.0-latest.md)

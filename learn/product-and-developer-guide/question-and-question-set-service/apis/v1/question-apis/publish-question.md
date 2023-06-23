@@ -19,12 +19,6 @@ description: This API is used to publish the question on Sunbird platform.
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It points to inquiry-api-service (assessment service)- 
 
 <mark style="color:orange;">
