@@ -269,20 +269,7 @@ To fetch the specific fields, this query parameter can be used eg. fields=name,b
 
 #### Success Result Schema
 
-| Attribute           | Type   | Description                                                        |
-| ------------------- | ------ | ------------------------------------------------------------------ |
-| identifier          | string | Unique Question Identifier                                         |
-| name                | string | Question name                                                      |
-| versionKey          | string | Question versionKey                                                |
-| code                | string | Unique Question code                                               |
-| lastStatusChangedOn | string | Last status changed time                                           |
-| visibility          | string | Question visibility eg. parent                                     |
-| mimeType            | string | Question mimeType eg. application/vnd.sunbird.question             |
-| createdOn           | string | Question createdOn Time                                            |
-| objectType          | string | Question objectType                                                |
-| primaryCategory     | string | Type of question (Multiple Choice Question or Subjective Question) |
-| lastUpdatedOn       | string | Question lastUpdatedOn                                             |
-| status              | string | Question status Draft/Review/Live                                  |
+<table><thead><tr><th width="232">Attribute</th><th width="109.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>identifier</td><td>string</td><td>Unique Question Identifier</td></tr><tr><td>name</td><td>string</td><td>Question name</td></tr><tr><td>versionKey</td><td>string</td><td>Question versionKey</td></tr><tr><td>code</td><td>string</td><td>Unique Question code</td></tr><tr><td>lastStatusChangedOn</td><td>string</td><td>Last status changed time</td></tr><tr><td>visibility</td><td>string</td><td>Question visibility eg. parent</td></tr><tr><td>mimeType</td><td>string</td><td>Question mimeType eg. application/vnd.sunbird.question</td></tr><tr><td>createdOn</td><td>string</td><td>Question createdOn Time</td></tr><tr><td>objectType</td><td>string</td><td>Question objectType</td></tr><tr><td>primaryCategory</td><td>string</td><td>Type of question (Multiple Choice Question or Subjective Question)</td></tr><tr><td>lastUpdatedOn</td><td>string</td><td>Question lastUpdatedOn</td></tr><tr><td>status</td><td>string</td><td>Question status Draft/Review/Live</td></tr></tbody></table>
 
 #### cURL
 

@@ -153,10 +153,7 @@ Unique identification number associated with a root organization.
 
 #### Success result Schema
 
-| Attribute  | Type   | Description                     |
-| ---------- | ------ | ------------------------------- |
-| identidier | String | Unique Question identifier      |
-| versionKey | String | Unique version key for question |
+<table><thead><tr><th width="172.33333333333331">Attribute</th><th width="152">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key for question</td></tr></tbody></table>
 
 #### cURL
 

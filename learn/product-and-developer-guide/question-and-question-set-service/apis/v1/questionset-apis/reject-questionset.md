@@ -32,12 +32,6 @@ description: >-
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • You need to provide a valid QuestionSet Id value in the 
 
 <mark style="color:orange;">
@@ -61,12 +55,6 @@ description: >-
 
 \
 
-
-<mark style="color:red;">
-
-
-
-</mark>
 
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
@@ -206,16 +194,11 @@ The metadata about the questionset to be rejected
 
 #### Request Schema
 
-| Attribute     | Type   | Description                           | Required |
-| ------------- | ------ | ------------------------------------- | -------- |
-| rejectComment | String | Question set rejection comment/reason | Yes      |
+<table><thead><tr><th>Attribute</th><th width="122">Type</th><th>Description</th><th>Required</th></tr></thead><tbody><tr><td>rejectComment</td><td>String</td><td>Question set rejection comment/reason</td><td>Yes</td></tr></tbody></table>
 
 #### Success result schema
 
-| Attribute  | Type   | Description                     |
-| ---------- | ------ | ------------------------------- |
-| identidier | String | Unique Question identifier      |
-| versionKey | String | Unique version key for question |
+<table><thead><tr><th width="189">Attribute</th><th width="120.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key for question</td></tr></tbody></table>
 
 #### cURL
 

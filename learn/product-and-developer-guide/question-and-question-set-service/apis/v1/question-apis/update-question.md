@@ -21,12 +21,6 @@ description: >-
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It points to inquiry-api-service (assessment service) - 
 
 <mark style="color:orange;">
@@ -203,16 +197,11 @@ Unique identification number associated with a root organization.
 
 #### Request Schema
 
-| Attribute  | Type   | Description                                                   | Required |
-| ---------- | ------ | ------------------------------------------------------------- | -------- |
-| versionKey | string | Represents the transaction update version key of the Question | Yes      |
+<table><thead><tr><th width="146">Attribute</th><th width="92">Type</th><th width="401">Description</th><th>Required</th></tr></thead><tbody><tr><td>versionKey</td><td>string</td><td>Represents the transaction update version key of the Question</td><td>Yes</td></tr></tbody></table>
 
 #### Success Result Schema
 
-| Attribute  | Type   | Description                     |
-| ---------- | ------ | ------------------------------- |
-| identidier | String | Unique Question identifier      |
-| versionKey | String | Unique version key for question |
+<table><thead><tr><th width="154.33333333333331">Attribute</th><th width="104">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key for question</td></tr></tbody></table>
 
 #### cURL
 

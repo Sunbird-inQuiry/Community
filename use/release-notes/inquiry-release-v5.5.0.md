@@ -1,24 +1,14 @@
-# inQuiry - Release v5.5.0 (latest)
+# inQuiry - Release v5.5.0
 
 ### Document Release Version
 
-| Project         | Release Version | Date        |
-| --------------- | --------------- | ----------- |
-| Sunbird Inquiry | R 5.5.0         | 06 Apr 2023 |
+<table><thead><tr><th>Project</th><th width="155">Release Version</th><th>Date</th></tr></thead><tbody><tr><td>Sunbird Inquiry</td><td>R 5.5.0</td><td>06 Apr 2023</td></tr></tbody></table>
 
 
 
 #### Following are the Planned Tickets of R5.5
 
-| Sl.no | JIRA Id                                                       | Issue Type        | Description                                                                                           |
-| ----- | ------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------- |
-| 1     | [IQ-207](https://project-sunbird.atlassian.net/browse/IQ-207) | RFC               | QuML player code move from project-sunbird to inQuiry BB repo                                         |
-| 2     | [IQ-247](https://project-sunbird.atlassian.net/browse/IQ-247) | Minor-Enhancement | Support for Multiple correct answer for MCQ - Editor and Player changes                               |
-| 3     | [IQ-242](https://project-sunbird.atlassian.net/browse/IQ-242) | Minor-Enhancement | Design : inQuiry Metadata should to be made QuML compliant - Player                                   |
-| 4     | [IQ-240](https://project-sunbird.atlassian.net/browse/IQ-240) | Minor-Enhancement | Design : inQuiry Metadata should to be made QuML compliant - Editor                                   |
-| 5     | [IQ-206](https://project-sunbird.atlassian.net/browse/IQ-206) | Minor-Enhancement | Separation of question-set components from Collection-Editor components                               |
-| 6     | [IQ-246](https://project-sunbird.atlassian.net/browse/IQ-246) | Bug               | Options of MCQ coming like vertical on portrait view when Creator created with Grid/Horizontal layout |
-| 7     | [IQ-197](https://project-sunbird.atlassian.net/browse/IQ-197) | Bug               | Edit option is getting dispalyed for the question added via library.                                  |
+<table><thead><tr><th width="85">Sl.no</th><th width="100">JIRA Id</th><th width="138">Issue Type</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-207">IQ-207</a></td><td>RFC</td><td>QuML player code move from project-sunbird to inQuiry BB repo</td></tr><tr><td>2</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-247">IQ-247</a></td><td>Minor-Enhancement</td><td>Support for Multiple correct answer for MCQ - Editor and Player changes</td></tr><tr><td>3</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-242">IQ-242</a></td><td>Minor-Enhancement</td><td>Design : inQuiry Metadata should to be made QuML compliant - Player</td></tr><tr><td>4</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-240">IQ-240</a></td><td>Minor-Enhancement</td><td>Design : inQuiry Metadata should to be made QuML compliant - Editor</td></tr><tr><td>5</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-206">IQ-206</a></td><td>Minor-Enhancement</td><td>Separation of question-set components from Collection-Editor components</td></tr><tr><td>6</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-246">IQ-246</a></td><td>Bug</td><td>Options of MCQ coming like vertical on portrait view when Creator created with Grid/Horizontal layout</td></tr><tr><td>7</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-197">IQ-197</a></td><td>Bug</td><td>Edit option is getting dispalyed for the question added via library.</td></tr></tbody></table>
 
 ## Release Tags:
 

@@ -30,12 +30,6 @@ description: This API is used to publish the question set on the Sunbird-inQuiry
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It is mandatory to provide values for parameters marked with 
 
 <mark style="color:red;">
@@ -46,12 +40,6 @@ description: This API is used to publish the question set on the Sunbird-inQuiry
 
 \
 
-
-<mark style="color:red;">
-
-
-
-</mark>
 
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
@@ -171,10 +159,7 @@ The body is the representation of the resource object for publishing question se
 
 #### Success result schema
 
-| Attribute  | Type   | Description                |
-| ---------- | ------ | -------------------------- |
-| identidier | String | Unique Question identifier |
-| message    | String | Publish success message    |
+<table><thead><tr><th width="183">Attribute</th><th width="141.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>message</td><td>String</td><td>Publish success message</td></tr></tbody></table>
 
 #### cURL
 

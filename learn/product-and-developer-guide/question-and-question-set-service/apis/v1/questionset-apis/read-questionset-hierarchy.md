@@ -74,12 +74,6 @@ QuestionSet_Id}
 \
 
 
-<mark style="color:red;">
-
-
-
-</mark>
-
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -293,22 +287,7 @@ To fetch the latest version of a questionSet hierarchy from the Database for edi
 
 #### Success result schema
 
-| Attribute           | Description                                                    | Type   |
-| ------------------- | -------------------------------------------------------------- | ------ |
-| identifier          | Questionset Identifier                                         | string |
-| name                | Questionset name                                               | string |
-| versionKey          | Questionset versionKey                                         | string |
-| code                | Questionset code                                               | string |
-| lastStatusChangedOn | Last status changed time                                       | string |
-| visibility          | Questionset visibility (eg. Parent/Default)                    | string |
-| mimeType            | Questionset mimeType (eg. application/vnd.sunbird.questionset) | string |
-| createdOn           | Questionset createtion timestamp                               | string |
-| objectType          | Questionset objectType (eg. QuestionSet)                       | string |
-| primaryCategory     | Questionset primaryCategory (eg. Practice Question Set)        | string |
-| lastUpdatedOn       | Questionset last updated timestamp                             | string |
-| status              | Questionset status (eg. Draft/Live)                            | string |
-| children            | Children of Questionset, mostly sections or questions          | Object |
-|                     |                                                                |        |
+<table><thead><tr><th width="219">Attribute</th><th width="425.3333333333333">Description</th><th>Type</th></tr></thead><tbody><tr><td>identifier</td><td>Questionset Identifier</td><td>string</td></tr><tr><td>name</td><td>Questionset name</td><td>string</td></tr><tr><td>versionKey</td><td>Questionset versionKey</td><td>string</td></tr><tr><td>code</td><td>Questionset code</td><td>string</td></tr><tr><td>lastStatusChangedOn</td><td>Last status changed time</td><td>string</td></tr><tr><td>visibility</td><td>Questionset visibility (eg. Parent/Default)</td><td>string</td></tr><tr><td>mimeType</td><td>Questionset mimeType (eg. application/vnd.sunbird.questionset)</td><td>string</td></tr><tr><td>createdOn</td><td>Questionset createtion timestamp</td><td>string</td></tr><tr><td>objectType</td><td>Questionset objectType (eg. QuestionSet)</td><td>string</td></tr><tr><td>primaryCategory</td><td>Questionset primaryCategory (eg. Practice Question Set)</td><td>string</td></tr><tr><td>lastUpdatedOn</td><td>Questionset last updated timestamp</td><td>string</td></tr><tr><td>status</td><td>Questionset status (eg. Draft/Live)</td><td>string</td></tr><tr><td>children</td><td>Children of Questionset, mostly sections or questions</td><td>Object</td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
 #### cURL
 

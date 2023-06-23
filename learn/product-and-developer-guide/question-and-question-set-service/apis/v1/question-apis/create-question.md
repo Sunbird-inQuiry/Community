@@ -174,19 +174,11 @@ Unique identification number associated with a root organization.
 
 #### Request Schema
 
-| Attribute       | Type   | Description                                                    | Required |
-| --------------- | ------ | -------------------------------------------------------------- | -------- |
-| name            | String | Represents the name of the question                            | Yes      |
-| code            | String | Represents the unique code for the question                    | Yes      |
-| mimeType        | String | Question mime type                                             | Yes      |
-| primaryCategory | String | PrimaryCategory agains which question schema will be validated | Yes      |
+<table><thead><tr><th width="182">Attribute</th><th width="104">Type</th><th width="249.33333333333331">Description</th><th>Required</th></tr></thead><tbody><tr><td>name</td><td>String</td><td>Represents the name of the question</td><td>Yes</td></tr><tr><td>code</td><td>String</td><td>Represents the unique code for the question</td><td>Yes</td></tr><tr><td>mimeType</td><td>String</td><td>Question mime type</td><td>Yes</td></tr><tr><td>primaryCategory</td><td>String</td><td>PrimaryCategory agains which question schema will be validated</td><td>Yes</td></tr></tbody></table>
 
 #### Success Result Schema
 
-| Attribute  | Type   | Description                    |
-| ---------- | ------ | ------------------------------ |
-| identifier | String | Unique Question Identifier     |
-| versionKey | String | Unique version key of Question |
+<table><thead><tr><th width="156">Attribute</th><th width="112.33333333333331">Type</th><th width="345.6666666666667">Description</th></tr></thead><tbody><tr><td>identifier</td><td>String</td><td>Unique Question Identifier</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key of Question</td></tr></tbody></table>
 
 #### cURL:
 

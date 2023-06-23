@@ -10,13 +10,7 @@
 
 Following are the Tickets of R5.3
 
-| Sl.no | JIRA Id                                                       | Issue Type          | Description                                                       |
-| ----- | ------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------- |
-| 1     | [IQ-176](https://project-sunbird.atlassian.net/browse/IQ-176) | Minor-enhancement   | Tech Item: QuML player Publishing as NG module using Schematics   |
-| 2     | [IQ-177](https://project-sunbird.atlassian.net/browse/IQ-177) | Minor-enhancement   | QuML player Mandatory & optional configuration                    |
-| 3     | [IQ-182](https://project-sunbird.atlassian.net/browse/IQ-182) | Minor-enhancement   | Page is not getting auto scrolled while previewing the questions. |
-| 4     | [IQ-184](https://project-sunbird.atlassian.net/browse/IQ-184) | Documentation-issue | inQuiry: Publish test-coverage reports in micro site              |
-| 5     | [IQ-68](https://project-sunbird.atlassian.net/browse/IQ-68)   | Bug                 | Question is not displayed completely on Portrait mode.            |
+<table><thead><tr><th width="85">Sl.no</th><th width="100">JIRA Id</th><th width="138">Issue Type</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-176">IQ-176</a></td><td>Minor-enhancement</td><td>Tech Item: QuML player Publishing as NG module using Schematics</td></tr><tr><td>2</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-177">IQ-177</a></td><td>Minor-enhancement</td><td>QuML player Mandatory &#x26; optional configuration</td></tr><tr><td>3</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-182">IQ-182</a></td><td>Minor-enhancement</td><td>Page is not getting auto scrolled while previewing the questions.</td></tr><tr><td>4</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-184">IQ-184</a></td><td>Documentation-issue</td><td>inQuiry: Publish test-coverage reports in micro site</td></tr><tr><td>5</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-68">IQ-68</a></td><td>Bug</td><td>Question is not displayed completely on Portrait mode.</td></tr></tbody></table>
 
 ## Release Tags:
 

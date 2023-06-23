@@ -32,12 +32,6 @@ description: >-
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It is mandatory to provide values for parameters marked with 
 
 <mark style="color:red;">
@@ -190,10 +184,7 @@ Unique identification number associated with a root organization.
 
 #### Request schema
 
-| Attribute   | Type   | Description                                                      | Required |
-| ----------- | ------ | ---------------------------------------------------------------- | -------- |
-| versionKey  | String | Represents the transaction update version key of the Questionset | Yes      |
-| description | String | Represents the description of the Questionset                    | No       |
+<table><thead><tr><th width="168">Attribute</th><th width="111">Type</th><th width="353">Description</th><th>Required</th></tr></thead><tbody><tr><td>versionKey</td><td>String</td><td>Represents the transaction update version key of the Questionset</td><td>Yes</td></tr><tr><td>description</td><td>String</td><td>Represents the description of the Questionset</td><td>No</td></tr></tbody></table>
 
 #### Success result schema
 

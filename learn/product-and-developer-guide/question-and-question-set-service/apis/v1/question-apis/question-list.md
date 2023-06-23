@@ -453,29 +453,7 @@ List of question identifiers
 
 Below is the list of possible fields which will occur in the question list API
 
-| Attribute           | Type             | Description                                                                  |
-| ------------------- | ---------------- | ---------------------------------------------------------------------------- |
-| mimeType            | string           | MimeType of Question eg. application/vnd.sunbird.question                    |
-| audience            | Array of strings | List of Audience eg. Student/Teacher/Administrator                           |
-| lastStatusChangedOn | string           | Timestamp of last status change                                              |
-| createdBy           | string           | UserId of creator                                                            |
-| compatibilityLevel  | integer          | compatibility Level                                                          |
-| language            | Array of string  | Language of Question                                                         |
-| lastUpdatedOn       | string           | Timestamp of last question update                                            |
-| name                | string           | Name of question                                                             |
-| version             | integer          | Version number                                                               |
-| license             | string           | License under it is created                                                  |
-| framework           | string           | Framework in which questiton created                                         |
-| code                | string           | Unique code for question                                                     |
-| objectType          | string           | Typeof object eg. Question                                                   |
-| identifier          | string           | Unique identifier of Question                                                |
-| languageCode        | Array of strings | List of language codes                                                       |
-| channel             | string           | Channel ID from which question is belongs to                                 |
-| visibility          | string           | visibility of question eg. Parent/Default                                    |
-| versionKey          | string           | Uniuque version key of  question for specific version                        |
-| status              | string           | Staus or state of the question eg. Draft/Review/Live                         |
-| createdOn           | string           | Timestamp of creation of question                                            |
-| primaryCategory     | string           | Main category of question eg. Multiple Choice Question/ Subjective Questions |
+<table><thead><tr><th width="219">Attribute</th><th width="149.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>mimeType</td><td>string</td><td>MimeType of Question eg. application/vnd.sunbird.question</td></tr><tr><td>audience</td><td>Array of strings</td><td>List of Audience eg. Student/Teacher/Administrator</td></tr><tr><td>lastStatusChangedOn</td><td>string</td><td>Timestamp of last status change</td></tr><tr><td>createdBy</td><td>string</td><td>UserId of creator</td></tr><tr><td>compatibilityLevel</td><td>integer</td><td>compatibility Level</td></tr><tr><td>language</td><td>Array of string</td><td>Language of Question</td></tr><tr><td>lastUpdatedOn</td><td>string</td><td>Timestamp of last question update</td></tr><tr><td>name</td><td>string</td><td>Name of question</td></tr><tr><td>version</td><td>integer</td><td>Version number</td></tr><tr><td>license</td><td>string</td><td>License under it is created</td></tr><tr><td>framework</td><td>string</td><td>Framework in which questiton created</td></tr><tr><td>code</td><td>string</td><td>Unique code for question</td></tr><tr><td>objectType</td><td>string</td><td>Typeof object eg. Question</td></tr><tr><td>identifier</td><td>string</td><td>Unique identifier of Question</td></tr><tr><td>languageCode</td><td>Array of strings</td><td>List of language codes</td></tr><tr><td>channel</td><td>string</td><td>Channel ID from which question is belongs to</td></tr><tr><td>visibility</td><td>string</td><td>visibility of question eg. Parent/Default</td></tr><tr><td>versionKey</td><td>string</td><td>Uniuque version key of  question for specific version</td></tr><tr><td>status</td><td>string</td><td>Staus or state of the question eg. Draft/Review/Live</td></tr><tr><td>createdOn</td><td>string</td><td>Timestamp of creation of question</td></tr><tr><td>primaryCategory</td><td>string</td><td>Main category of question eg. Multiple Choice Question/ Subjective Questions</td></tr></tbody></table>
 
 #### cURL
 

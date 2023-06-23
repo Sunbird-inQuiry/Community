@@ -267,17 +267,11 @@ Unique identification number associated with a root organization.
 
 #### Request Shema
 
-| Attribute     | Type   | Description                              | Required |
-| ------------- | ------ | ---------------------------------------- | -------- |
-| nodesModified | Object | objects details to be created or updated | Yes      |
-| hierarchy     | Object | objects hierarchy details                | Yes      |
+<table><thead><tr><th width="169">Attribute</th><th width="87">Type</th><th width="344">Description</th><th>Required</th></tr></thead><tbody><tr><td>nodesModified</td><td>Object</td><td>objects details to be created or updated</td><td>Yes</td></tr><tr><td>hierarchy</td><td>Object</td><td>objects hierarchy details</td><td>Yes</td></tr></tbody></table>
 
 #### Success result schema
 
-| Attribute   | Type   | Description                            |
-| ----------- | ------ | -------------------------------------- |
-| identidier  | String | Unique Question identifier             |
-| identifiers | String | Object mapping i.e. created or updated |
+<table><thead><tr><th width="164">Attribute</th><th width="136.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>identifiers</td><td>String</td><td>Object mapping i.e. created or updated</td></tr></tbody></table>
 
 #### cURL
 

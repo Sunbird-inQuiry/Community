@@ -15,7 +15,7 @@ In 4.7.0, following two changes were done by the inQuiry building block team:
 
 ### 2. **Details of the changes**
 
-<table><thead><tr><th data-type="number">SI No</th><th>JIRA ID</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td><a href="https://project-sunbird.atlassian.net/browse/SB-28090">SB-28090</a></td><td>Accessibility changes to Question set editor</td></tr><tr><td>2</td><td></td><td>Extensive documentation updates to the inQuiry microsite</td></tr></tbody></table>
+<table><thead><tr><th width="150" data-type="number">SI No</th><th width="150">JIRA ID</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td><a href="https://project-sunbird.atlassian.net/browse/SB-28090">SB-28090</a></td><td>Accessibility changes to Question set editor</td></tr><tr><td>2</td><td></td><td>Extensive documentation updates to the inQuiry microsite</td></tr></tbody></table>
 
 ### 3. Test Scenarios
 

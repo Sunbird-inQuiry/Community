@@ -26,10 +26,7 @@ URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-collection-editor-v
 
 #### Question & Question Set Service:
 
-| Service to be Build             | Build Tag                                                                                                          | Service to Deploy | Deploy Tag                                                                                                           | Comments                                    |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| Assessment                      | [release-4.10.0\_RC1](https://github.com/project-sunbird/knowledge-platform/releases/tag/release-4.10.0\_RC1)      | Assessment        | [release-4.10.0](https://github.com/project-sunbird/sunbird-devops/tree/release-4.10.0)                              |                                             |
-| Questionset-publish : FlinkJobs | [reelase-4.10.0\_RC1](https://github.com/project-sunbird/knowledge-platform-jobs/releases/tag/release-4.10.0\_RC1) | FlinkJobs         | [release-4.10.0\_RC1](https://github.com/project-sunbird/sunbird-learning-platform/releases/tag/release-4.10.0\_RC1) | job\_names\_to\_deploy: questionset-publish |
+<table><thead><tr><th width="157">Service to be Build</th><th width="150">Build Tag</th><th width="159">Service to Deploy</th><th width="150">Deploy Tag</th><th>Comments</th></tr></thead><tbody><tr><td>Assessment</td><td><a href="https://github.com/project-sunbird/knowledge-platform/releases/tag/release-4.10.0_RC1">release-4.10.0_RC1</a></td><td>Assessment</td><td><a href="https://github.com/project-sunbird/sunbird-devops/tree/release-4.10.0">release-4.10.0</a></td><td></td></tr><tr><td>Questionset-publish : FlinkJobs</td><td><a href="https://github.com/project-sunbird/knowledge-platform-jobs/releases/tag/release-4.10.0_RC1">reelase-4.10.0_RC1</a></td><td>FlinkJobs</td><td><a href="https://github.com/project-sunbird/sunbird-learning-platform/releases/tag/release-4.10.0_RC1">release-4.10.0_RC1</a></td><td>job_names_to_deploy: questionset-publish</td></tr></tbody></table>
 
 
 

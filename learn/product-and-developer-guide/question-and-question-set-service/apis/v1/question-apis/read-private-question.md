@@ -229,20 +229,7 @@ Unique identification number associated with a root organization.
 
 #### Success Result Schema
 
-| Name                | Type   | Description                                                            |
-| ------------------- | ------ | ---------------------------------------------------------------------- |
-| identifier          | String | Unique Question Identifier                                             |
-| name                | String | Name of the Question                                                   |
-| versionKey          | String | Unique version key of Question                                         |
-| code                | String | Unique Code for Question                                               |
-| lastStatusChangedOn | String | Last status changed time                                               |
-| visibility          | String | Question Visibility eg. parent                                         |
-| mimeType            | String | Question mimeType eg. `application/vnd.sunbird.question`               |
-| createdOn           | String | Time of question creation                                              |
-| objectType          | String | Question objectType                                                    |
-| primaryCategory     | String | Type of question - `Multiple Choice Question` or `Subjective Question` |
-| status              | String | Question status `Draft/Review/Live`                                    |
-| lastUpdatedOn       | String | Last Updated time                                                      |
+<table><thead><tr><th width="230">Name</th><th width="133.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>identifier</td><td>String</td><td>Unique Question Identifier</td></tr><tr><td>name</td><td>String</td><td>Name of the Question</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key of Question</td></tr><tr><td>code</td><td>String</td><td>Unique Code for Question</td></tr><tr><td>lastStatusChangedOn</td><td>String</td><td>Last status changed time</td></tr><tr><td>visibility</td><td>String</td><td>Question Visibility eg. parent</td></tr><tr><td>mimeType</td><td>String</td><td>Question mimeType eg. <code>application/vnd.sunbird.question</code></td></tr><tr><td>createdOn</td><td>String</td><td>Time of question creation</td></tr><tr><td>objectType</td><td>String</td><td>Question objectType</td></tr><tr><td>primaryCategory</td><td>String</td><td>Type of question - <code>Multiple Choice Question</code> or <code>Subjective Question</code></td></tr><tr><td>status</td><td>String</td><td>Question status <code>Draft/Review/Live</code></td></tr><tr><td>lastUpdatedOn</td><td>String</td><td>Last Updated time</td></tr></tbody></table>
 
 #### &#x20;
 

@@ -36,12 +36,6 @@ _**Submit for Review**_
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • You need to provide a valid QuestionSet Id value in 
 
 <mark style="color:orange;">
@@ -65,12 +59,6 @@ _**Submit for Review**_
 
 \
 
-
-<mark style="color:red;">
-
-
-
-</mark>
 
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
@@ -191,10 +179,7 @@ It contains metadata about the questionset to be updated.
 
 #### Success result schema
 
-| Attribute  | Type   | Description                     |
-| ---------- | ------ | ------------------------------- |
-| identidier | String | Unique Question identifier      |
-| versionKey | String | Unique version key for question |
+<table><thead><tr><th width="154.33333333333331">Attribute</th><th width="257">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key for question</td></tr></tbody></table>
 
 #### cURL
 

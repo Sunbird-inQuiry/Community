@@ -226,20 +226,7 @@ To fetch the specific fields, this query parameter can be used eg. fields=name,d
 
 #### Success response schema
 
-| Attribute           | Type   | Description                                               |
-| ------------------- | ------ | --------------------------------------------------------- |
-| identifier          | String | Unique Question set Identifier                            |
-| name                | String | Name of the Question set                                  |
-| versionKey          | String | Unique version key of Question set                        |
-| code                | String | Unique Code for Question set                              |
-| lastStatusChangedOn | String | Last status changed time                                  |
-| visibility          | String | Question set Visibility eg. parent or default             |
-| mimeType            | String | Question mimeType eg. application/vnd.sunbird.questionset |
-| createdOn           | String | Time of question set creation                             |
-| objectType          | String | QuestionSet objectType                                    |
-| primaryCategory     | String | Eg - `Practice Question set` or `Exam Question set`       |
-| status              | String | Question status `Draft/Review/Live`                       |
-| lastUpdatedOn       | String | Last updated time                                         |
+<table><thead><tr><th width="223">Attribute</th><th width="121.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>identifier</td><td>String</td><td>Unique Question set Identifier</td></tr><tr><td>name</td><td>String</td><td>Name of the Question set</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key of Question set</td></tr><tr><td>code</td><td>String</td><td>Unique Code for Question set</td></tr><tr><td>lastStatusChangedOn</td><td>String</td><td>Last status changed time</td></tr><tr><td>visibility</td><td>String</td><td>Question set Visibility eg. parent or default</td></tr><tr><td>mimeType</td><td>String</td><td>Question mimeType eg. application/vnd.sunbird.questionset</td></tr><tr><td>createdOn</td><td>String</td><td>Time of question set creation</td></tr><tr><td>objectType</td><td>String</td><td>QuestionSet objectType</td></tr><tr><td>primaryCategory</td><td>String</td><td>Eg - <code>Practice Question set</code> or <code>Exam Question set</code></td></tr><tr><td>status</td><td>String</td><td>Question status <code>Draft/Review/Live</code></td></tr><tr><td>lastUpdatedOn</td><td>String</td><td>Last updated time</td></tr></tbody></table>
 
 #### cURL
 

@@ -174,10 +174,7 @@ The body is the representation of the resource object for retiring a question se
 
 #### Success result schema
 
-| Attribute  | Type   | Description                     |
-| ---------- | ------ | ------------------------------- |
-| identidier | String | Unique Question identifier      |
-| versionKey | String | Unique version key for question |
+<table><thead><tr><th width="188">Attribute</th><th width="159.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key for question</td></tr></tbody></table>
 
 #### cURL
 

@@ -8,12 +8,7 @@
 
 #### Following are the Planned Tickets of R5.7
 
-| Sl.no | JIRA Id                                                       | Issue Type        | Description                                                                               |
-| ----- | ------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------- |
-| 1     | [IQ-355](https://project-sunbird.atlassian.net/browse/IQ-355) | Minor-Enhancement | Web Component for the QuestionSet Editor                                                  |
-| 2     | [IQ-354](https://project-sunbird.atlassian.net/browse/IQ-354) | Minor-Enhancement | Publishing the Web component (QuML Player) as NPM Package                                 |
-| 3     | [IQ-345](https://project-sunbird.atlassian.net/browse/IQ-345) | Bug               | Zoom icon is not proper visible if user add image in the solution for subjective question |
-| 4     | [IQ-334](https://project-sunbird.atlassian.net/browse/IQ-334) | Bug               | CLONE - Portal : Zoom(-) icon is not appear if user clicks on zoom icon for the image     |
+<table><thead><tr><th width="85">Sl.no</th><th width="100">JIRA Id</th><th width="147">Issue Type</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-355">IQ-355</a></td><td>Minor-Enhancement</td><td>Web Component for the QuestionSet Editor</td></tr><tr><td>2</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-354">IQ-354</a></td><td>Minor-Enhancement</td><td>Publishing the Web component (QuML Player) as NPM Package</td></tr><tr><td>3</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-345">IQ-345</a></td><td>Bug</td><td>Zoom icon is not proper visible if user add image in the solution for subjective question</td></tr><tr><td>4</td><td><a href="https://project-sunbird.atlassian.net/browse/IQ-334">IQ-334</a></td><td>Bug</td><td>CLONE - Portal : Zoom(-) icon is not appear if user clicks on zoom icon for the image</td></tr></tbody></table>
 
 ## Release Tags:
 

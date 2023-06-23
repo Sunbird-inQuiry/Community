@@ -23,12 +23,6 @@ description: >-
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It points to inquiry-api-service (assessment service) - 
 
 <mark style="color:orange;">
@@ -41,12 +35,6 @@ description: >-
 
 \
 
-
-<mark style="color:orange;">
-
-
-
-</mark>
 
 • All parameters marked with 
 
@@ -188,11 +176,7 @@ Unique identification number associated with a root organization.
 
 #### Request schema
 
-| Attribute  | Description                                                     | Type             |
-| ---------- | --------------------------------------------------------------- | ---------------- |
-| source     | Represents the source of questionset object                     | string           |
-| metadata   | Represents the additional metadata for the questionset object   | Object           |
-| collection | Represents the collection with which Questionset can be linked. | Array of strings |
+<table><thead><tr><th width="139.33333333333331">Attribute</th><th width="486">Description</th><th>Type</th></tr></thead><tbody><tr><td>source</td><td>Represents the source of questionset object</td><td>string</td></tr><tr><td>metadata</td><td>Represents the additional metadata for the questionset object</td><td>Object</td></tr><tr><td>collection</td><td>Represents the collection with which Questionset can be linked.</td><td>Array of strings</td></tr></tbody></table>
 
 #### Success result schema
 

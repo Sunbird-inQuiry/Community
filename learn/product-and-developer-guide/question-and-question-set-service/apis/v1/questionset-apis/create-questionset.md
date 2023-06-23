@@ -17,12 +17,6 @@ description: This API is used to create a question set on the Sunbird-inQuiry Pl
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It points to inquiry-api-service (assessment service) - 
 
 <mark style="color:orange;">
@@ -34,12 +28,6 @@ description: This API is used to create a question set on the Sunbird-inQuiry Pl
 \
 
 
-<mark style="color:orange;">
-
-
-
-</mark>
-
 • It is mandatory to provide values for parameters marked with 
 
 <mark style="color:red;">
@@ -50,12 +38,6 @@ description: This API is used to create a question set on the Sunbird-inQuiry Pl
 
 \
 
-
-<mark style="color:red;">
-
-
-
-</mark>
 
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
@@ -175,19 +157,11 @@ Unique identification number associated with a root organization.
 
 #### Request Schema
 
-| Attribute       | Type   | Description                                                       | Required |
-| --------------- | ------ | ----------------------------------------------------------------- | -------- |
-| name            | String | Represents the name of the questionset                            | Yes      |
-| code            | String | Represents the unique code for the questionset                    | Yes      |
-| mimeType        | String | questionset mime type                                             | Yes      |
-| primaryCategory | String | PrimaryCategory agains which questionset schema will be validated | Yes      |
+<table><thead><tr><th width="180">Attribute</th><th width="99">Type</th><th>Description</th><th width="102">Required</th></tr></thead><tbody><tr><td>name</td><td>String</td><td>Represents the name of the questionset</td><td>Yes</td></tr><tr><td>code</td><td>String</td><td>Represents the unique code for the questionset</td><td>Yes</td></tr><tr><td>mimeType</td><td>String</td><td>questionset mime type</td><td>Yes</td></tr><tr><td>primaryCategory</td><td>String</td><td>PrimaryCategory agains which questionset schema will be validated</td><td>Yes</td></tr></tbody></table>
 
 #### Success result schema
 
-| Attribute  | Type   | Description                     |
-| ---------- | ------ | ------------------------------- |
-| identidier | String | Unique Question identifier      |
-| versionKey | String | Unique version key for question |
+<table><thead><tr><th width="184">Attribute</th><th width="158.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key for question</td></tr></tbody></table>
 
 #### cURL
 

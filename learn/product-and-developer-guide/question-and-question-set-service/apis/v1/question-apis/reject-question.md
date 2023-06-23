@@ -10,20 +10,6 @@ description: This API is used to reject the questions on the Sunbird-inQuiry Pla
 
 _<mark style="color:orange;">/question/reject/{Question_Id}</mark>_
 
- 
-
-<mark style="color:orange;">
-
-
-
-</mark>
-
-<mark style="color:orange;">
-
-
-
-</mark>
-
  endpoint executes the "Reject Question" request based on parameters provided as metadata in the request body
 
 \
@@ -33,12 +19,6 @@ _<mark style="color:orange;">/question/reject/{Question_Id}</mark>_
 
 \
 
-
-<mark style="color:orange;">
-
-
-
-</mark>
 
 • It points to inquiry-api-service (assessment service) - 
 
@@ -171,10 +151,7 @@ Metadata about the question to be rejected.
 
 #### Success result schema
 
-| Attribute  | Type   | Description                     |
-| ---------- | ------ | ------------------------------- |
-| identidier | String | Unique Question identifier      |
-| versionKey | String | Unique version key for question |
+<table><thead><tr><th width="189.33333333333331">Attribute</th><th width="142">Type</th><th>Description</th></tr></thead><tbody><tr><td>identidier</td><td>String</td><td>Unique Question identifier</td></tr><tr><td>versionKey</td><td>String</td><td>Unique version key for question</td></tr></tbody></table>
 
 #### cURL
 
