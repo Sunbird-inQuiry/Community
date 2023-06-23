@@ -48,6 +48,10 @@ Question & QuestionSet Service has below API's to manage Question & QuestionSet 
 [import-question.md](question-apis/import-question.md)
 {% endcontent-ref %}
 
+{% content-ref url="question-apis/copy-question.md" %}
+[copy-question.md](question-apis/copy-question.md)
+{% endcontent-ref %}
+
 ### **Question Set Management API's**
 
 {% content-ref url="questionset-apis/create-questionset.md" %}
@@ -92,5 +96,9 @@ Question & QuestionSet Service has below API's to manage Question & QuestionSet 
 
 {% content-ref url="questionset-apis/read-questionset-hierarchy.md" %}
 [read-questionset-hierarchy.md](questionset-apis/read-questionset-hierarchy.md)
+{% endcontent-ref %}
+
+{% content-ref url="questionset-apis/copy-questionset.md" %}
+[copy-questionset.md](questionset-apis/copy-questionset.md)
 {% endcontent-ref %}
 
