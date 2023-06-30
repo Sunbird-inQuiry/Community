@@ -76,14 +76,13 @@ The WYSIWYG editor makes the creation experience easier and faster for creators.
 The various question set level configurations available to the creator are:
 
 1. **Set maximum time** - The maximum time allowed for the users to complete the question set.
-2. **Set warning timer** - Timer to warn users about the time left to complete the question set.&#x20;
-3. **Submit confirmation page** - If enabled, provides an explicit Submit option for the users to review their answers and submit the assessment.&#x20;
-4. **Max attempts** - It defines the number of times the user can attempt a question set.
-5. **Summary Type** - Defines the details which we want to show on the summary page, For example:- Score, Duration, Score+Duration.&#x20;
+2. **Submit confirmation page** - If enabled, provides an explicit Submit option for the users to review their answers and submit the assessment.&#x20;
+3. **Max attempts** - It defines the number of times the user can attempt a question set.
+4. **Summary Type** - Defines the details which we want to show on the summary page, For example:- Score, Duration, Score+Duration.&#x20;
 
-![](../../../.gitbook/assets/Questionset-configs.png)
+![](<../../../.gitbook/assets/Question-set-behaviour-fields (1).png>)
 
-![](../../../.gitbook/assets/questionset-preview.png)
+![](../../../.gitbook/assets/Questionset-preview.png)
 
 #### k) Ability to group questions into multiple sections with each section having its own specific behaviour.
 
@@ -94,4 +93,4 @@ The various section level configurations available to the creator are:
 3. **Show feedback** - If enabled, users are informed whether they have correctly answered questions or not.&#x20;
 4. **Show solution** - If enabled, solutions to each question are shown to the users.
 
-![](../../../.gitbook/assets/section-config.png)
+![](../../../.gitbook/assets/section-form.png)

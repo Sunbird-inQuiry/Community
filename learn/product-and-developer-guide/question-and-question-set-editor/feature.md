@@ -162,10 +162,18 @@ This defines the icon which comes in the node and levels, you can set your own i
 
 ![](<../../../.gitbook/assets/image (23).png>)
 
+## &#x20;Common Framework License URL
+
+It defines where should the creative common framework link should be redirected.
+
+Ex - `commonFrameworkLicenseUrl: 'https://creativecommons.org/licenses/'`
+
+<figure><img src="../../../.gitbook/assets/commonFrameworkLicenseUrl.png" alt=""><figcaption></figcaption></figure>
+
 ## Content Policy URL
 
-It defines where should the content policy link should be retirected.
+It defines where should the content policy link should be redirected.
 
-contentPolicyUrl: "/term-of-use.html" in diksha we are using this config as it redirects to (https://diksha.gov.in/term-of-use.html)
+`contentPolicyUrl: "/term-of-use.html"` we are using this config in Diksha as it redirects to (https://diksha.gov.in/term-of-use.html)
 
 ![](<../../../.gitbook/assets/image (1) (1) (2).png>)
