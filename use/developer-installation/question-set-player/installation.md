@@ -30,18 +30,18 @@ The QuML player can be integrated as a web component and also as an angular libr
 
 QuML Library can also be used as a web component which means if your project does not use a JavaScript framework but prefers platform-based HTML, CSS, and JavaScript, you may wish to use QuML Library in this way. Simply follow the below-mentioned steps to use it in plain JavaScript project:
 
-*   Insert [library](https://github.com/Sunbird-inQuiry/player/blob/release-5.7.0/web-component/sunbird-quml-player.js) as below:
+*   Insert [library](https://github.com/Sunbird-inQuiry/player/blob/main/web-component/sunbird-quml-player.js) as below:
 
     ```
     <script  type="text/javascript"  src="sunbird-quml-player.js"></script>
     ```
-* Create an asset folder and copy all the files from [here](https://github.com/Sunbird-inQuiry/player/tree/release-5.7.0/web-component/assets), the library requires these assets internally to work well.
+* Create an asset folder and copy all the files from [here](https://github.com/Sunbird-inQuiry/player/tree/main/web-component/assets), the library requires these assets internally to work well.
 *   Create a custom HTML element: `sunbird-quml-player`
 
     ```
     const  qumlPlayerElement = document.createElement('sunbird-quml-player');
     ```
-*   Get sample playerConfig from here: [playerConfig](https://github.com/Sunbird-inQuiry/player/blob/release-5.7.0/projects/quml-demo-app/src/app/quml-library-data.ts) and pass data using `player-config`
+*   Get sample playerConfig from here: [playerConfig](https://github.com/Sunbird-inQuiry/player/blob/main/projects/quml-demo-app/src/app/quml-library-data.ts) and pass data using `player-config`
 
     ```
     qumlPlayerElement.setAttribute('player-config', JSON.stringify(playerConfig));
@@ -51,7 +51,7 @@ QuML Library can also be used as a web component which means if your project doe
 *   Pass the Question List API baseUrl for, e.g.
 
     ```
-    window.questionListUrl = 'https://staging.sunbirded.org/api/question/v1/list';
+    window.questionListUrl = 'https://dev.inquiry.sunbird.org/api/question/v2/list';
     ```
 *   Listen for the output events: `playerEvent` and `telemetryEvent`
 
@@ -69,7 +69,7 @@ QuML Library can also be used as a web component which means if your project doe
     const myPlayer = document.getElementById("my-player");
     myPlayer.appendChild(qumlPlayerElement);
     ```
-* ▶️ Refer demo [example](https://github.com/Sunbird-inQuiry/player/blob/release-5.7.0/web-component-examples/vanilla-js/index.html)
+* ▶️ Refer demo [example](https://github.com/Sunbird-inQuiry/player/blob/main/web-component-examples/vanilla-js/index.html)
 
 ## Use as web component in the Angular app
 
@@ -144,13 +144,13 @@ QuML Library can also be used as a web component which means if your project doe
       ....
     ```
 
-    **Note:**: Click to see the mock - [playerConfig](https://github.com/Sunbird-inQuiry/player/blob/release-5.7.0/projects/quml-demo-app/src/app/quml-library-data.ts) and send the input config as a string
+    **Note:**: Click to see the mock - [playerConfig](https://github.com/Sunbird-inQuiry/player/blob/main/projects/quml-demo-app/src/app/quml-library-data.ts) and send the input config as a string
 *   Pass the Question List API baseUrl for, e.g.
 
     ```
     ngAfterViewInit() {
       ...
-      (window as any).questionListUrl = "https://staging.sunbirded.org/api/question/v1/list";
+      (window as any).questionListUrl = "https://dev.inquiry.sunbird.org/api/question/v2/list";
       ...
     }
     ```
@@ -185,7 +185,7 @@ ng add @project-sunbird/sunbird-quml-player --project myProject
 Schematics will create `question-cursor-implementation.service.ts`. Please update the `listUrl` in it. For more information refer [question-cursor-implementation.service.ts](https://github.com/Sunbird-inQuiry/player/blob/main/projects/quml-demo-app/src/app/question-cursor-implementation.service.ts) and do not forget to add your question list API URL here, for example&#x20;
 
 ```
-listUrl = "https://staging.sunbirded.org/api/question/v1/list";
+listUrl = "https://dev.inquiry.sunbird.org/api/question/v2/list";
 ```
 
 #### Manual installation
@@ -218,7 +218,7 @@ Note: _As QuML library is build with angular version 15, we are using **bootstra
 Create a **question-cursor-implementation.service.ts** in a project and which will implement the `QuestionCursor` abstract class.\
 `QuestionCursor` is an abstract class, exported from the library, which needs to be implemented. Basically, it has some methods which should make an API request over HTTP
 
-For more information refer [question-cursor-implementation.service.ts](https://github.com/Sunbird-inQuiry/player/blob/main/projects/quml-demo-app/src/app/question-cursor-implementation.service.ts) and do not forget to add your question list API URL here, for example: listUrl = "[https://staging.sunbirded.org/api/question/v1/list](https://staging.sunbirded.org/api/question/v1/list)";
+For more information refer [question-cursor-implementation.service.ts](https://github.com/Sunbird-inQuiry/player/blob/main/projects/quml-demo-app/src/app/question-cursor-implementation.service.ts) and do not forget to add your question list API URL here, for example: listUrl = "[https://dev.inquiry.sunbird.org/api/question/v2/list](https://dev.inquiry.sunbird.org/api/question/v2/list)";
 
 #### 🏷️ Step 3: Include the styles, scripts and assets in angular.json
 
@@ -287,13 +287,13 @@ Import the required modules such as **CarouselModule**, **QumlLibraryModule**, *
 
 </details>
 
-Note: To avoid CORS errors, add proxy configuration for API's refer - [proxy.conf.json](https://github.com/Sunbird-inQuiry/player/blob/release-5.7.0/projects/quml-demo-app/src/proxy.conf.json)
+Note: To avoid CORS errors, add proxy configuration for API's refer - [proxy.conf.json](https://github.com/Sunbird-inQuiry/player/blob/main/projects/quml-demo-app/src/proxy.conf.json)
 
 ### 🏷️ Send input to render QuML player
 
 Users can get a response from the `api/questionset/v1/hierarchy/:do_id` or can use the provided mock config for the demo
 
-Use the mock config in your component to send input to the QuML player as `playerConfig` Click to see the mock - [samplePlayerConfig](https://github.com/Sunbird-inQuiry/player/blob/release-5.7.0/projects/quml-demo-app/src/app/quml-library-data.ts#L495)
+Use the mock config in your component to send input to the QuML player as `playerConfig` Click to see the mock - [samplePlayerConfig](https://github.com/Sunbird-inQuiry/player/blob/main/projects/quml-demo-app/src/app/quml-library-data.ts)
 
 ```
 <quml-main-player [playerConfig]="samplePlayerConfig" ><quml-main-player>

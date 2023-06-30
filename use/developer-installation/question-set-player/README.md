@@ -14,4 +14,10 @@ To install the player, ensure that your laptop or desktop has the following mini
 
 ### NPM Repository
 
+#### Web Component
+
+{% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component" %}
+
+#### Angular Library
+
 {% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player" %}

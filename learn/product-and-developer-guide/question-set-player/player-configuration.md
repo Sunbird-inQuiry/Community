@@ -44,24 +44,28 @@ Along with this it also provides the state of the content, if available.
     nextContent?: {
         name: string;
         identifer?: string;
-    }
+    },
+    showWarningTimer: boolean,
+    warningTime: number
 }
 ```
 
 Description of the properties for the config
 
-| Property              | Default Value | Required | Description                                                                                                     |
-| --------------------- | ------------- | -------- | --------------------------------------------------------------------------------------------------------------- |
-| sideMenu.enable       | true          | false    | To show/hide the sidebar menu / hamburger menu                                                                  |
-| sideMenu.showShare    | true          | false    | To enable the share functionality in a sidebar menu                                                             |
-| sideMenu.showDownload | true          | false    | To enable the Download functionality in a sidebar menu                                                          |
-| sideMenu.showExit     | true          | false    | To enable the exit functionality in a sidebar menu (Mostly used in mobile application to exit the player)       |
-| progressBar           | \[ ]          | false    | Previous saved state for progressBar. It is state object containing question and there associate answer status. |
-| questions             | \[ ]          | false    | Previously saved state for questions. Array of saved questions                                                  |
-| lastQuestionId        | null          | false    | Question Identifier of last played content                                                                      |
-| nextContent           | null          | false    | Data of the next content to be play like name and identifier                                                    |
-| duration              | 0             | false    | Last player duration in miliseconds.                                                                            |
-| traceId               | null          | false    | To trace the error                                                                                              |
+| Property              | Default Value | Required | Description                                                                                                                                                                                               |
+| --------------------- | ------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sideMenu.enable       | true          | false    | To show/hide the sidebar menu / hamburger menu                                                                                                                                                            |
+| sideMenu.showShare    | true          | false    | To enable the share functionality in a sidebar menu                                                                                                                                                       |
+| sideMenu.showDownload | true          | false    | To enable the Download functionality in a sidebar menu                                                                                                                                                    |
+| sideMenu.showExit     | true          | false    | To enable the exit functionality in a sidebar menu (Mostly used in mobile application to exit the player)                                                                                                 |
+| progressBar           | \[ ]          | false    | Previous saved state for progressBar. It is state object containing question and there associate answer status.                                                                                           |
+| questions             | \[ ]          | false    | Previously saved state for questions. Array of saved questions                                                                                                                                            |
+| lastQuestionId        | null          | false    | Question Identifier of last played content                                                                                                                                                                |
+| nextContent           | null          | false    | Data of the next content to be play like name and identifier                                                                                                                                              |
+| duration              | 0             | false    | Last player duration in miliseconds.                                                                                                                                                                      |
+| traceId               | null          | false    | To trace the error                                                                                                                                                                                        |
+| showWarningTimer      | true          | false    | This will decide if the `WarningTimer` has to be displayed or not                                                                                                                                         |
+| warningTime           | 75            | false    | <p>Warning timer will start showing once the user finishes 75% (default) of the max time</p><p><strong>For eg,</strong> max time is 100 seconds, warning timer will start showing from the 75 seconds</p> |
 
 ### **2. Context** - (Optional)
 

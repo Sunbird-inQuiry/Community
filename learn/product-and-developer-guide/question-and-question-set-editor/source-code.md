@@ -6,4 +6,12 @@ Here is the link to the source code. Currently, inQuiry leverages collection edi
 
 ## NPM Repository
 
-{% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor" %}
+
+
+**Web component**
+
+{% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor-web-component" %}
+
+**Angular library**
+
+{% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor" fullWidth="false" %}

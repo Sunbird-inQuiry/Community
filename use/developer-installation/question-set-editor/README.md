@@ -24,4 +24,12 @@ To know more about Question Set Editor configuration, please refer the link  (co
 
 ### NPM Repository
 
+
+
+**Web component**
+
+{% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor-web-component" %}
+
+**Angular library**
+
 {% embed url="https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor" %}

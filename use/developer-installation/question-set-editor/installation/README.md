@@ -233,7 +233,7 @@ npm i @project-sunbird/sunbird-questionset-editor --save
 Don't forget to install the below peer dependencies of the library in your application. that need to be installed in order to use the library in your angular project.
 
 ```
-npm i common-form-elements-web-v9 --save
+npm i @project-sunbird/common-form-elements-full --save
 npm i ng2-semantic-ui-v9 --save
 npm i ngx-infinite-scroll --save
 npm i lodash-es --save
@@ -243,15 +243,9 @@ npm i @project-sunbird/client-services --save
 npm i export-to-csv --save
 npm i moment --save
 npm i @project-sunbird/ckeditor-build-classic --save
-npm i @project-sunbird/sunbird-pdf-player-v9 --save
-npm i @project-sunbird/sunbird-epub-player-v9 --save
-npm i @project-sunbird/sunbird-video-player-v9 --save
-npm i @project-sunbird/sunbird-quml-player --save
+npm i @project-sunbird/sunbird-quml-player-web-component --save
 npm i ngx-bootstrap@^10.0.0 --save
 npm i ngx-chips@2.2.0 --save
-npm i epubjs --save
-npm i videojs-contrib-quality-levels --save
-npm i videojs-http-source-selector --save
 npm i jquery --save
 npm i express-http-proxy --save
 npm i mathjax-full --save
@@ -292,51 +286,34 @@ Now open the `angular.json` file and add the following under `architect.build.as
         ...
 +        {
 +          "glob": "**/*",
-+          "input": "node_modules/@project-sunbird/sunbird-pdf-player-v9/lib/assets/",
-+         "output": "/assets/"
-+        },
-+        {
-+          "glob": "**/*",
-+          "input": "node_modules/@project-sunbird/sunbird-video-player-v9/lib/assets/",
-+          "output": "/assets/"
-+        },
-+        {
-+          "glob": "**/*",
 +          "input": "node_modules/@project-sunbird/sunbird-questionset-editor/lib/assets",
 +          "output": "/assets/"
 +        },
 +        {
 +          "glob": "**/*",
-+          "input": "node_modules/@project-sunbird/sunbird-quml-player/lib/assets/",
++          "input": "node_modules/@project-sunbird/sunbird-quml-player-web-component/assets/",
 +          "output": "/assets/"
 +        }
       ],
       "styles": [
         ...
-+        "src/assets/quml-styles/quml-carousel.css",
++        "node_modules/@project-sunbird/sunbird-quml-player-web-component/styles.css",
 +        "node_modules/@project-sunbird/sb-styles/assets/_styles.scss",
 +        "src/assets/lib/semantic/semantic.min.css",
 +        "src/assets/styles/styles.scss",
 +        "node_modules/font-awesome/css/font-awesome.css"
-+        "node_modules/video.js/dist/video-js.min.css",
-+        "node_modules/@project-sunbird/sunbird-video-player-v9/lib/assets/videojs.markers.min.css",
-+        "node_modules/videojs-http-source-selector/dist/videojs-http-source-selector.css"
       ],
       "scripts": [
         ...
-+        "node_modules/epubjs/dist/epub.js",
++        "node_modules/@project-sunbird/sunbird-quml-player-web-component/sunbird-quml-player.js",
 +        "src/assets/libs/iziToast/iziToast.min.js",
-+        "node_modules/jquery/dist/jquery.min.js",
 +        "node_modules/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js",
 +        "src/assets/lib/dimmer.min.js",
 +        "src/assets/lib/transition.min.js",
 +        "src/assets/lib/modal.min.js",
 +        "src/assets/lib/semantic-ui-tree-picker.js",
++        "node_modules/@project-sunbird/telemetry-sdk/index.js",
 +        "node_modules/@project-sunbird/client-services/index.js"
-+        "node_modules/video.js/dist/video.js",
-+        "node_modules/@project-sunbird/sunbird-video-player-v9/lib/assets/videojs-markers.js",
-+        "node_modules/videojs-contrib-quality-levels/dist/videojs-contrib-quality-levels.min.js",
-+        "node_modules/videojs-http-source-selector/dist/videojs-http-source-selector.min.js"
       ]
     }
   }
@@ -385,12 +362,10 @@ Now open `app.module.ts` file and import like this:
 
 ```diff
 + import { EditorCursor } from '@project-sunbird/sunbird-questionset-editor';
-+ import { QuestionCursor } from '@project-sunbird/sunbird-quml-player';
 + import { EditorCursorImplementationService } from './editor-cursor-implementation.service';
 
 @NgModule({
   providers: [
-+    { provide: QuestionCursor, useExisting: EditorCursorImplementationService },
 +    { provide: EditorCursor, useExisting: EditorCursorImplementationService }
   ],
 })
@@ -398,7 +373,7 @@ export class AppModule { }
 
 ```
 
-For more information refer [question-cursor-implementation.service.ts](https://github.com/Sunbird-inQuiry/editor/blob/main/src/app/editor-cursor-implementation.service.ts) and do not forgot to add your question list API URL **For example:** `https://staging.sunbirded.org/api/question/v1/list`
+For more information refer [question-cursor-implementation.service.ts](https://github.com/Sunbird-inQuiry/editor/blob/main/src/app/editor-cursor-implementation.service.ts).
 
 ### :label: Step 5: Import the modules and components
 
@@ -408,7 +383,6 @@ Include `QuestionsetEditorLibraryModule` in your app module:
   import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 +  import { QuestionsetEditorLibraryModule, EditorCursor } from '@project-sunbird/sunbird-questionset-editor';
   import { RouterModule } from '@angular/router';
-  import { QuestionCursor } from '@project-sunbird/sunbird-quml-player';
   import { EditorCursorImplementationService } from './editor-cursor-implementation.service';
 
   @NgModule({
@@ -420,7 +394,6 @@ Include `QuestionsetEditorLibraryModule` in your app module:
       RouterModule.forRoot([])
       ],
    providers: [
-    { provide: QuestionCursor, useExisting: EditorCursorImplementationService },
     { provide: EditorCursor, useExisting: EditorCursorImplementationService }
    ]
 
