@@ -80,7 +80,7 @@ The various question set level configurations available to the creator are:
 3. **Max attempts** - It defines the number of times the user can attempt a question set.
 4. **Summary Type** - Defines the details which we want to show on the summary page, For example:- Score, Duration, Score+Duration.&#x20;
 
-![](<../../../.gitbook/assets/Question-set-behaviour-fields (1).png>)
+![](../../../.gitbook/assets/Question-set-behaviour-fields.png)
 
 ![](../../../.gitbook/assets/Questionset-preview.png)
 

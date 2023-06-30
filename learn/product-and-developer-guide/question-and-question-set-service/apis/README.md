@@ -10,7 +10,7 @@ Question & QuestionSet Service has the API's to manage Question & QuestionSet ty
 [v1](v1/)
 {% endcontent-ref %}
 
-{% content-ref url="v2.md" %}
-[v2.md](v2.md)
+{% content-ref url="v2/" %}
+[v2](v2/)
 {% endcontent-ref %}
 
