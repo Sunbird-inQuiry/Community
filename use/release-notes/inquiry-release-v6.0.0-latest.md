@@ -1,6 +1,6 @@
 # inQuiry - Release v6.0.0 (latest)
 
-### Integration of QuML player web component into the sunbird resource libraryDocument Release Version
+### Document Release Version
 
 | Project         | Release Version | Date        |
 | --------------- | --------------- | ----------- |
