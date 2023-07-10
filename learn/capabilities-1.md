@@ -62,4 +62,3 @@ Question set player is a player provided by inQuiry to create **engaging & inclu
 
 {% embed url="https://youtu.be/8j1gr3LzlS8" %}
 
-***
