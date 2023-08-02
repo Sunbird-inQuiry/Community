@@ -26,8 +26,8 @@ Sunbird [inQuiry Player](https://inquiry.sunbird.org/learn/product-and-developer
 
 Details are listed [here](https://inquiry.sunbird.org/use/learn-more/dependencies) for the below specified dependencies
 
-* Sunbird QuML
-* Sunbird inQuiry Service&#x20;
+* [Sunbird QuML Specification](https://quml.sunbird.org/)
+* [Sunbird inQuiry Service](inquiry-service.md)&#x20;
 * Sunbird Telemetry
 
 ## APIs used by Player

@@ -57,6 +57,17 @@ description: This API is used to publish the question on Sunbird platform.
 
 
 • Mandatory fields cannot be null or empty.
+
+\
+
+
+• 
+
+<mark style="color:orange;">
+
+Asynchronous flink job : async-questionset-publish will takes care of the publishing activity.
+
+</mark>
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="question_id" type="String" required="true" %}

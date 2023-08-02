@@ -66,6 +66,25 @@ description: This API is used to publish the question on Sunbird platform.
 [here](https://github.com/project-sunbird/knowledge-platform/blob/release-4.4.0/schemas/question/1.0/schema.json)
 
 
+
+\
+
+
+
+
+<mark style="color:green;">
+
+•
+
+</mark>
+
+ 
+
+<mark style="color:orange;">
+
+Asynchronous flink job : async-questionset-publish will takes care of the publishing activity.
+
+</mark>
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="Question_Id" type="String" required="true" %}

@@ -31,9 +31,9 @@ Sunbird [inQuiry Editor](../../product-and-developer-guide/question-and-question
 
 Details are listed [here](https://inquiry.sunbird.org/use/learn-more/dependencies) for the below specified dependencies
 
-* Sunbird QuML
-* Sunbird inQuiry Service&#x20;
-* Sunbird Knowlg Service
+* [Sunbird QuML Specification](https://quml.sunbird.org/)
+* [Sunbird inQuiry Service](inquiry-service.md)&#x20;
+* [Sunbird Knowlg Service](https://knowlg.sunbird.org/)
 * Sunbird Telemetry
 
 ## APIs used by Editor

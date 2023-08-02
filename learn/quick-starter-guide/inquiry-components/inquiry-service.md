@@ -2,9 +2,15 @@
 
 Sunbird [inQuiry Service](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service) is the backend service used from inQuiry Editor and Player.
 
+#### Player to inQuiry Service
+
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Player to inQuiry Service</p></figcaption></figure>
 
+#### Editor to inQuiry Service calls
+
 <figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Editor to inQuiry Service calls</p></figcaption></figure>
+
+#### Publish Process
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Publish Process</p></figcaption></figure>
 
@@ -44,11 +50,11 @@ The detail on how the data is saved and retrieved is not depicted in above seque
   * [Question Schema](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service/schema/question-schema)
   * [QuestionSet Schema](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service/schema/questionset-schema)
 * Databases
-  * Neo4J
-  * Cassandra
-  * Elastic Search
-  * Redis
-  * Cloud Storage
+  * **Neo4J** (Primary data store for storing the question and questionSet hierarchy details)
+  * **Cassandra** (Secondary data store for question and questionSet meta data information)
+  * **Elastic Search** (Indexed data store to store the question and questionSet information. Data is sourced from Neo4J and Cassandra, auto synced through Neo4J plugin)
+  * **Redis** (Used for caching the question / questionSet information)
+  * **Cloud Storage** (Used to store assets like video, images, audio in the cloud storage)
 
 #### Code Structure
 
@@ -85,8 +91,8 @@ The detail on how the data is saved and retrieved is not depicted in above seque
 
 Details are listed [here](https://inquiry.sunbird.org/use/learn-more/dependencies) for the below specified dependencies
 
-* Sunbird QuML Specification
-* Sunbird Knowlg Service
+* [Sunbird QuML Specification](https://quml.sunbird.org/)
+* [Sunbird Knowlg Service](https://knowlg.sunbird.org/)
 * Sunbird Telemetry Specification
 * Sunbird Obsrv (Optional)
 
