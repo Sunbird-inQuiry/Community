@@ -2,7 +2,7 @@
 description: This Page Explains Steps For Local Installation of Assessment Service
 ---
 
-# Local Installation
+# Installation
 
 ### :label: **Prerequisite**
 
@@ -34,21 +34,41 @@ By default, Neo4j requires authentication (user\_name & password). Authenticatio
 
 #### **Step 1:**
 
-* Clone the Repository (https://github.com/project-sunbird/knowledge-platform.git) using the below command.
+* Create a directory with name **inquiry-service** and switch to the directory.
+* Question & QuestionSet Service uses **knowlg-core** module from Knowlg BB. So we need to clone two repo's inside folder created above
+* Clone the Repository ([https://github.com/Sunbird-Knowlg/knowledge-platform.git](https://github.com/Sunbird-Knowlg/knowledge-platform.git)) using the below command.
 
 ```
-git clone https://github.com/project-sunbird/knowledge-platform.git
+git clone https://github.com/Sunbird-Knowlg/knowledge-platform.git
 ```
 
-* If any other branch (e.g: release branch) is required, you can switch to that branch using below command.
+* Based on release version, Please checkout to specific tag for knowlg-core module. For Tag information, Please refer to Core Release Tag Section of Assessment Service under Release Notes.
 
 ```
-git checkout <BRANCH-NAME>
+git checkout <BRANCH-NAME/Tag>
+```
+
+* Clone the Repository ([https://github.com/Sunbird-inQuiry/inquiry-api-service.git](https://github.com/Sunbird-inQuiry/inquiry-api-service.git)) using the below command.
+
+```
+git clone https://github.com/Sunbird-inQuiry/inquiry-api-service.git
+```
+
+* Based on release version, Please checkout to specific branch or tag using below command
+
+```
+git checkout <BRANCH-NAME/Tag>
 ```
 
 #### **Step 2:**
 
-* build the entire code base from root location (e.g: knowledge-platform) using below command.
+* Navigate to inquiry-service/knowledge-platform folder and build **knowlg-core** module using below command
+
+```
+mvn clean install -DskipTests -Pknowlg-core
+```
+
+* Navigate to the inquiry-service/inquiry-api-service folder and build the entire code base from the location
 
 ```
 mvn clean install -DskipTests
@@ -58,7 +78,7 @@ mvn clean install -DskipTests
 
 
 1. You need to build entire code base, if installing for first time**.**
-2. Assessment Service can be located in path (knowledge-platform/assessment-api) and you can build the service only from 2nd time onwards.
+2. Assessment Service can be located in path (inquiry-api-service/assessment-api) and you can build the service only from 2nd time onwards.
 {% endhint %}
 
 **Step 3:**
@@ -127,6 +147,7 @@ CREATE TABLE IF NOT EXISTS category_store.category_definition_data (
 **Step 4:**
 
 * Create required Primary Category (e.g: Practice Question Set, Multiple Choice Question)  & Its corresponding category definition using taxonomy-service.
+* [taxonomy-service](https://knowlg.sunbird.org/use/installation-guide/services/taxonomy-service) is a micro-service from Knowlg BB.
 * Primary Category is a mandatory property for creating any object (Question, QuestionSet) using assessment-service. Sunbird has a set of predefined Primary Categories and its definitions. Users can also create their own Primary Category and its definition using taxonomy-service.
 * For Question & QuestionSet below Primary Categories can be used:
 
@@ -142,20 +163,20 @@ CREATE TABLE IF NOT EXISTS category_store.category_definition_data (
 
 * Sunbird Primary Category Curls can be found here:
 
-{% embed url="https://github.com/project-sunbird/knowledge-platform/blob/master/scripts/definition-scripts/master_category_create" %}
+{% embed url="https://github.com/Sunbird-inQuiry/inquiry-api-service/blob/master/scripts/definition-scripts/master_category_create" %}
 
 * Sunbird Primary Category Definition Curls can be found here:
 
-{% embed url="https://github.com/project-sunbird/knowledge-platform/tree/master/scripts/definition-scripts" %}
+{% embed url="https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/master/scripts/definition-scripts" %}
 
 **Step 5:**
 
-* Modify the application configuration (knowledge-platform/assessment-api/assessment-service/conf/application.conf) and do the maven build using maven command (mvn clean install -DskipTests)  from assessment-service folder location.
+* Modify the application configuration (inquiry-api-service/assessment-api/assessment-service/conf/application.conf) and do the maven build using maven command (mvn clean install -DskipTests)  from assessment-service folder location.
 * For Configuration details, Please Refer to [Configuration](configuration.md) Page.
 
 **Step 6:**
 
-* Update Object Schema If Required. Object Level Schema is available under path _knowledge-platform/schemas_
+* Update Object Schema If Required. Object Level Schema is available under path _inquiry-api-service/schemas_
 * For Detailed Schema, Please Refer to [Schema](../../../learn/product-and-developer-guide/question-and-question-set-service/schema/) Page.
 
 **Step 7:**
@@ -175,7 +196,7 @@ curl --location --request GET 'http://localhost:9000/health'
 ```
 
 * **Now Service is Up and Running. You can try available endpoints.**
-* Available endpoints can be checked in **knowledge-platform/assessment-api/assessment-service/conf/routes** file.
+* Available endpoints can be checked in **inquiry-api-service/assessment-api/assessment-service/conf/routes** file.
 * **To Run Service in Debug Mode, below command can be used**
 
 ```
@@ -190,8 +211,8 @@ mvnDebug play2:run
 
 ### :label: **Dependencies**
 
-* **Assessment Service** depends upon an async job **questionset-publish** for completion of publish operation of the object.
-* For local setup and try out api’s, it's not mandatory to have this flink job because  publish api just sends the event to the configured kafka topic and the backend job takes events from kafka topic and performs further operation in async mode. So even if the job is not available, publish api sends the  event and returns 200 response.
-* **questionset-publish** code base is available in below repository.
+* **Assessment Service** depends upon an async job **async-questionset-publish** for completion of publish operation of the object.
+* For local setup and try out api’s, it's not mandatory to have this flink job because publish api just sends the event to the configured kafka topic and the backend job takes events from kafka topic and performs further operation in async mode. So even if the job is not available, publish api sends the  event and returns 200 response.
+* **async-questionset-publish** code base is available in below repository.
 
-{% embed url="https://github.com/project-sunbird/knowledge-platform-jobs/tree/master/publish-pipeline/questionset-publish" %}
+{% embed url="https://github.com/Sunbird-inQuiry/data-pipeline.git" %}
