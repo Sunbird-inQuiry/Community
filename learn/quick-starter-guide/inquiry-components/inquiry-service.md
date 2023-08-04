@@ -46,11 +46,11 @@ The detail on how the data is saved and retrieved is not depicted in above seque
   * [Question Schema](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service/schema/question-schema)
   * [QuestionSet Schema](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service/schema/questionset-schema)
 * Databases
-  * **Neo4J** (Primary data store for storing the question and questionSet hierarchy details)
-  * **Cassandra** (Secondary data store for question and questionSet meta data information)
-  * **Elastic Search** (Indexed data store to store the question and questionSet information. Data is sourced from Neo4J and Cassandra, auto synced through Neo4J plugin)
-  * **Redis** (Used for caching the question / questionSet information)
-  * **Cloud Storage** (Used to store assets like video, images, audio in the cloud storage)
+  * **Neo4J** (Primary Data Storage. inQuiry store all objects (e.g: Question/QuestionSet/ObjectCategory, etc) simple/lite metadata (e.g: name, description, createdOn, etc) in graph)
+  * **Cassandra** (Secondary data Storage. inQuiry stores all complex/bulk data in this storage. For more information, please refer to external section of each object config (config.json) to see what all data gets stored in secondary storage for particular object.)
+  * **Elastic Search** (Data Stored in Grpah Database (Primary Data Storage) gets replicated in Elasticsearch through data pipeline. So that user can search data based on different criteria (e.g: need to search science subject questions for class 5))
+  * **Redis** (Used for caching the question / questionSet information. It only stores object which are ready for consumption (objects in Live status))
+  * **Cloud Storage** (Used to store assets like media, question/questionset bundles, artifacts in the cloud storage)
 
 #### Code Structure
 
