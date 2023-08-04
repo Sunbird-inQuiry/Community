@@ -40,7 +40,7 @@ More details on the editor can be found [here](../capabilities-1.md#a-question-s
 
 Editor architecture is as below,
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Editor Module is as detailed below,
 

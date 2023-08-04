@@ -6,13 +6,19 @@ Sunbird [inQuiry Editor](../../product-and-developer-guide/question-and-question
 * Multi-select Multiple Choice Question (MMCQ)
 * Subjective Question (SA)
 
+#### Question / QuestionSet Creation flow
+
 <figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>QuestionSet creation flow</p></figcaption></figure>
+#### Question / QuestionSet Review process flow
+
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>QuestionSet creation flow</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>QuestionSet Review / Publish flow</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption><p>Editor to Knowlg Service calls</p></figcaption></figure>
+#### Editor interaction with Knowlg BB Service
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Code Structure
 

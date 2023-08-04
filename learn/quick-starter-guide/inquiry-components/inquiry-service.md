@@ -2,17 +2,13 @@
 
 Sunbird [inQuiry Service](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service) is the backend service used from inQuiry Editor and Player.
 
-#### Player to inQuiry Service
+#### Player / Editor interaction with inQuiry Service
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Player to inQuiry Service</p></figcaption></figure>
-
-#### Editor to inQuiry Service calls
-
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Editor to inQuiry Service calls</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Publish Process
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Publish Process</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Publish Process</p></figcaption></figure>
 
 ### Critical APIs - Sequence of calls
 
