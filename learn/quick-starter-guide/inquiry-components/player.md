@@ -68,4 +68,4 @@ Details are listed [here](https://inquiry.sunbird.org/use/learn-more/dependencie
 
 ## APIs used by Player
 
-APIs invoked from Player component is listed [here](https://app.gitbook.com/o/-Mi9QwJlsfb7xuxTBc0J/s/Wu4HIWGkb7dD4y0Kup4W/\~/changes/294/learn/product-and-developer-guide/question-set-player/apis)
+APIs invoked from Player component is listed [here](../../product-and-developer-guide/question-set-player/apis.md)

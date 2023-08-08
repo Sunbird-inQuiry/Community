@@ -2,7 +2,7 @@
 
 Sunbird [inQuiry Editor](../../product-and-developer-guide/question-and-question-set-editor/architecture.md) is used for creating questions and questionSets. The current Editor supports the following question types.&#x20;
 
-This editor is also known as Question & Question Set Editor or QuML Editor.
+This Editor is also known as Question & Question Set Editor or QuML Editor.
 
 * Multiple Choice Question (MCQ)
 * Multi-select Multiple Choice Question (MMCQ)
@@ -68,7 +68,7 @@ Editor Module is as detailed below,
 
 #### Dependencies
 
-Details are listed [here](https://inquiry.sunbird.org/use/learn-more/dependencies) for the below specified dependencies
+Details are listed [here](../../../use/learn-more/dependencies.md) for the below specified dependencies
 
 * [Sunbird QuML Specification](https://quml.sunbird.org/)
 * [Sunbird inQuiry Service](inquiry-service.md)&#x20;
@@ -77,4 +77,4 @@ Details are listed [here](https://inquiry.sunbird.org/use/learn-more/dependencie
 
 ## APIs used by Editor
 
-APIs invoked from Editor component is listed [here](https://app.gitbook.com/o/-Mi9QwJlsfb7xuxTBc0J/s/Wu4HIWGkb7dD4y0Kup4W/\~/changes/294/learn/product-and-developer-guide/question-and-question-set-editor/apis)
+APIs invoked from Editor component is listed [here](../../product-and-developer-guide/question-and-question-set-editor/apis.md)

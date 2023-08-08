@@ -91,7 +91,7 @@ The detail on how the data is saved and retrieved is not depicted in above seque
   *   Flink Jobs Used
 
       async-questionset-publish \[Used for Question and QuestionSet publish]
-  * [Configuration](https://inquiry.sunbird.org/use/developer-installation/question-and-question-set-service/configuration#questionset-republish-flink-job)
+  * [Configuration](../../product-and-developer-guide/question-and-question-set-service/configuration.md)
 
 #### Dependencies
 
