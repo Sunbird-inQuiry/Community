@@ -1,6 +1,6 @@
 # Player
 
-Sunbird [inQuiry Player](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-set-player/architecture) is used for consuming the question set. The current player supports the following question types,
+Sunbird [inQuiry Player](../../product-and-developer-guide/question-set-player/architecture.md) is used for consuming the question set. The current player supports the following question types,
 
 * Multiple Choice Question (MCQ)
 * Multi-select Multiple Choice Question (MMCQ)
@@ -46,7 +46,7 @@ Player Module is as detailed below,
 
 #### Code Structure
 
-* [Repository](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-set-player/source-code)
+* [Repository](../../product-and-developer-guide/question-set-player/source-code.md)
 *   Important Folder / Package structure
 
     ```

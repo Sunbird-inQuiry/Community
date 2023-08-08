@@ -55,7 +55,7 @@ Editor Module is as detailed below,
 
 #### Code Structure
 
-* [Repository](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-editor/source-code)
+* [Repository](../../product-and-developer-guide/question-and-question-set-editor/source-code.md)
 *   Important Folder / Package structure
 
     <pre><code><strong>- projects

@@ -1,6 +1,6 @@
 # inQuiry Service
 
-Sunbird [inQuiry Service](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service) is the backend service used from inQuiry Editor and Player. This service is also called as Question & QuestionSet service.
+Sunbird [inQuiry Service](../../product-and-developer-guide/question-and-question-set-service/architecture.md) is the backend service used from inQuiry Editor and Player. This service is also called as Question & QuestionSet service.
 
 ## Question & Question Set Service
 
@@ -64,7 +64,7 @@ The detail on how the data is saved and retrieved is not depicted in above seque
 
 #### Code Structure
 
-* [Repository](https://inquiry.sunbird.org/learn/product-and-developer-guide/question-and-question-set-service/source-code)
+* [Repository](../../product-and-developer-guide/question-and-question-set-service/source-code.md)
 *   Important Folder / Package structure
 
     ```
