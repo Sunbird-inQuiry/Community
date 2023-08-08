@@ -6,7 +6,7 @@ Sunbird [inQuiry Player](https://inquiry.sunbird.org/learn/product-and-developer
 * Multi-select Multiple Choice Question (MMCQ)
 * Subjective Question (SA)
 
-<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption><p>User attempting questions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption><p>User attempting questions</p></figcaption></figure>
 
 #### Code Structure
 

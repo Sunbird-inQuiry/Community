@@ -14,7 +14,7 @@ The specification that enables all these 3 components work in tandem is a standa
 
 ## inQuiry components
 
-The section below gives a high level overview of how the inQuiry components functions together. More details [here](../technical-architecture.md).
+The section below gives a high level overview of how the inQuiry components functions together. More details [here](../../technical-architecture.md).
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FWu4HIWGkb7dD4y0Kup4W%2Fuploads%2Fmdne7aEl7RvHwjM0j9tO%2Finquiry.png?alt=media&#x26;token=21a8b19d-2552-4458-9199-5dfa7df2783e" alt=""><figcaption></figcaption></figure>
 
@@ -36,15 +36,15 @@ Key advantages are,
 
 Question set editor is a tool offered by inQuiry to help you kickstart your creation of Question Banks.
 
-More details on the editor can be found [here](../capabilities-1.md#a-question-set-editor) and [here](../product-and-developer-guide/question-and-question-set-editor/).
+More details on the editor can be found [here](../../capabilities-1.md#a-question-set-editor) and [here](../question-and-question-set-editor/).
 
 Editor architecture is as below,
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Editor Module is as detailed below,
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -67,15 +67,15 @@ Editor Module is as detailed below,
 
 Question set player is a player provided by inQuiry to create engaging & inclusive experiences for end users consuming the question sets.
 
-More details on the player can be found [here](../capabilities-1.md#d-question-set-player-quml-player) and [here](../product-and-developer-guide/question-set-player/).
+More details on the player can be found [here](../../capabilities-1.md#d-question-set-player-quml-player) and [here](../question-set-player/).
 
 Player architecture is as below,
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 Player Module is as detailed below,
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -99,7 +99,7 @@ Player Module is as detailed below,
 
 Question and Question set service is a micro-service which provides APIs to manage the lifecycle and workflows of creation and consumption of question & question set objects.
 
-More details on the player can be found [here](../capabilities-1.md#c-question-and-question-set-services) and [here](../product-and-developer-guide/question-and-question-set-service/).
+More details on the player can be found [here](../../capabilities-1.md#c-question-and-question-set-services) and [here](../question-and-question-set-service/).
 
 Question & Question Set Service architecture is as below,
 

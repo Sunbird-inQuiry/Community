@@ -4,7 +4,7 @@ This section captures information on the internal details about the inQuiry Serv
 
 ### Component Architecture Diagram
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 <details>
 

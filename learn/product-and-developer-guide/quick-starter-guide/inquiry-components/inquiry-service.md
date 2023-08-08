@@ -4,11 +4,11 @@ Sunbird [inQuiry Service](https://inquiry.sunbird.org/learn/product-and-develope
 
 #### Player / Editor interaction with inQuiry Service
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Publish Process
 
-<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Publish Process</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Publish Process</p></figcaption></figure>
 
 ### Critical APIs - Sequence of calls
 
@@ -18,21 +18,21 @@ This also shows the usage of Knowlg core in the flow of inQuiry apis.
 
 **QuestionSet Create**
 
-<figure><img src="../../../.gitbook/assets/questionset_create_sequence.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/questionset_create_sequence.png" alt=""><figcaption></figcaption></figure>
 
 **QuestionSet Read**
 
-<figure><img src="../../../.gitbook/assets/questionset_read_sequence (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/questionset_read_sequence (1).png" alt=""><figcaption></figcaption></figure>
 
 **QuestionSet Update**
 
-<figure><img src="../../../.gitbook/assets/questionset_update_sequence.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/questionset_update_sequence.png" alt=""><figcaption></figcaption></figure>
 
 **Question Create**
 
 <div data-full-width="false">
 
-<figure><img src="../../../.gitbook/assets/question_create_sequence.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/question_create_sequence.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -94,4 +94,4 @@ Details are listed [here](https://inquiry.sunbird.org/use/learn-more/dependencie
 
 ## API listing
 
-The APIs exposed by the micro service is available [here](../../product-and-developer-guide/question-and-question-set-service/apis/)
+The APIs exposed by the micro service is available [here](../../question-and-question-set-service/apis/)

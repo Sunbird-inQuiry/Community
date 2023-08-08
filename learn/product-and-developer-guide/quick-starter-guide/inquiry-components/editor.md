@@ -1,6 +1,6 @@
 # Editor
 
-Sunbird [inQuiry Editor](../../product-and-developer-guide/question-and-question-set-editor/architecture.md) is used for creating questions and questionSets. The current Editor supports the following question types
+Sunbird [inQuiry Editor](../../question-and-question-set-editor/architecture.md) is used for creating questions and questionSets. The current Editor supports the following question types
 
 * Multiple Choice Question (MCQ)
 * Multi-select Multiple Choice Question (MMCQ)
@@ -8,17 +8,17 @@ Sunbird [inQuiry Editor](../../product-and-developer-guide/question-and-question
 
 #### Question / QuestionSet Creation flow
 
-<figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 #### Question / QuestionSet Review process flow
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>QuestionSet creation flow</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>QuestionSet creation flow</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>QuestionSet Review / Publish flow</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption><p>QuestionSet Review / Publish flow</p></figcaption></figure>
 
 #### Editor interaction with Knowlg BB Service
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Code Structure
 

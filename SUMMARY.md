@@ -7,6 +7,11 @@
 * [Components](learn/capabilities-1.md)
 * [Technical Architecture](learn/technical-architecture.md)
 * [Product & Developer Guide](learn/product-and-developer-guide/README.md)
+  * [Quick Starter Guide](learn/product-and-developer-guide/quick-starter-guide/README.md)
+    * [inQuiry Components](learn/product-and-developer-guide/quick-starter-guide/inquiry-components/README.md)
+      * [Editor](learn/product-and-developer-guide/quick-starter-guide/inquiry-components/editor.md)
+      * [Player](learn/product-and-developer-guide/quick-starter-guide/inquiry-components/player.md)
+      * [inQuiry Service](learn/product-and-developer-guide/quick-starter-guide/inquiry-components/inquiry-service.md)
   * [Question & Question Set Editor](learn/product-and-developer-guide/question-and-question-set-editor/README.md)
     * [Architecture](learn/product-and-developer-guide/question-and-question-set-editor/architecture.md)
     * [Features](learn/product-and-developer-guide/question-and-question-set-editor/feature.md)
@@ -85,11 +90,6 @@
   * [Analytics](learn/product-and-developer-guide/analytics.md)
   * [Code Coverage Stats](learn/product-and-developer-guide/code-coverage-stats.md)
 * [🚀 Product Roadmap](learn/product-roadmap.md)
-* [Quick Starter Guide](learn/quick-starter-guide/README.md)
-  * [inQuiry Components](learn/quick-starter-guide/inquiry-components/README.md)
-    * [Editor](learn/quick-starter-guide/inquiry-components/editor.md)
-    * [Player](learn/quick-starter-guide/inquiry-components/player.md)
-    * [inQuiry Service](learn/quick-starter-guide/inquiry-components/inquiry-service.md)
 
 ## ENGAGE
 
