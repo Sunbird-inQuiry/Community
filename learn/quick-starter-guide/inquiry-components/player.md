@@ -6,6 +6,8 @@ Sunbird [inQuiry Player](https://inquiry.sunbird.org/learn/product-and-developer
 * Multi-select Multiple Choice Question (MMCQ)
 * Subjective Question (SA)
 
+This Player is also known as Question Set Player or QuML Player.
+
 ## Question Set Player (QuML Player)
 
 Question set player is a player provided by inQuiry to create engaging & inclusive experiences for end users consuming the question sets.

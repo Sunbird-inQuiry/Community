@@ -1,6 +1,8 @@
 # Editor
 
-Sunbird [inQuiry Editor](../../product-and-developer-guide/question-and-question-set-editor/architecture.md) is used for creating questions and questionSets. The current Editor supports the following question types
+Sunbird [inQuiry Editor](../../product-and-developer-guide/question-and-question-set-editor/architecture.md) is used for creating questions and questionSets. The current Editor supports the following question types.&#x20;
+
+This editor is also known as Question & Question Set Editor or QuML Editor.
 
 * Multiple Choice Question (MCQ)
 * Multi-select Multiple Choice Question (MMCQ)
