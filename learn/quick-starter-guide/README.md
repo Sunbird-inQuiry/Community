@@ -18,6 +18,8 @@ The section below gives a high level overview of how the inQuiry components func
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FWu4HIWGkb7dD4y0Kup4W%2Fuploads%2Fmdne7aEl7RvHwjM0j9tO%2Finquiry.png?alt=media&#x26;token=21a8b19d-2552-4458-9199-5dfa7df2783e" alt=""><figcaption></figcaption></figure>
 
+{% embed url="https://youtu.be/mjV0MmP9WuQ?si=SpE9q8f7j5r2htmD&t=103" %}
+
 ## What is QuML?
 
 QuML defines a standard format for representation of questions, tests and their results, supporting the exchange of this material between authoring and delivery systems, repositories and other e-learning systems.
@@ -31,6 +33,8 @@ Key advantages are,
 * Interoperability
 * Longevity
 * Reusability
+
+{% embed url="https://youtu.be/mjV0MmP9WuQ?si=qQ4j446PZoZue14V&t=1042" %}
 
 ## Different types of questions supported
 

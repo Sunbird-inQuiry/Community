@@ -12,6 +12,8 @@ Question & Question Set Service architecture is as below,
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FWu4HIWGkb7dD4y0Kup4W%2Fuploads%2FrA9rFcWflZ5JbOcENCbA%2FInQuiry%20Backend%20Architecture.png?alt=media&#x26;token=a12df702-71d5-4f03-b3e5-80880cf6de15" alt=""><figcaption></figcaption></figure>
 
+{% embed url="https://youtu.be/mjV0MmP9WuQ?si=n61pgaVwp9G55QI4&t=2407" %}
+
 #### Player / Editor interaction with inQuiry Service
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
@@ -19,6 +21,8 @@ Question & Question Set Service architecture is as below,
 #### Publish Process
 
 <figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Publish Process</p></figcaption></figure>
+
+{% embed url="https://youtu.be/mjV0MmP9WuQ?si=IUEzBizPUScSA58R&t=2448" %}
 
 ### Critical APIs - Sequence of calls
 
@@ -50,6 +54,8 @@ This also shows the usage of Knowlg core in the flow of inQuiry apis.
 The detail on how the data is saved and retrieved is not depicted in above sequence of flow as it is part of Knowlg core library.&#x20;
 {% endhint %}
 
+{% embed url="https://youtu.be/mjV0MmP9WuQ?si=Bb45DfVfW6ffIC63&t=2489" %}
+
 #### Data Models
 
 * Schemas
@@ -77,6 +83,9 @@ The detail on how the data is saved and retrieved is not depicted in above seque
      - qs-hierarchy-manager
        - src/main/scala/org/sunbird/managers [all utility to perform operations on hierarchal structure]
     ```
+
+{% embed url="https://youtu.be/yoHBowTh4OQ?si=ivf7Rh1NNwblG-d8&t=23" %}
+
 * Sub Components
   *   Question API
 
@@ -102,6 +111,8 @@ Details are listed [here](https://inquiry.sunbird.org/use/learn-more/dependencie
 * [Sunbird Knowlg Service](https://knowlg.sunbird.org/)
 * Sunbird Telemetry Specification
 * Sunbird Obsrv (Optional)
+
+{% embed url="https://youtu.be/mjV0MmP9WuQ?si=Lv8cgzUIYjivNfX8&t=815" %}
 
 ## API listing
 

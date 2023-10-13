@@ -19,6 +19,8 @@ This section captures information on the internal details about the inQuiry Serv
 
 </details>
 
+{% embed url="https://youtu.be/mjV0MmP9WuQ?si=M7t7v9AdIF0sCUL8&t=583" %}
+
 ### Brief Description
 
 Sunbird inQuiry is used to power the assessment capabilities in Sunbird. This uses an open specification called as QuML for preparing the questions and question sets.

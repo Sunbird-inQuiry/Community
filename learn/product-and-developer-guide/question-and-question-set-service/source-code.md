@@ -8,6 +8,8 @@ Here is the link to the source code. Currently, inQuiry leverages source code fr
 
 {% embed url="https://github.com/Sunbird-inQuiry/inquiry-api-service.git" %}
 
+{% embed url="https://youtu.be/yoHBowTh4OQ?si=OddNJ_r67qgGSyWV&t=37" %}
+
 **Core Component (knowlg-core) Source Code:**&#x20;
 
 {% embed url="https://github.com/Sunbird-Knowlg/knowledge-platform.git" %}
@@ -22,3 +24,4 @@ Question & QuestionSet Service uses below async jobs (written using Apache Flink
 
 1. [async-questionset-publish](https://github.com/Sunbird-inQuiry/data-pipeline/tree/master/publish-pipeline/async-questionset-publish) : used for publish operation of Question & QuestionSet Asset.
 
+{% embed url="https://youtu.be/yoHBowTh4OQ?si=il_JPSlJU_FGB4DD&t=1433" %}
