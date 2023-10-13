@@ -6,53 +6,11 @@ description: This API is used to publish the question set on the Sunbird-inQuiry
 
 {% swagger method="post" path="/questionset/v2/publish/{questionSet_id}" baseUrl="" summary="This API is used to publish the question set on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• 
-
-<mark style="color:orange;">
-
-/questionset/v2/publish/{questionSet_id}
-
-</mark>
-
- endpoint executes the "Publish QuestionSet" request based on parameters provided as metadata in the request body. 
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v5/publish/{questionSet_id}
-
-</mark>
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
-• Mandatory fields cannot be null or empty.
-
-\
-
-
-• 
-
-<mark style="color:orange;">
-
-Asynchronous flink job : async-questionset-publish will takes care of the publishing activity.
-
-</mark>
+• <mark style="color:orange;">/questionset/v2/publish/{questionSet\_id}</mark> endpoint executes the "Publish QuestionSet" request based on parameters provided as metadata in the request body. \
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v5/publish/{questionSet\_id}</mark>\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
+• Mandatory fields cannot be null or empty.\
+• <mark style="color:orange;">Asynchronous flink job : async-questionset-publish will takes care of the publishing activity.</mark>
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="questionSet_id" type="String" %}
@@ -60,28 +18,12 @@ Append a valid Question Set Id To the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. Possible media types can be: 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. Possible media types can be: <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
-All content APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+All content APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

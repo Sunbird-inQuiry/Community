@@ -6,43 +6,9 @@ description: This API is used to read the question on the Sunbird-inQuiry Platfo
 
 {% swagger method="get" path="/question/v2/read/{question_id}" baseUrl="" summary="This API is used to read the question on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• It points to inquiry-api-service (assessment service)  - 
-
-<mark style="color:orange;">
-
-`/question/v5/read`
-
-</mark>
-
-\
-
-
-• You need to provide a valid Question Id value in 
-
-<mark style="color:orange;">
-
-{question_id}
-
-</mark>
-
- field of the API URL.
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-.
-
-\
-
-
+• It points to inquiry-api-service (assessment service)  - <mark style="color:orange;">`/question/v5/read`</mark>\
+• You need to provide a valid Question Id value in <mark style="color:orange;">{question\_id}</mark> field of the API URL.\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>.\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -51,13 +17,7 @@ Append a valid Question ID To the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="false" %}
-The Content-Type entity is the media type of the resource. It should be 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. It should be <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}

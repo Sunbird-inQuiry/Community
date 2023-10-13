@@ -8,74 +8,20 @@ description: >-
 
 {% swagger method="patch" path="/questionset/v2/hierarchy/update" baseUrl="" summary="This API is used to update the existing question set on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• 
-
-<mark style="color:orange;">
-
-/questionset/v2/hierarchy/update/
-
-</mark>
-
- endpoint executes the "Update Hierarchy QuestionSet" request based on parameters provided as metadata in the request body.
-
-\
-
-
-•This API is used to add new children and update the existing children or update a hierarchical structure of the question set.
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v5/hierarchy/update
-
-</mark>
-
- 
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• <mark style="color:orange;">/questionset/v2/hierarchy/update/</mark> endpoint executes the "Update Hierarchy QuestionSet" request based on parameters provided as metadata in the request body.\
+•This API is used to add new children and update the existing children or update a hierarchical structure of the question set.\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v5/hierarchy/update</mark> \
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content Type entity is the media type of the resource.Possible media types can be: 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content Type entity is the media type of the resource.Possible media types can be: <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
-All question APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+All question APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="request" type="Object" required="true" %}

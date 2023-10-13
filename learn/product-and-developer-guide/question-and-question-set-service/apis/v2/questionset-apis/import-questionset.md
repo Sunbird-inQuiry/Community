@@ -8,73 +8,19 @@ description: >-
 
 {% swagger method="post" path="/questionset/v2/import" baseUrl="" summary="This API is used to import QuestionSet from one instance of sunbird to another instance of sunbird." expanded="true" %}
 {% swagger-description %}
-• The endpoint for 
-
-**Import QuestionSet**
-
- is 
-
-<mark style="color:orange;">
-
-/questionset/v2/import
-
-</mark>
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v5/import
-
-</mark>
-
- 
-
-\
-
-
-• All parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
- are mandatory. You must provide values for these parameters. 
-
-\
-
-
+• The endpoint for **Import QuestionSet** is <mark style="color:orange;">/questionset/v2/import</mark>\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v5/import</mark> \
+• All parameters marked with <mark style="color:red;">\*</mark> are mandatory. You must provide values for these parameters. \
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. The possible media types can be: 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. The possible media types can be: <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="Authorization" type="String" required="true" %}
-You require authorization to make use of the API. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+You require authorization to make use of the API. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="request" type="Object" required="true" %}

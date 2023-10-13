@@ -6,69 +6,23 @@ description: This API is used to create a question set on the Sunbird-inQuiry Pl
 
 {% swagger method="post" path="/questionset/v2/create" baseUrl="" summary="This API is used to create a question set on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• The endpoint for Create QuestionSet is 
-
-<mark style="color:orange;">
-
-/questionset/v2/create
-
-</mark>
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v5/create
-
-</mark>
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• The endpoint for Create QuestionSet is <mark style="color:orange;">/questionset/v2/create</mark>\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v5/create</mark>\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. The possible media types can be:- 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. The possible media types can be:- <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
-To make use of the API, you require authorization. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+To make use of the API, you require authorization. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="request" type="Object" required="true" %}
-The body is the representation of the resource object for creating questionset 
+The body is the representation of the resource object for creating questionset&#x20;
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

@@ -6,43 +6,9 @@ description: This API is used to retire the question set on the Sunbird-inQuiry 
 
 {% swagger method="delete" path="/questionset/v2/retire/{questionSet_id}" baseUrl="" summary="This API is used to retire the question set on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• The 
-
-<mark style="color:orange;">
-
-/questionset/v2/retire/{questionSet_id}
-
-</mark>
-
- endpoint executes a "Retire QuestionSet" request based on 
-
-<mark style="color:orange;">
-
-QuestionSet_Id
-
-</mark>
-
- to delete the specific Question set.
-
-\
-
-
-•  It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v5/retire/{questionSet_id}
-
-</mark>
-
-\
-
-
-• It is mandatory to provide values for parameters. 
-
-\
-
-
+• The <mark style="color:orange;">/questionset/v2/retire/{questionSet\_id}</mark> endpoint executes a "Retire QuestionSet" request based on <mark style="color:orange;">QuestionSet\_Id</mark> to delete the specific Question set.\
+•  It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v5/retire/{questionSet\_id}</mark>\
+• It is mandatory to provide values for parameters. \
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -51,18 +17,8 @@ Please append a valid QuestionSet Id to the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
-All questionset APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+All questionset APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

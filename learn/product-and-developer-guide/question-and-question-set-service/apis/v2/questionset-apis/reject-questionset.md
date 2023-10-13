@@ -8,54 +8,10 @@ description: >-
 
 {% swagger method="post" path="/questionset/v2/reject/{questionSet_Id}}" baseUrl="" summary="This API is used to reject the question set, which is sent for review on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• The  
-
-<mark style="color:orange;">
-
-/questionset/v2/reject/{questionSet_Id}
-
-</mark>
-
- endpoint executes the "Rejecting QuestionSet" request based on parameters provided as metadata in the request body.
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v5/reject/{questionSet_Id}
-
-</mark>
-
-\
-
-
-• You need to provide a valid QuestionSet Id value in the 
-
-<mark style="color:orange;">
-
-{questionSet_Id}
-
-</mark>
-
- field of the API URL. 
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• The  <mark style="color:orange;">/questionset/v2/reject/{questionSet\_Id}</mark> endpoint executes the "Rejecting QuestionSet" request based on parameters provided as metadata in the request body.\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v5/reject/{questionSet\_Id}</mark>\
+• You need to provide a valid QuestionSet Id value in the <mark style="color:orange;">{questionSet\_Id}</mark> field of the API URL. \
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -64,28 +20,12 @@ Append a valid Question Set Id To the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. Possible media types can be: 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. Possible media types can be: <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
-All content APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+All content APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

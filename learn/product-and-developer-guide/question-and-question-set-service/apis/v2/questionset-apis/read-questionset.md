@@ -8,86 +8,12 @@ description: >-
 
 {% swagger method="get" path="/questionset/v2/read/{questionSet_id}" baseUrl="" summary="This API is used to read an existing question set on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• The 
-
-<mark style="color:orange;">
-
-/questionset/v2/read/{
-
-</mark>
-
-questionSet_id
-
-<mark style="color:orange;">
-
-}
-
-</mark>
-
- endpoint executes a request for fetching the question to read.
-
-\
-
-
-• This API returns only the metadata of the question set not the hierarchical structure. To read  hierarchical structure please use 
-
-**read**
-
- 
-
-**questionset hierarchy**
-
- API
-
-\
-
-
-• The endpoint for reading QuestionSet is 
-
-<mark style="color:orange;">
-
-`/questionset/v2/read`
-
-</mark>
-
-\
-
-
-• It points to inquiry-api-service (assessment service)  - 
-
-<mark style="color:orange;">
-
-/questionset/v5/read
-
-</mark>
-
-\
-
-
-• You need to provide a valid QuestionSet Id value in 
-
-<mark style="color:orange;">
-
-{questionSet_id}
-
-</mark>
-
- field of the API URL. 
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• The <mark style="color:orange;">/questionset/v2/read/{</mark>questionSet\_id<mark style="color:orange;">}</mark> endpoint executes a request for fetching the question to read.\
+• This API returns only the metadata of the question set not the hierarchical structure. To read  hierarchical structure please use **read** **questionset hierarchy** API\
+• The endpoint for reading QuestionSet is <mark style="color:orange;">`/questionset/v2/read`</mark>\
+• It points to inquiry-api-service (assessment service)  - <mark style="color:orange;">/questionset/v5/read</mark>\
+• You need to provide a valid QuestionSet Id value in <mark style="color:orange;">{questionSet\_id}</mark> field of the API URL. \
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -96,28 +22,12 @@ Append a valid Question Set Id To the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="false" %}
-The Content-Type entity is the media type of the resource. Possible media types can be: 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. Possible media types can be: <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="false" %}
-To make use of the API, you require authorization. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+To make use of the API, you require authorization. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

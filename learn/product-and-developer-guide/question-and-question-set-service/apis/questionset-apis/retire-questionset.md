@@ -6,58 +6,10 @@ description: This API is used to retire the question set on the Sunbird-inQuiry 
 
 {% swagger method="delete" path="/retire/{QuestionSet_Id}" baseUrl="" summary="This API is used to retire the question set on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• The 
-
-<mark style="color:orange;">
-
-/retire/{QuestionSet_Id}
-
-</mark>
-
- endpoint executes a "Retire QuestionSet" request based on 
-
-<mark style="color:orange;">
-
-QuestionSet_Id
-
-</mark>
-
- to delete the specific Question set.
-
-\
-
-
-• The endpoint for Retire QuestionSet is 
-
-<mark style="color:orange;">
-
-/questionset/v1/retire
-
-</mark>
-
- 
-
-\
-
-
-•  It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v4/retire
-
-</mark>
-
- 
-
-\
-
-
-• It is mandatory to provide values for parameters. 
-
-\
-
-
+• The <mark style="color:orange;">/retire/{QuestionSet\_Id}</mark> endpoint executes a "Retire QuestionSet" request based on <mark style="color:orange;">QuestionSet\_Id</mark> to delete the specific Question set.\
+• The endpoint for Retire QuestionSet is <mark style="color:orange;">/questionset/v1/retire</mark> \
+•  It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v4/retire</mark> \
+• It is mandatory to provide values for parameters. \
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -66,18 +18,8 @@ Please append a valid QuestionSet Id to the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
-All questionset APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+All questionset APIs require authorization for use. Specify the authorization key received from the administrator when placing the request for use of the API.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

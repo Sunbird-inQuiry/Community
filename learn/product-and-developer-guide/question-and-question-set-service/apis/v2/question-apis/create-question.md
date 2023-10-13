@@ -6,85 +6,25 @@ description: This API is used to create Questions on the Sunbird-inQuiry Platfor
 
 {% swagger method="post" path="/question/v2/create" baseUrl="" summary="This API is used to create Question on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/question/v5/create
-
-</mark>
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-.
-
-\
-
-
-• Mandatory fields cannot be null or empty.
-
-\
-
-
-• The API supports QuML 1.1 version onwards. For Detailed Question schema, Please check 
-
-[here](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-6.0.0/schemas/question/1.1)
-
- 
-
-\
-
-
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/question/v5/create</mark>\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>.\
+• Mandatory fields cannot be null or empty.\
+• The API supports QuML 1.1 version onwards. For Detailed Question schema, Please check [here](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-6.0.0/schemas/question/1.1) \
 • Appropriate fields need to be passed to work questions functionally well.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="request" type="object" required="true" %}
-<mark style="color:orange;">
-
-`request`
-
-</mark>
-
- is the representation of the resource object for creating questions, which is an object of parameters that describes the question
-
-\
-
-
+<mark style="color:orange;">`request`</mark> is the representation of the resource object for creating questions, which is an object of parameters that describes the question\
 
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. It should be
-
-<mark style="color:green;">
-
-`Application/json`
-
-</mark>
+The Content-Type entity is the media type of the resource. It should be<mark style="color:green;">`Application/json`</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
-You require authorization to make use of the API. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+You require authorization to make use of the API. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

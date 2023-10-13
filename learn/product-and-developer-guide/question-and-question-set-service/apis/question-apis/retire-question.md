@@ -6,51 +6,11 @@ description: This API is used to retiring a questions on the Sunbird-inQuiry Pla
 
 {% swagger method="delete" path="/question/v1/retire/{Question_Id}" baseUrl="" summary="This API is used to retiring a questions on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• It points to inquiry-api-service (assessment service)- 
-
-<mark style="color:orange;">
-
-/question/v4/retire
-
-</mark>
-
-\
-
-
-• You need to provide a valid Question Id value in 
-
-<mark style="color:orange;">
-
-{Question_Id}
-
-</mark>
-
- field of the API URL.
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
-• Mandatory fields cannot be null or empty.
-
-\
-
-
-• Question schema check 
-
-[here](https://github.com/project-sunbird/knowledge-platform/blob/release-4.4.0/schemas/question/1.0/schema.json)
-
-
+• It points to inquiry-api-service (assessment service)- <mark style="color:orange;">/question/v4/retire</mark>\
+• You need to provide a valid Question Id value in <mark style="color:orange;">{Question\_Id}</mark> field of the API URL.\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
+• Mandatory fields cannot be null or empty.\
+• Question schema check [here](https://github.com/project-sunbird/knowledge-platform/blob/release-4.4.0/schemas/question/1.0/schema.json)
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="Question_Id" type="String" required="true" %}

@@ -8,58 +8,10 @@ description: >-
 
 {% swagger method="post" path="/questionset/v2/review/{questionSet_Id}" baseUrl="" summary="This API is used to send question set for review on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• The 
-
-<mark style="color:orange;">
-
-/questionset/v2/review/{questionSet_Id}
-
-</mark>
-
- endpoint executes the "
-
-_**Submit for Review**_
-
-" request based on parameters provided as metadata in the request body. 
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v5/review
-
-</mark>
-
-\
-
-
-• You need to provide a valid QuestionSet Id value in 
-
-<mark style="color:orange;">
-
-{questionSet_Id}
-
-</mark>
-
- field of the API URL. 
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• The <mark style="color:orange;">/questionset/v2/review/{questionSet\_Id}</mark> endpoint executes the "_**Submit for Review**_" request based on parameters provided as metadata in the request body. \
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v5/review</mark>\
+• You need to provide a valid QuestionSet Id value in <mark style="color:orange;">{questionSet\_Id}</mark> field of the API URL. \
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -68,13 +20,7 @@ Append a valid Question Set Id To the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. Possible media types can be: 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. Possible media types can be: <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}

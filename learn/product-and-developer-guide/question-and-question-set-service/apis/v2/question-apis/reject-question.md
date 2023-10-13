@@ -6,52 +6,10 @@ description: This API is used to reject the questions on the Sunbird-inQuiry Pla
 
 {% swagger method="delete" path="/question/v2/reject/{question_id}" baseUrl="" summary="This API is used to reject the questions on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• 
-
-_<mark style="color:orange;">/question/v2/reject/{</mark>_
-
-<mark style="color:orange;">
-
-question_id
-
-</mark>
-
-_<mark style="color:orange;">}</mark>_
-
- endpoint executes the "Reject Question" request based on parameters provided as metadata in the request body
-
-\
-
-
-• This API is used to send back the question to the creator by the reviewer. The API changes the question object status from review to draft.
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/question/v5/reject
-
-</mark>
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-.
-
-\
-
-
+• _<mark style="color:orange;">/question/v2/reject/{</mark>_<mark style="color:orange;">question\_id</mark>_<mark style="color:orange;">}</mark>_ endpoint executes the "Reject Question" request based on parameters provided as metadata in the request body\
+• This API is used to send back the question to the creator by the reviewer. The API changes the question object status from review to draft.\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/question/v5/reject</mark>\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>.\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 

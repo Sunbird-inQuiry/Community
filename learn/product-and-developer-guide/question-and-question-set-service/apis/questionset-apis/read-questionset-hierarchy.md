@@ -6,74 +6,12 @@ description: This API is used to read the question set on the Sunbird-inQuiry Pl
 
 {% swagger method="get" path="/hierarchy/{QuestionSet_Id}" baseUrl="" summary="This API is used to read the question set on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• The 
-
-<mark style="color:orange;">
-
-/hierarchy/{QuestionSet_Id}
-
-</mark>
-
- endpoint executes a request for fetching the question set hierarchical structure. 
-
-\
-
-
-• By default, this API tries to fetch a question set with live status. If you need to fetch the hierarchy of qustion set having any other status please use mode=edit query parameter.
-
-\
-
-
-• The endpoint for reading QuestionSet Hierarchy is 
-
-<mark style="color:orange;">
-
-/questionset/v1/hierarchy
-
-</mark>
-
- 
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/questionset/v4/hierarchy
-
-</mark>
-
- 
-
-\
-
-
-• You need to provide a valid QuestionSet Id value in {
-
-<mark style="color:orange;">
-
-QuestionSet_Id}
-
-</mark>
-
- field of the API URL. 
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• The <mark style="color:orange;">/hierarchy/{QuestionSet\_Id}</mark> endpoint executes a request for fetching the question set hierarchical structure. \
+• By default, this API tries to fetch a question set with live status. If you need to fetch the hierarchy of qustion set having any other status please use mode=edit query parameter.\
+• The endpoint for reading QuestionSet Hierarchy is <mark style="color:orange;">/questionset/v1/hierarchy</mark> \
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/questionset/v4/hierarchy</mark> \
+• You need to provide a valid QuestionSet Id value in {<mark style="color:orange;">QuestionSet\_Id}</mark> field of the API URL. \
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -82,13 +20,7 @@ Please append a valid QuestionSet Id to the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="false" %}
-The Content-Type entity is the media type of the resource. Possible media types can be: 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. Possible media types can be: <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}

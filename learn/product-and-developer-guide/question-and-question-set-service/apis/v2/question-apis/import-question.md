@@ -8,52 +8,14 @@ description: >-
 
 {% swagger method="post" path="/question/v2/import" baseUrl="" summary="This API is used to import Question from one instance to another instance of sunbird" expanded="true" %}
 {% swagger-description %}
-• 
-
-<mark style="color:orange;">
-
-/question/v2/import
-
-</mark>
-
- endpoint executes the "Import Question" request based on parameters provided as metadata in the request body
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/question/v5/import
-
-</mark>
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• <mark style="color:orange;">/question/v2/import</mark> endpoint executes the "Import Question" request based on parameters provided as metadata in the request body\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/question/v5/import</mark>\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. It should be 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. It should be <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}

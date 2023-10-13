@@ -8,54 +8,10 @@ description: >-
 
 {% swagger method="post" path="/question/v2/review/{question_id}" baseUrl="" summary="This API is used to submit question for review on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• 
-
-<mark style="color:orange;">
-
-/question/v2/review/{question_id}
-
-</mark>
-
- endpoint executes the "Submit for Review" request based on parameters provided as metadata in the request body
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/question/v5/review
-
-</mark>
-
-\
-
-
-• You need to provide a valid Question Id value in 
-
-<mark style="color:orange;">
-
-{question_id}
-
-</mark>
-
- field of the API URL.
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• <mark style="color:orange;">/question/v2/review/{question\_id}</mark> endpoint executes the "Submit for Review" request based on parameters provided as metadata in the request body\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/question/v5/review</mark>\
+• You need to provide a valid Question Id value in <mark style="color:orange;">{question\_id}</mark> field of the API URL.\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -64,13 +20,7 @@ Append a valid Question ID To the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. It should be 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. It should be <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}

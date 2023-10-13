@@ -6,60 +6,10 @@ description: This API is associated with copying question on the Sunbird Platfor
 
 {% swagger method="post" path="/question/v1/copy/{Question_Id}" baseUrl="" summary="This API is associated with copying question on the Sunbird Platform." expanded="true" %}
 {% swagger-description %}
-• The endpoint for 
-
-**Copy Question**
-
- is 
-
-<mark style="color:orange;">
-
-/question/v1/copy
-
-</mark>
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/question/v4/copy
-
-</mark>
-
- 
-
-\
-
-
-• You need to provide a valid Question Id value in 
-
-<mark style="color:orange;">
-
-{Question_Id}
-
-</mark>
-
- field of the API URL.
-
-\
-
-
-• All parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
- are mandatory. You must provide values for these parameters. 
-
-\
-
-
+• The endpoint for **Copy Question** is <mark style="color:orange;">/question/v1/copy</mark>\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/question/v4/copy</mark> \
+• You need to provide a valid Question Id value in <mark style="color:orange;">{Question\_Id}</mark> field of the API URL.\
+• All parameters marked with <mark style="color:red;">\*</mark> are mandatory. You must provide values for these parameters. \
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
@@ -68,28 +18,12 @@ The body is the representation of the resource object for importing a question s
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. The possible media types can be: 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. The possible media types can be: <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
-You require authorization to make use of the API. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.
-
-\
-
-
-Set 
-
-<mark style="color:green;">
-
-Bearer {{api_key}}
-
-</mark>
+You require authorization to make use of the API. Raise a request to the administrator for the use of the API. You will receive the authorization key. Specify the key received, here.\
+Set <mark style="color:green;">Bearer \{{api\_key\}}</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

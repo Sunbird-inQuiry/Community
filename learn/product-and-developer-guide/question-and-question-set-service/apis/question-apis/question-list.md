@@ -6,49 +6,15 @@ description: This API is used to get the list of Questions on the Sunbird-inQuir
 
 {% swagger method="post" path="/question/v1/list" baseUrl="" summary="This API is used to get the list of Questions on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• It gives all metadata of requested question identifiers
-
-\
-
-
-• It points to inquiry-api-service (assessment service)- 
-
-<mark style="color:orange;">
-
-/question/v4/list
-
-</mark>
-
-\
-
-
-• You need to provide list of valid question identifiers in the request body
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-\
-
-
+• It gives all metadata of requested question identifiers\
+• It points to inquiry-api-service (assessment service)- <mark style="color:orange;">/question/v4/list</mark>\
+• You need to provide list of valid question identifiers in the request body\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>\
 • Mandatory fields cannot be null or empty.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. It should be 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. It should be <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="x-channel-id" type="String" %}

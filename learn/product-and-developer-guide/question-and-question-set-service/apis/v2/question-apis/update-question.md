@@ -8,66 +8,12 @@ description: >-
 
 {% swagger method="patch" path="/question/v2/update/{question_id}" baseUrl="" summary="This API is used to update the existing question on the Sunbird-inQuiry Platform." expanded="true" %}
 {% swagger-description %}
-• 
-
-<mark style="color:orange;">
-
-/update
-
-</mark>
-
- endpoint executes the "Update Question" request based on parameters provided as metadata in the request body. Users can provide updated attributes and their values in a request.
-
-\
-
-
-• It points to inquiry-api-service (assessment service) - 
-
-<mark style="color:orange;">
-
-/question/v5/update
-
-</mark>
-
-\
-
-
-• You need to provide a valid Question Id value in 
-
-<mark style="color:orange;">
-
-{question_id}
-
-</mark>
-
- field of the API URL.
-
-\
-
-
-• It is mandatory to provide values for parameters marked with 
-
-<mark style="color:red;">
-
-\*
-
-</mark>
-
-.
-
-\
-
-
-• Mandatory fields cannot be null or empty.
-
-\
-
-
-• The API supports QuML 1.1 version onwards. For Detailed Question schema, Please check 
-
-[here](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-6.0.0/schemas/question/1.1)
-
- 
+• <mark style="color:orange;">/update</mark> endpoint executes the "Update Question" request based on parameters provided as metadata in the request body. Users can provide updated attributes and their values in a request.\
+• It points to inquiry-api-service (assessment service) - <mark style="color:orange;">/question/v5/update</mark>\
+• You need to provide a valid Question Id value in <mark style="color:orange;">{question\_id}</mark> field of the API URL.\
+• It is mandatory to provide values for parameters marked with <mark style="color:red;">\*</mark>.\
+• Mandatory fields cannot be null or empty.\
+• The API supports QuML 1.1 version onwards. For Detailed Question schema, Please check [here](https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-6.0.0/schemas/question/1.1)&#x20;
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="question_id" type="String" required="true" %}
@@ -75,13 +21,7 @@ Append a valid Question ID To the Request URL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-The Content-Type entity is the media type of the resource. It should be 
-
-<mark style="color:green;">
-
-Application/json
-
-</mark>
+The Content-Type entity is the media type of the resource. It should be <mark style="color:green;">Application/json</mark>
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="String" required="true" %}
