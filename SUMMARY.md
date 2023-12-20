@@ -112,6 +112,7 @@
   * [Release calendar 5.2.0, 5.3.0, 5.4.0, 5.5.0, 5.6.0](use/release-plan-and-calendar/release-calendar-5.2.0-5.3.0-5.4.0-5.5.0-5.6.0.md)
   * [Release calendar 5.7.0, 6.0.0,6.1.0 and 6.2.0](use/release-plan-and-calendar/release-calendar-5.7.0-6.0.0-6.1.0-and-6.2.0.md)
 * [Release notes](use/release-notes/README.md)
+  * [inQuiry - Release v7.0.0 (Ongoing)](use/release-notes/inquiry-release-v7.0.0-ongoing.md)
   * [inQuiry - Release v6.2.0 (Latest)](use/release-notes/inquiry-release-v6.2.0-latest.md)
   * [inQuiry - Release v6.1.0](use/release-notes/inquiry-release-v6.1.0.md)
   * [inQuiry - Release v6.0.0](use/release-notes/inquiry-release-v6.0.0.md)

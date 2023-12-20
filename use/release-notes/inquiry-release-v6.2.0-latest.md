@@ -2,9 +2,7 @@
 
 ### Document Release Version
 
-| Project         | Release Version | Date         |
-| --------------- | --------------- | ------------ |
-| Sunbird Inquiry | R 6.2.0         | 11 Sept 2023 |
+<table><thead><tr><th width="167">Project</th><th>Release Version</th><th>Date</th></tr></thead><tbody><tr><td>Sunbird Inquiry</td><td>R 6.2.0</td><td>11 Sept 2023</td></tr></tbody></table>
 
 **Following are the Planned Tickets of R 6.2.0**
 
