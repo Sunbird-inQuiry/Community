@@ -1,4 +1,4 @@
-# inQuiry - Release v7.0.0 (Ongoing)
+# inQuiry - Release v7.0.0 (Latest)
 
 ### Document Release Version
 
@@ -10,7 +10,7 @@
 
 **Following are the Planned Tickets of R 7.0.0**
 
-<table><thead><tr><th width="85">Sl.no</th><th width="100">JIRA Id</th><th width="138">Issue Type</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>IQ-645</td><td>Minor-Enhancement</td><td>Jenkins script for data pipeline</td></tr><tr><td>2</td><td>IQ-638</td><td>Minor-Enhancement</td><td>[inQuiry] Removal of hardcoding in Question Editor</td></tr><tr><td>3</td><td>IQ-604</td><td>Minor-Enhancement</td><td>Upgrade coKreat to v2 APIs</td></tr><tr><td>4</td><td>IQ-585</td><td>Minor-Enhancement</td><td>Productionise inquiry V2</td></tr><tr><td>5</td><td>IQ-584</td><td>Minor-Enhancement</td><td>User Account Deletion</td></tr><tr><td>6</td><td>IQ-580</td><td>Minor-Enhancement</td><td>Enabling of V2 Questionset Editor in sunbirdEd-portal</td></tr><tr><td>7</td><td>IQ-567</td><td>Bug</td><td>Error Event is generated on Telemetry while preview the Question set</td></tr><tr><td>8</td><td>IQ-560</td><td>Minor-Enhancement</td><td>[inQuiry ] Removal of Hardcoding from inQuiry components</td></tr><tr><td>9</td><td>IQ-559</td><td>Minor-Enhancement</td><td>Merging the inQuiry dev infra to Ed dev infra</td></tr></tbody></table>
+<table><thead><tr><th width="85">Sl.no</th><th width="100">JIRA Id</th><th width="138">Issue Type</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>IQ-645</td><td>Minor-Enhancement</td><td>Jenkins script for data pipeline</td></tr><tr><td>2</td><td>IQ-638</td><td>Minor-Enhancement</td><td>[inQuiry] Removal of hardcoding in Question Editor</td></tr><tr><td>3</td><td>IQ-604</td><td>Minor-Enhancement</td><td>Upgrade coKreat to v2 APIs</td></tr><tr><td>4</td><td>IQ-585</td><td>Minor-Enhancement</td><td>Productionise inquiry V2</td></tr><tr><td>5</td><td>IQ-584</td><td>Minor-Enhancement</td><td>User Account Deletion</td></tr><tr><td>6</td><td>IQ-580</td><td>Minor-Enhancement</td><td>Enabling of V2 Questionset Editor in sunbirdEd-portal</td></tr><tr><td>7</td><td>IQ-567</td><td>Bug</td><td>Error Event is generated on Telemetry while preview the Question set</td></tr><tr><td>8</td><td>IQ-560</td><td>Minor-Enhancement</td><td>[inQuiry ] Removal of Hardcoding from inQuiry components</td></tr><tr><td>9</td><td>IQ-559</td><td>Minor-Enhancement</td><td>Merging the inQuiry dev infra to Ed dev infra</td></tr><tr><td>10</td><td>IQ-646</td><td>Minor-Enhancement</td><td>Deploy user-pii-updater flink job in cokreat infra</td></tr><tr><td>11</td><td>IQ-591</td><td>Bug</td><td>Deployment failure in OCI because of Sunbird related variables</td></tr></tbody></table>
 
 ## Release Tags:
 
