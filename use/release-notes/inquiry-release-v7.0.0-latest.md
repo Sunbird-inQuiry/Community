@@ -16,43 +16,43 @@
 
 ### Question Set **Editor**:
 
-Tag: v7.0.2
+Tag: v7.0.3
 
-Install: `npm i @project-sunbird/sunbird-questionset-editor@7.0.2`
+Install: `npm i @project-sunbird/sunbird-questionset-editor@7.0.3`
 
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor/v/7.0.2](https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor/v/7.0.2)
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor/v/7.0.3](https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor/v/7.0.3)
 
 ### Question Set **Editor Web Component**:
 
-Tag: v3.0.1
+Tag: v3.0.2
 
-Install: `npm i @project-sunbird/sunbird-questionset-editor-web-component@3.0.1`
+Install: `npm i @project-sunbird/sunbird-questionset-editor-web-component@3.0.2`
 
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor-web-component/v/3.0.1](https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor-web-component/v/3.0.1)
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor-web-component/v/3.0.2](https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor-web-component/v/3.0.2)
 
 ### QuML Player:
 
-Tag: v7.0.1
+Tag: v7.0.2
 
-Install: `npm i @project-sunbird/sunbird-quml-player@7.0.1`
+Install: `npm i @project-sunbird/sunbird-quml-player@7.0.2`
 
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/7.0.1](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/7.0.1)
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/7.0.2](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/7.0.2)
 
 ### QuML Player Web Component:
 
-Tag: v3.0.1
+Tag: v3.0.2
 
-Install: `npm i @project-sunbird/sunbird-quml-player-web-component@3.0.1`
+Install: `npm i @project-sunbird/sunbird-quml-player-web-component@3.0.2`
 
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.1](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.1)
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.2](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.2)
 
 ### Resource Library:&#x20;
 
-Tag: v7.0.1
+Tag: v7.0.2
 
-Install: `npm i @project-sunbird/sunbird-resource-library@7.0.1`
+Install: `npm i @project-sunbird/sunbird-resource-library@7.0.2`
 
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/7.0.1](https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/7.0.1)
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/7.0.2](https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/7.0.2)
 
 ### Question & Question Set Service:
 
