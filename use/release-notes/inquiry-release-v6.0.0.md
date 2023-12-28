@@ -60,7 +60,7 @@ URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/
 
 ### Question & Question Set Service:
 
-<table><thead><tr><th width="141">Component</th><th>Service To Build</th><th>Build Tag</th><th>Core Release Tag</th><th width="130">Service To Deploy</th><th>Deploy Tag</th><th width="328">Comment</th></tr></thead><tbody><tr><td>Assessment</td><td>Build/job/Core/job/Assessment/ </td><td><a href="https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-6.0.0_RC1">release-6.0.0_RC1</a></td><td><a href="https://github.com/Sunbird-Knowlg/knowledge-platform/tree/release-5.6.0_RC1">release-5.6.0_RC1</a></td><td>Deploy/job/dev/job/Kubernetes/job/Assessment/</td><td><a href="https://github.com/project-sunbird/sunbird-devops/tree/release-6.0.0-inquiry_RC1">release-6.0.0-inquiry_RC1</a><br></td><td>New Configuration Added:<br>Please Refer to <a href="inquiry-release-v6.0.0.md#configuration-changes-for-assessment-service">Configuration Section</a> <br>Note: V2 API need to be onboarded.<br>Ref: <a href="https://github.com/project-sunbird/sunbird-devops/compare/release-5.6.0-inquiry...release-6.0.0-inquiry">https://github.com/project-sunbird/sunbird-devops/compare/release-5.6.0-inquiry...release-6.0.0-inquiry</a><br></td></tr><tr><td>InQuiryFlink Job</td><td>Build/job/KnowledgePlatform/job/InquiryFlinkJob</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.0.0_RC1">release-6.0.0_<br>RC1</a></td><td>Not Applicable</td><td>Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.0.0_RC1">release-6.0.0_<br>RC1</a></td><td>No Configuration Changes</td></tr></tbody></table>
+<table><thead><tr><th width="141">Component</th><th>Service To Build</th><th>Build Tag</th><th>Core Release Tag</th><th width="130">Service To Deploy</th><th>Deploy Tag</th><th width="328">Comment</th></tr></thead><tbody><tr><td>Assessment</td><td>Build/job/Core/job/Assessment/ </td><td><a href="https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-6.0.0_RC1">release-6.0.0_RC1</a></td><td><a href="https://github.com/Sunbird-Knowlg/knowledge-platform/tree/release-5.6.0_RC1">release-5.6.0_RC1</a></td><td>Deploy/job/dev/job/Kubernetes/job/Assessment/</td><td><a href="https://github.com/project-sunbird/sunbird-devops/tree/release-6.0.0-inquiry_RC1">release-6.0.0-inquiry_RC1</a><br></td><td>New Configuration Added:<br>Please Refer to <a href="inquiry-release-v6.0.0.md#configuration-changes-for-assessment-service">Configuration Section</a> <br>Note: V2 API need to be onboarded.<br>Ref: <a href="https://github.com/project-sunbird/sunbird-devops/compare/release-5.6.0-inquiry...release-6.0.0-inquiry">https://github.com/project-sunbird/sunbird-devops/compare/release-5.6.0-inquiry...release-6.0.0-inquiry</a><br></td></tr><tr><td>InQuiryFlink</td><td>NA</td><td>NA</td><td>NA</td><td>Deploy/job/dev/job/Kubernetes/job/InquiryUploadSchema/</td><td>NA</td><td>Schema Should be Uploaded For Question &#x26; QuestionSet using <a href="https://github.com/project-sunbird/sunbird-devops/tree/release-6.0.0-inquiry_RC1">release-6.0.0-inquiry_RC1</a></td></tr><tr><td>InQuiryFlink Job</td><td>Build/job/KnowledgePlatform/job/InquiryFlinkJob</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.0.0_RC2">release-6.0.0_RC2</a></td><td>Not Applicable</td><td>Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.0.0_RC2">release-6.0.0_RC2</a></td><td>No Configuration Changes</td></tr></tbody></table>
 
 ## Configuration Changes For Assessment Service:
 
@@ -643,3 +643,15 @@ File Name: ansible/roles/kong-api/defaults/main.yml
 
 ```
 
+## DB Model Changes For V2 API:
+
+```
+ALTER TABLE {{ question_keyspace_name }}.question_data ADD (outcomeDeclaration text, feedback text);
+ 
+```
+
+## Jenkins Job Changes:
+
+A New Jenkins Job Created For Kafka Topic Management. The job can be imported using [https://github.com/Sunbird-inQuiry/data-pipeline/blob/release-6.0.0\_RC2/scripts/jenkins-jobs/Deploy/KnowledgePlatform/InquiryKafkaSetup/config.xml](https://github.com/Sunbird-inQuiry/data-pipeline/blob/release-6.0.0\_RC2/scripts/jenkins-jobs/Deploy/KnowledgePlatform/InquiryKafkaSetup/config.xml)\
+\
+For Build, Upload, and Deploy operation of data-pipeline jobs, jenkins jobs are available for import [here](https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.0.0\_RC2/scripts/jenkins-jobs)
