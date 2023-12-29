@@ -1,4 +1,4 @@
-# inQuiry - Release v6.1.0 (latest)
+# inQuiry - Release v6.1.0
 
 ### Document Release Version
 
@@ -51,3 +51,58 @@ Tag: v6.1.0
 Install: `npm i @project-sunbird/sunbird-resource-library@6.1.0`
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/6.1.0](https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/6.1.0)
+
+### Question & Question Set Service:
+
+<table><thead><tr><th width="141">Component</th><th>Service To Build</th><th>Build Tag</th><th>Core Release Tag</th><th width="130">Service To Deploy</th><th>Deploy Tag</th><th width="328">Comment</th></tr></thead><tbody><tr><td>InquiryKafkaSetup</td><td>NA</td><td>NA</td><td>NA</td><td>Deploy/job/dev/job/KnowledgePlatform/job/InquiryKafkaSetup/</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.1.0_RC2">release-6.1.0_RC2</a></td><td>Run this job to create kafka topics required for Flink Job quml-migrator.<br>Below topics will be created:<br>quml.migration.job.request<br>assessment.republish.request</td></tr><tr><td>InQuiryFlink Job</td><td>Build/job/KnowledgePlatform/job/InquiryFlinkJob</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.1.0_RC2">release-6.1.0_RC2</a></td><td>Not Applicable</td><td>Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.1.0_RC2">release-6.1.0_RC2</a></td><td>A new flink job quml-migrator introduced for data migration of QUML 1.0 to QUML 1.1<br>Question &#x26; QuestionSet V2 API's work with QUML 1.1 only. So this job will help to migrate existing data created in QUML 1.0 format.</td></tr></tbody></table>
+
+## Configuration Changes quml-migrator flink job:
+
+Configuration File Link: [https://github.com/Sunbird-inQuiry/data-pipeline/blob/723b236ae558f967cb20a45508318269aa408abe/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L232](https://github.com/Sunbird-inQuiry/data-pipeline/blob/723b236ae558f967cb20a45508318269aa408abe/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L232)
+
+```
+quml-migrator:
+  quml-migrator: |+
+    include file("/data/flink/conf/base-config.conf")
+    kafka {
+      input.topic = "{{ inquiry_quml_migrator_kafka_topic_name }}"
+      republish.topic = "{{ inquiry_assessment_republish_kafka_topic_name }}"
+      groupId = "{{ inquiry_quml_migrator_group }}"
+    }
+    task {
+      consumer.parallelism = 1
+      parallelism = 1
+      router.parallelism = 1
+    }
+    question {
+      keyspace = "{{ question_keyspace_name }}"
+      table = "question_data"
+    }
+    questionset {
+      keyspace = "{{ hierarchy_keyspace_name }}"
+      table = "questionset_hierarchy"
+    }
+
+  flink-conf: |+
+    jobmanager.memory.flink.size: {{ flink_job_names['quml-migrator'].jobmanager_memory }}
+    taskmanager.memory.flink.size: {{ flink_job_names['quml-migrator'].taskmanager_memory }}
+    taskmanager.numberOfTaskSlots: {{ flink_job_names['quml-migrator'].taskslots }}
+    parallelism.default: 1
+    jobmanager.execution.failover-strategy: region
+    taskmanager.memory.network.fraction: 0.1
+    
+    
+```
+
+## Default values of configuration variables for quml-migrator flink job:
+
+```
+inquiry_quml_migrator_kafka_topic_name: "{{ env_name }}.quml.migration.job.request"
+inquiry_quml_migrator_group: "{{ env_name }}-quml-migrator-group"
+inquiry_assessment_republish_kafka_topic_name: "{{ env_name }}.assessment.republish.request"
+```
+
+## Data Migration Guide:
+
+Data Migration For QML 1.0 to QUML 1.1 is optional and should be decided by adopter.\
+For more information on migration steps, Please checkout here
