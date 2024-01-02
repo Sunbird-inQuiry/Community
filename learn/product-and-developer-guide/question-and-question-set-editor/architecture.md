@@ -1,12 +1,12 @@
 # Architecture
 
-![Question Set Editor - Architecture](<../../../.gitbook/assets/image (35).png>)
+![Question Set Editor - Architecture](<../../../.gitbook/assets/image (43).png>)
 
 #### [FancyTree](https://github.com/mar10/fancytree/wiki)
 
 The main purpose of using a fancy tree is a tree view/tree grid that allows to dynamically render powerful, user-friendly tree view, drag\&drop, lazy loading, efficient and performant handling of large data sets.
 
-****[**CKEditor5**](https://ckeditor.com/ckeditor-5/)****
+[**CKEditor5**](https://ckeditor.com/ckeditor-5/)
 
 CKEditor provides features to add images, mathematical formula, formatting of texts as per the needs, etc in questions.
 

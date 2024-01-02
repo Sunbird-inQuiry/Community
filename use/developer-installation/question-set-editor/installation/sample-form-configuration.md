@@ -123,7 +123,7 @@ In QuestionSet Editor these are the following of fields which we are using:
 }
 ```
 
-![](../../../../.gitbook/assets/richText.png)
+![](<../../../../.gitbook/assets/richText (1).png>)
 
 ### **Keywords**
 
@@ -298,7 +298,7 @@ In QuestionSet Editor these are the following of fields which we are using:
                    }
 ```
 
-![sb-g-col-lg-2](<../../../../.gitbook/assets/richText (1).png>)
+![sb-g-col-lg-2](../../../../.gitbook/assets/richText.png)
 
 * One column space fields should have renderHints as:
 

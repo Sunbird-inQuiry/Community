@@ -37,7 +37,7 @@ Enables question(s) and questions set(s) creation, curation and publishing
 
 &#x20;     There are a wide range of behaviours that can be enabled through inQuiry
 
-<figure><img src="../.gitbook/assets/Screenshot 2022-12-09 at 10.55.15 AM.png" alt=""><figcaption><p>inQuiry - Example of configurable behaviours</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2022-12-09 at 10.55.15 AM (1).png" alt=""><figcaption><p>inQuiry - Example of configurable behaviours</p></figcaption></figure>
 
 * The pluggable player in inQuiry is built as per the WCAG AA guidelines which enables you to reach more learners.&#x20;
 

@@ -87,7 +87,7 @@ To enable this feature, the player accepts the following configs :point\_down:
 
 <div align="center">
 
-<img src="../../../.gitbook/assets/feedback-popup (2).png" alt="Feedback popup">
+<img src="../../../.gitbook/assets/feedback-popup.png" alt="Feedback popup">
 
 </div>
 

@@ -21,7 +21,7 @@ Here’s the configuration:
 }
 ```
 
-![](<../../../.gitbook/assets/image (37).png>)
+![](<../../../.gitbook/assets/image (78).png>)
 
 **- edit**\
 All the fields will be enabled to edit for the collection creator.\
@@ -33,7 +33,7 @@ Here’s the configuration:
 }
 ```
 
-![](<../../../.gitbook/assets/image (1) (2).png>)
+![](<../../../.gitbook/assets/image (12).png>)
 
 **- review**\
 It’s similar to read mode only. but here users can perform some actions such as publish, reject. \
@@ -45,7 +45,7 @@ Here’s the configuration:
 }
 ```
 
-![](<../../../.gitbook/assets/image (2) (1) (1).png>)
+![](<../../../.gitbook/assets/image (68).png>)
 
 You define which fields of a form can be editable for a specific `mode` with limited editing rights, leaving the rest of the fields non-editable to them. \
 \
@@ -83,14 +83,14 @@ Here is the configuration:
 }
 ```
 
-![](<../../../.gitbook/assets/image (15).png>)
+![](<../../../.gitbook/assets/image (25).png>)
 
 ## Organize TOC
 
 The maximum number of levels in the questionset has to be defined using the `maxDepth` property. This has to be updated in the object metadata of the primary category definition under hierarchy.\
 `maxDepth` defines the level of questionset i.e at which level question is to be linked. If `maxDepth` is set as 0, `Create New` button get enabled to question at root node.
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (42).png>)
 
 Note: children at root node is to be defined which defines the type of question can be created at root node. Here is the default value to be used for children.
 
@@ -138,7 +138,7 @@ Here is the configuration:
     }
 ```
 
-![](<../../../.gitbook/assets/image (16) (1) (1).png>)
+![](<../../../.gitbook/assets/image (63).png>)
 
 ## Question Linking Limit
 
@@ -154,13 +154,13 @@ questionSet: {
 
 Suppose if "maxQuestionsLimit" is set to **“5“** then while trying to create new question it will give error maxlimit message as:
 
-![](<../../../.gitbook/assets/image (15) (1) (1).png>)
+![](<../../../.gitbook/assets/image (27).png>)
 
 ## Icon
 
 This defines the icon which comes in the node and levels, you can set your own icon here by adding the class of icon, in root node for iconClass: 'fa fa-book' icon is shown as:
 
-![](<../../../.gitbook/assets/image (23).png>)
+![](<../../../.gitbook/assets/image (74).png>)
 
 ## &#x20;Common Framework License URL
 
@@ -176,4 +176,4 @@ It defines where should the content policy link should be redirected.
 
 `contentPolicyUrl: "/term-of-use.html"` we are using this config in Diksha as it redirects to (https://diksha.gov.in/term-of-use.html)
 
-![](<../../../.gitbook/assets/image (1) (1) (2).png>)
+![](<../../../.gitbook/assets/image (36).png>)
