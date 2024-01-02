@@ -19,37 +19,37 @@ The inQuiry comes with two pre-built question types:
 * Multiple Choice Question (interactive) and
 * Subjective Question (non-interactive).
 
-![](<../../../.gitbook/assets/image (14) (1) (2).png>)
+![](<../../../.gitbook/assets/image (17).png>)
 
 #### c) Ability to create a question(s) that have images & rich text.
 
 Question set editor provides features to add images, mathematical formula, formatting of texts as per the needs, etc.
 
-![](<../../../.gitbook/assets/image (18).png>)
+![](<../../../.gitbook/assets/image (29).png>)
 
 #### d) Ability to add and customize scientific and mathematical formulae in the question text.
 
-![](<../../../.gitbook/assets/image (29).png>)
+![](<../../../.gitbook/assets/image (10).png>)
 
 #### e) Flexibility for creators to choose to render their questions in one of the three different layouts:&#x20;
 
 * &#x20;Vertical layout
 
-![Vertical layout](<../../../.gitbook/assets/image (4) (1).png>)
+![Vertical layout](<../../../.gitbook/assets/image (50).png>)
 
 * Grid layout
 
-![Grid layout](<../../../.gitbook/assets/image (8).png>)
+![Grid layout](<../../../.gitbook/assets/image (23).png>)
 
 * &#x20;Horizontal layout
 
-![](<../../../.gitbook/assets/image (18) (1).png>)
+![](<../../../.gitbook/assets/image (22).png>)
 
 #### f) Ability to include 'Solutions' - either 'text+image' only solutions or 'video' solutions to the question(s)
 
 During the question creation solution can be added to the question, the solution can have text and image or the video which can be shown in the player on enabling the **Show Solution** in the editor.
 
-![](<../../../.gitbook/assets/image (21) (1).png>)
+![](<../../../.gitbook/assets/image (47).png>)
 
 ![](../../../.gitbook/assets/Mcq-text-solution.png)
 

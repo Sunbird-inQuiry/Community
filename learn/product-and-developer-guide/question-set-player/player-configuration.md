@@ -176,13 +176,13 @@ The followings are some of the properties related to the question set response, 
 
 * Refer to the following screenshots for more understanding:
 
-![First page configurations](<../../../.gitbook/assets/parent-config (1).png>)
+![First page configurations](../../../.gitbook/assets/parent-config.png)
 
 
 
-![Sidebar menu configurations](<../../../.gitbook/assets/sidemenu (1).png>)
+![Sidebar menu configurations](../../../.gitbook/assets/sidemenu.png)
 
 
 
-![Feedback popup configurations](<../../../.gitbook/assets/feedback-popup (1).png>)
+![Feedback popup configurations](<../../../.gitbook/assets/feedback-popup (2).png>)
 
