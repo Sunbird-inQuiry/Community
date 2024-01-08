@@ -105,4 +105,10 @@ inquiry_assessment_republish_kafka_topic_name: "{{ env_name }}.assessment.republ
 ## Data Migration Guide:
 
 Data Migration For QML 1.0 to QUML 1.1 is optional and should be decided by adopter.\
-For more information on migration steps, Please checkout here
+For more information on migration steps, Please checkout [here](https://project-sunbird.atlassian.net/wiki/spaces/QB/pages/3351511041/QuML+Migration+Notes+-+From+V1.0+TO+V1.1)\
+\
+**Sync Tool:**\
+Sync Tool is maintained in Knowlg BB and should be build and deployed using Tag [release-5.7.0\_RC1](https://github.com/Sunbird-Knowlg/sunbird-learning-platform/tree/release-5.7.0\_RC1)\
+Jenkins Jobs to for sync tool are as below: \
+Build: Build/job/KnowledgePlatform/job/SyncTool/\
+Deploy: Deploy/job/dev/job/KnowledgePlatform/job/Neo4jElasticSearchSyncTool/
