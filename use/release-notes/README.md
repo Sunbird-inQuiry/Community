@@ -2,6 +2,18 @@
 
 ### This section represents the release versions of inQuiry build block:
 
+{% content-ref url="inquiry-release-v7.0.0-latest.md" %}
+[inquiry-release-v7.0.0-latest.md](inquiry-release-v7.0.0-latest.md)
+{% endcontent-ref %}
+
+{% content-ref url="inquiry-release-v6.2.0.md" %}
+[inquiry-release-v6.2.0.md](inquiry-release-v6.2.0.md)
+{% endcontent-ref %}
+
+{% content-ref url="inquiry-release-v6.1.0.md" %}
+[inquiry-release-v6.1.0.md](inquiry-release-v6.1.0.md)
+{% endcontent-ref %}
+
 {% content-ref url="inquiry-release-v6.0.0.md" %}
 [inquiry-release-v6.0.0.md](inquiry-release-v6.0.0.md)
 {% endcontent-ref %}
