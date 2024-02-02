@@ -109,7 +109,7 @@ For more information on migration steps, Please checkout [here](https://project-
 
 ## Sync Tool:
 
-Sync Tool is maintained in Knowlg BB and should be build and deployed using Tag [release-5.7.0\_RC1](https://github.com/Sunbird-Knowlg/sunbird-learning-platform/tree/release-5.7.0\_RC1)\
+Sync Tool is maintained in Knowlg BB and should be build and deployed using Tag [release-5.7.0\_RC2](https://github.com/Sunbird-Knowlg/sunbird-learning-platform/tree/release-5.7.0\_RC2)\
 Jenkins Jobs to for sync tool are as below: \
 Build: Build/job/KnowledgePlatform/job/SyncTool/\
 Deploy: Deploy/job/dev/job/KnowledgePlatform/job/Neo4jElasticSearchSyncTool/
