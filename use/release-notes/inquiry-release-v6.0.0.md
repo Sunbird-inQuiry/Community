@@ -659,3 +659,10 @@ ALTER TABLE {{ question_keyspace_name }}.question_data ADD (outcomeDeclaration t
 A New Jenkins Job Created For Kafka Topic Management. The job can be imported using [https://github.com/Sunbird-inQuiry/data-pipeline/blob/release-6.0.0\_RC2/scripts/jenkins-jobs/Deploy/KnowledgePlatform/InquiryKafkaSetup/config.xml](https://github.com/Sunbird-inQuiry/data-pipeline/blob/release-6.0.0\_RC2/scripts/jenkins-jobs/Deploy/KnowledgePlatform/InquiryKafkaSetup/config.xml)\
 \
 For Build, Upload, and Deploy operation of data-pipeline jobs, jenkins jobs are available for import [here](https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-6.0.0\_RC2/scripts/jenkins-jobs)
+
+### Note:
+
+\
+1\. For V2 API's, compatibilityLevel increased by 1. So for Question object, value is 5 and for Questionset  object, value is 6. If any application consume data based on compatibilityLevel, it should make the the changes accordingly.
+
+##
