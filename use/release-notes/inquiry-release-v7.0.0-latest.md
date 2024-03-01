@@ -32,19 +32,25 @@ URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-questionset-editor-
 
 ### QuML Player:
 
-Tag: v7.0.2
+Tag: v7.0.3
 
-Install: `npm i @project-sunbird/sunbird-quml-player@7.0.2`
+Install: `npm i @project-sunbird/sunbird-quml-player@7.0.3`
 
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/7.0.2](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/7.0.2)
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/7.0.3](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player/v/7.0.3)
 
 ### QuML Player Web Component:
 
-Tag: v3.0.2
+Tag: v3.0.4
 
-Install: `npm i @project-sunbird/sunbird-quml-player-web-component@3.0.2`
+Install: `npm i @project-sunbird/sunbird-quml-player-web-component@3.0.4`
 
-URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.2](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.2)
+URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.4](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.4)
+
+#### Quml Player HotFix:
+
+[IQ-674](https://project-sunbird.atlassian.net/browse/IQ-674) - Quml Player should work without making any API call if Questionset Config.metadata have complete question data.
+
+&#x20;This fix is provided in [3.0.3](https://www.npmjs.com/package/@project-sunbird/sunbird-quml-player-web-component/v/3.0.3) version of web component
 
 ### Resource Library:&#x20;
 
@@ -53,6 +59,8 @@ Tag: v7.0.3
 Install: `npm i @project-sunbird/sunbird-resource-library@7.0.3`
 
 URL: [https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/7.0.3](https://www.npmjs.com/package/@project-sunbird/sunbird-resource-library/v/7.0.3)
+
+
 
 ### Question & Question Set Service:
 
