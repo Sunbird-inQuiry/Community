@@ -1,5 +1,14 @@
 # inQuiry - Release v7.0.0 (Latest)
 
+### Hot-fix 7.0.0 (17-04-2024) <a href="#hot-fix-5.7.0-17-04-2024" id="hot-fix-5.7.0-17-04-2024"></a>
+
+1. script changes to make InquiryUploadSchema job cloud neutral ([IQ-750](https://project-sunbird.atlassian.net/browse/IQ-750))
+2. author field is removed from pii configuration ([IQ-756](https://project-sunbird.atlassian.net/browse/IQ-756))
+
+#### Release Tags: <a href="#release-tags" id="release-tags"></a>
+
+<table><thead><tr><th>Component</th><th width="100">Service to be Build</th><th width="93">Build Tag</th><th>Deploy Job</th><th width="157">Deployment Tag</th><th>Comment</th></tr></thead><tbody><tr><td>InquiryUploadSchema</td><td>NA</td><td>NA</td><td>Deploy/Kubernetes/UploadSchema</td><td><a href="https://github.com/project-sunbird/sunbird-devops/tree/release-7.0.0_RC4">release-7.0.0_RC4</a></td><td>schema tag: <a href="https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-7.0.0_RC4">release-7.0.0_RC4</a><br>Note: the job should be re-imported using <a href="https://github.com/project-sunbird/sunbird-devops/blob/release-7.0.0_RC4/deploy/jenkins/jobs/Deploy/jobs/dev/jobs/Kubernetes/jobs/InquiryUploadSchema/config.xml">script</a> </td></tr></tbody></table>
+
 ### Document Release Version
 
 | Project         | Release Version | Date        |
