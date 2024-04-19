@@ -133,6 +133,9 @@
   * [Release-5.5.0](use/deprecations/release-5.5.0.md)
 * [Learn More](use/learn-more/README.md)
   * [Dependencies](use/learn-more/dependencies.md)
+  * [Delete User Functionality](use/learn-more/delete-user-functionality/README.md)
+    * [User PII Cleanup](use/learn-more/delete-user-functionality/user-pii-cleanup.md)
+    * [Asset Ownership Transfer](use/learn-more/delete-user-functionality/asset-ownership-transfer.md)
 
 ## Guidelines or Best practices
 
