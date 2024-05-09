@@ -1,5 +1,30 @@
 # inQuiry - Release v7.0.0 (Latest)
 
+### Hot-fix 7.0.0 (30-04-2024) <a href="#hot-fix-5.7.0-17-04-2024" id="hot-fix-5.7.0-17-04-2024"></a>
+
+1. Image is not getting in solution while previewing the question ([IQ-772](https://project-sunbird.atlassian.net/browse/IQ-772))
+2. The Drop down values are not aligned properly for learning level field ([IQ-777](https://project-sunbird.atlassian.net/browse/IQ-777))
+
+#### Release Tags: <a href="#release-tags" id="release-tags"></a>
+
+**Question Set** **Editor**:
+
+Tag: v7.0.6
+
+Install: `npm i @project-sunbird/sunbird-questionset-editor@7.0.6`
+
+**QuML Player:**
+
+Tag: v7.0.4
+
+Install: `npm i @project-sunbird/sunbird-quml-player@7.0.4`
+
+**Resource Library:**&#x20;
+
+Tag: v7.0.4
+
+Install: `npm i @project-sunbird/sunbird-resource-library@7.0.4`
+
 ### Hot-fix 7.0.0 (17-04-2024) <a href="#hot-fix-5.7.0-17-04-2024" id="hot-fix-5.7.0-17-04-2024"></a>
 
 1. script changes to make InquiryUploadSchema job cloud neutral ([IQ-750](https://project-sunbird.atlassian.net/browse/IQ-750))
@@ -9,13 +34,11 @@
 
 <table><thead><tr><th>Component</th><th width="100">Service to be Build</th><th width="93">Build Tag</th><th>Deploy Job</th><th width="157">Deployment Tag</th><th>Comment</th></tr></thead><tbody><tr><td>InquiryUploadSchema</td><td>NA</td><td>NA</td><td>Deploy/Kubernetes/UploadSchema</td><td><a href="https://github.com/project-sunbird/sunbird-devops/tree/release-7.0.0_RC4">release-7.0.0_RC4</a></td><td>schema tag: <a href="https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-7.0.0_RC4">release-7.0.0_RC4</a><br>Note: the job should be re-imported using <a href="https://github.com/project-sunbird/sunbird-devops/blob/release-7.0.0_RC4/deploy/jenkins/jobs/Deploy/jobs/dev/jobs/Kubernetes/jobs/InquiryUploadSchema/config.xml">script</a> </td></tr></tbody></table>
 
-### Document Release Version
+## Document Release Version
 
 | Project         | Release Version | Date        |
 | --------------- | --------------- | ----------- |
 | Sunbird Inquiry | R 7.0.0         | 21 Dec 2023 |
-
-
 
 **Following are the Planned Tickets of R 7.0.0**
 
