@@ -37,6 +37,10 @@ This release had a few bug fixes.
 
 ## Build Tags
 
+### Question & Question Set Service:
+
+<table><thead><tr><th width="136">Component</th><th width="91">Service To Build</th><th>Build Tag</th><th>Core Release Tag</th><th width="107">Service To Deploy</th><th>Deploy Tag</th><th width="328">Comment</th></tr></thead><tbody><tr><td>Assessment</td><td>Build/job/Core/job/Assessment/ </td><td><a href="https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-8.0.0_RC2">release-8.0.0_RC2</a></td><td><a href="https://github.com/Sunbird-Knowlg/knowledge-platform/tree/release-5.6.0_RC3">release-5.6.0_RC3</a></td><td>Deploy/job/dev/job/Kubernetes/job/Assessment/</td><td>TO BE ADDED</td><td>Note: <br>1. No New Configuration Added.<br>2. Few Bug fixes and some enhancement done.<br>3. Object Schema for Questionset v2 api has been updated. So Schema should be uploaded before deployment for Question, QuestionSet object types.<br><br>Config File Ref: <br>TO BE UPDATED<br></td></tr><tr><td>InquiryUploadSchema</td><td>NA</td><td>NA</td><td>NA</td><td>Deploy/job/dev/job/Kubernetes/job/InquiryUploadSchema/</td><td>TO BE ADDED</td><td>Schema Should be Uploaded For Question &#x26; QuestionSet using <a href="https://github.com/Sunbird-inQuiry/inquiry-api-service/tree/release-8.0.0_RC2">release-8.0.0_RC2 </a></td></tr><tr><td>InquiryKafkaSetup</td><td>NA</td><td>NA</td><td>NA</td><td>Deploy/job/dev/job/KnowledgePlatform/job/InquiryKafkaSetup/</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-8.0.0_RC1">release-8.0.0_RC1</a></td><td>A new kafka topic user.ownership.transfer has to be created for user-pii-data-updater flink job.</td></tr><tr><td>InQuiryFlink Job</td><td>Build/job/KnowledgePlatform/job/InquiryFlinkJob</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-8.0.0_RC1">release-8.0.0_RC1</a></td><td>Not Applicable</td><td>Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-8.0.0_RC1">release-8.0.0_RC1</a></td><td>An Existing Flink Job user-pii-data-updater is enahnced for asset ownership transfer feature. <br>For more details on the feature, <a href="../learn-more/delete-user-functionality/asset-ownership-transfer.md">Click Here</a><br>For Configuration file reference, <a href="https://github.com/Sunbird-inQuiry/data-pipeline/blob/c30fd964c440b62afcabde8ce896cc1ce1b15f89/kubernetes/helm_charts/datapipeline_jobs/values.j2#L264">Click Here</a></td></tr></tbody></table>
+
 
 
 ## Installation or Upgrade
@@ -45,7 +49,10 @@ This release had a few bug fixes.
 
 ## Configuration/Environment variable
 
+**Question & QuestionSet Service:**
 
+* For Assessment micro-service, no new configuration added.
+* For user-pii-data updater flink job, new configurations are added. For more details, Please checkout variable section and configuration section [Here](../learn-more/delete-user-functionality/asset-ownership-transfer.md)
 
 ## Deprecation and Removals
 
