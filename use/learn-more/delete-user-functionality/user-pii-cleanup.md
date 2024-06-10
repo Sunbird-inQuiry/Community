@@ -54,3 +54,92 @@ The user can request for deletion of their account in Sunbird, this means two pr
 | email\_notification\_subject           | Subject Line for Email Notification                                                                                                                                                                                                            | "User Account Deletion Notification"                              |
 | email\_notification\_regards           | Value For Regards in Email Notification                                                                                                                                                                                                        | "Team"                                                            |
 
+
+
+### Code And Configuration Changes:
+
+If you are interested in adopting this feature by making code changes in your forked repository of sunbird, then please checkout below code and configuration changes:\
+\
+**Code Changes:**\
+For **user-pii-data-updater** flink job code, please checkout the link below:
+
+{% embed url="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-7.0.0/user-pii-data-updater" %}
+
+Below changes need to be done for creating kafka topic needed by user-pii-data-updater-job:\
+[**ansible/roles/inquiry-setup-kafka/defaults/main.yml**](https://github.com/Sunbird-inQuiry/data-pipeline/blob/release-7.0.0/ansible/roles/inquiry-setup-kafka/defaults/main.yml)
+
+```
+- name: delete.user
+    num_of_partitions: 1
+    replication_factor: 1  
+
+- name: delete.user
+    retention_time: 172800000
+    replication_factor: 1
+```
+
+If the above topic already exists, you can skip this change.
+
+**Configuration Changes:**\
+Add below configuration in [**kubernetes/helm\_charts/datapipeline\_jobs/values.j2**](https://github.com/Sunbird-inQuiry/data-pipeline/blob/7425f7c65e8bb2071635b00feffc17eb18ea32a6/kubernetes/helm\_charts/datapipeline\_jobs/values.j2#L264) file:
+
+For Variables used in below configuration, please refer to Variables Section Above.
+
+```
+user-pii-data-updater:
+  user-pii-data-updater: |+
+    include file("/data/flink/conf/base-config.conf")
+    kafka {
+      input.topic = "{{ user_pii_updater_kafka_topic_name }}"
+      groupId = "{{ user_pii_updater_group }}"
+    }
+    task {
+      consumer.parallelism = 1
+      parallelism = 1
+      router.parallelism = 1
+    }
+    target_object_types={{ user_pii_target_object_types }}
+    user_pii_replacement_value="{{ user_pii_replacement_value }}"
+    admin_email_notification_enable={{ enable_admin_email_notification | default('true') }}
+    userorg_service_base_url="{{ user_org_service_base_url }}"
+    notification {
+      email {
+        subject: "{{ email_notification_subject }}",
+        regards: "{{ email_notification_regards }}"
+      }
+    }
+  flink-conf: |+
+    jobmanager.memory.flink.size: {{ flink_job_names['user-pii-data-updater'].jobmanager_memory }}
+    taskmanager.memory.flink.size: {{ flink_job_names['user-pii-data-updater'].taskmanager_memory }}
+    taskmanager.numberOfTaskSlots: {{ flink_job_names['user-pii-data-updater'].taskslots }}
+    parallelism.default: 1
+    jobmanager.execution.failover-strategy: region
+    taskmanager.memory.network.fraction: 0.1
+
+```
+
+Add below configuration in [**kubernetes/ansible/roles/flink-jobs-deploy/defaults/main.yml** ](https://github.com/Sunbird-inQuiry/data-pipeline/blob/release-7.0.0/kubernetes/ansible/roles/flink-jobs-deploy/defaults/main.yml)file:
+
+```
+flink_job_names:
+  user-pii-data-updater:
+    job_class_name: 'org.sunbird.job.user.pii.updater.task.UserPiiUpdaterStreamTask'
+    replica: 1
+    jobmanager_memory: 2048m
+    taskmanager_memory: 2048m
+    taskslots: 1
+    cpu_requests: 0.3
+
+
+### user-pii-data-updater config
+user_pii_updater_kafka_topic_name: "{{ env_name }}.delete.user"
+user_pii_updater_group: "{{ env_name }}-user-pii-updater-group"
+user_pii_target_object_types: '{
+  "Question": ["1.0", "1.1"],
+  "QuestionSet": ["1.0", "1.1"]
+}'
+user_pii_replacement_value: "Deleted User"
+user_org_service_base_url: "http://{{private_ingressgateway_ip}}/userorg"
+email_notification_subject: "User Account Deletion Notification"
+email_notification_regards: "Team"
+```
