@@ -1,7 +1,7 @@
 # Asset Ownership Transfer
 
 {% hint style="info" %}
-This feature will be released under inQuiry 8.0.0 release.
+This feature is released under inQuiry 8.0.0 release.
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>
