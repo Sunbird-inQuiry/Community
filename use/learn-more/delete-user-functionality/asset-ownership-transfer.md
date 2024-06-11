@@ -45,7 +45,9 @@ The user can request for deletion of their account in Sunbird, this means two pr
 
 <table><thead><tr><th width="118">Component</th><th width="114">Service to be Build</th><th>Build Tag</th><th>Deploy Job</th><th>Deployment Tag</th><th>Comment</th></tr></thead><tbody><tr><td>InquiryKafkaSetup</td><td>NA</td><td>NA</td><td>Deploy/job/dev/job/KnowledgePlatform/job/InquiryKafkaSetup/</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-8.0.0_RC1">release-8.0.0_RC1</a></td><td>A new kafka topic <strong>&#x3C;env>.user.ownership.transfer</strong> has to be created for user-pii-data-updater flink job</td></tr><tr><td>InQuiryFlink Job</td><td>Build/job/KnowledgePlatform/job/InquiryFlinkJob</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-8.0.0_RC1">release-8.0.0_RC1</a></td><td>Deploy/job/dev/job/KnowledgePlatform/job/InquiryFlinkJob/</td><td><a href="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-8.0.0_RC1">release-8.0.0_RC1</a></td><td>Flink Job <strong>user-pii-data-updater</strong> is modified to support ownership transfer use case<br><br>Config File Reference For Above Job: <a href="https://github.com/Sunbird-inQuiry/data-pipeline/blob/c30fd964c440b62afcabde8ce896cc1ce1b15f89/kubernetes/helm_charts/datapipeline_jobs/values.j2#L264">https://github.com/Sunbird-inQuiry/data-pipeline/blob/c30fd964c440b62afcabde8ce896cc1ce1b15f89/kubernetes/helm_charts/datapipeline_jobs/values.j2#L264</a></td></tr></tbody></table>
 
-#### &#x20;Existing Variables of user-pii-data-updater flink job (for PII Cleanup Use case): <a href="#document-release-version" id="document-release-version"></a>
+### Variables: <a href="#document-release-version" id="document-release-version"></a>
+
+#### Existing Variables of user-pii-data-updater flink job (for PII Cleanup Use case): <a href="#document-release-version" id="document-release-version"></a>
 
 | Variable Name                          | Description                                                                                                                                                                                                                                    | Default Value                                                     |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -67,12 +69,17 @@ The user can request for deletion of their account in Sunbird, this means two pr
 
 ### Code And Configuration Changes:
 
-If you are interested in adopting this feature by making code changes in your forked repository of sunbird, then please checkout below code and configuration changes:\
+If you are interested in adopting this feature by making code changes in your forked repository of sunbird, then please checkout below code and configuration changes:
+
+#### **Code Changes:**
+
 \
-**Code Changes:**\
+\
 For **user-pii-data-updater** flink job code, please checkout the link below:
 
 {% embed url="https://github.com/Sunbird-inQuiry/data-pipeline/tree/release-8.0.0/user-pii-data-updater" %}
+
+#### Configuration Changes:
 
 Below changes need to be done for creating kafka topic needed by user-pii-data-updater-job:\
 [**ansible/roles/inquiry-setup-kafka/defaults/main.yml**](https://github.com/Sunbird-inQuiry/data-pipeline/blob/release-8.0.0/ansible/roles/inquiry-setup-kafka/defaults/main.yml)
